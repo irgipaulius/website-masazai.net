@@ -59,18 +59,22 @@ export default function NavBar() {
           Masažai.net
         </Typography>
         <Box className={classes.menuButtons}>
-          {["Masažai", "Informacija", "Kainininkas", "Kasažuotoja", "Kontaktai"].map((item) => (
-            <Link
-              component="button"
-              variant="body2"
-              onClick={() => setActiveBtn(item)}
-              color={activeBtn === item ? "textPrimary" : "textSecondary"}
-              className={classes.item}
-              key={item}
-            >
-              {item.toUpperCase()}
-            </Link>
-          ))}
+          {[].map(
+            (
+              item // "Masažai", "Informacija", "Kainininkas", "Masažuotoja", "Kontaktai"
+            ) => (
+              <Link
+                component="button"
+                variant="body2"
+                onClick={() => setActiveBtn(item)}
+                color={activeBtn === item ? "textPrimary" : "textSecondary"}
+                className={classes.item}
+                key={item}
+              >
+                {item.toUpperCase()}
+              </Link>
+            )
+          )}
         </Box>
       </Toolbar>
     </Container>
