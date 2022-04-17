@@ -84,7 +84,7 @@ function App() {
         }}
       >
         <EmailIcon fontSize="large" color="primary" />
-        <h1> jelena@masazai.net</h1>
+        <h1> jacinkevicienejelena@gmail.com</h1>
       </div>
     </div>
   );
