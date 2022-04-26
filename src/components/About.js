@@ -9,7 +9,7 @@ export default function About() {
         <div className="about__text__container">
           <p className="about__title">Sveiki</p>
           <p className="about__subtitle">as esu Jelena</p>
-          <p className="about__text">dlajkshdkjahskjdhakjshdkj</p>
+          <p className="about__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic laborum quae dicta repellendus cumque sit nostrum aliquam aliquid libero eveniet?</p>
         </div>
         <div className="about__image__container">
           <img className="about__image" src="/images/profile.jpeg" alt="" />
