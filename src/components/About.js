@@ -1,6 +1,6 @@
 import React from "react";
 
-import styles from "./About.css";
+import "./About.css";
 
 export default function About() {
   return (
@@ -12,7 +12,7 @@ export default function About() {
           <p className="about__text">dlajkshdkjahskjdhakjshdkj</p>
         </div>
         <div className="about__image__container">
-          <img className="about__image" src="/images/profile.jpeg" />
+          <img className="about__image" src="/images/profile.jpeg" alt="" />
         </div>
       </div>
     </div>
