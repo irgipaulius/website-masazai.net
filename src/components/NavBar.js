@@ -56,25 +56,21 @@ export default function NavBar() {
           noWrap
           className={classes.toolbarTitle}
         >
-          Masažai.net
+          Masažai
         </Typography>
         <Box className={classes.menuButtons}>
-          {[].map(
-            (
-              item // "Masažai", "Informacija", "Kainininkas", "Masažuotoja", "Kontaktai"
-            ) => (
-              <Link
-                component="button"
-                variant="body2"
-                onClick={() => setActiveBtn(item)}
-                color={activeBtn === item ? "textPrimary" : "textSecondary"}
-                className={classes.item}
-                key={item}
-              >
-                {item.toUpperCase()}
-              </Link>
-            )
-          )}
+          {["Pradžia", "Apie", "Masažai", "Kontaktai"].map((item) => (
+            <Link
+              component="button"
+              variant="body2"
+              onClick={() => setActiveBtn(item)}
+              color={activeBtn === item ? "textPrimary" : "textSecondary"}
+              className={classes.item}
+              key={item}
+            >
+              {item.toUpperCase()}
+            </Link>
+          ))}
         </Box>
       </Toolbar>
     </Container>
