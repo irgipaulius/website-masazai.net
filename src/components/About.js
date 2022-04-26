@@ -7,7 +7,7 @@ export default function About() {
     <div className="about">
       <div className="about__content">
         <div className="about__text__container">
-          <p className="about__title">SVEIKI</p>
+          <p className="about__title">Sveiki</p>
           <p className="about__subtitle">as esu Jelena</p>
           <p className="about__text">dlajkshdkjahskjdhakjshdkj</p>
         </div>
