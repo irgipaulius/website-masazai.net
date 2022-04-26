@@ -5,7 +5,7 @@
 }
 
 .hero-container {
-  background-image: url("http://localhost:3000/images/background.jpg");
+  background-image: url("/public/images/background.jpg");
   max-width: 100%;
   /* height: auto; */
   height: 700px;
