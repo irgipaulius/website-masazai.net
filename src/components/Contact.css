@@ -1,0 +1,54 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.contact {
+  background-color: #464d56;
+  max-width: 100%;
+  /* height: auto; */
+  height: 350px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 24px;
+
+  color: white;
+}
+
+.contact__title {
+  font-size: 32px;
+  font-weight: bold;
+  letter-spacing: 4px;
+}
+
+.contact__subtitle {
+  font-size: 20px;
+}
+
+.contact__mob__email {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.mob {
+  font-size: 32px;
+}
+
+.email {
+  font-size: 16px;
+}
+
+.contact__facebook {
+  font-size: 24px;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}

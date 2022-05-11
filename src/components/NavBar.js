@@ -10,11 +10,13 @@ export default function Navbar() {
   return (
     <>
       <nav className="navbar">
-        <div className="navbar-container">
-          <ul className="nav-menu">
-            {["Pradzia", "Apie", "Masazai", "Kontaktai"].map((buttonText) => (
-              <li className="nav-item">
-                <div className="nav-links" onClick={closeMobileMenu}>
+        <div className="navbar__mob">+370 612 121 21</div>
+        <div className="navbar__line"/>
+        <div className="navbar__container">
+          <ul className="nav__menu">
+            {["Pradžia", "Apie", "Masažai", "Kontaktai"].map((buttonText) => (
+              <li className="nav_item">
+                <div className="nav_links" onClick={closeMobileMenu}>
                   {buttonText}
                 </div>
               </li>
