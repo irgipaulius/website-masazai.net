@@ -1,0 +1,63 @@
+.contacts {
+  background-color: #464d56;
+  max-width: 100%;
+  /* height: auto; */
+  /* height: 350px; */
+}
+
+.contacts-container {
+  max-width: 120rem;
+  margin: 0 auto;
+  padding: 4.8rem 3.2rem 6.4rem 3.2rem;
+
+  display: flex;
+  flex-direction: column;
+  /* justify-content: center; */
+  align-items: center;
+  gap: 3.2rem;
+
+  text-align: center;
+
+  color: white;
+
+  border: 1px solid blue;
+}
+
+.contacts-title {
+  font-size: 3.6rem;
+  font-weight: 500;
+  letter-spacing: 4px;
+}
+
+.contacts-subtitle {
+  font-size: 2rem;
+  font-weight: 300;
+}
+
+.contacts-mob-email {
+}
+
+.mob {
+  font-size: 3.6rem;
+  font-weight: 500;
+  margin-bottom: 0.8rem;
+}
+
+.email {
+  font-size: 1.6rem;
+  font-weight: 300;
+}
+
+.contacts-facebook {
+  font-size: 2.4rem;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+a:hover {
+  color: #ff59cd;
+  text-decoration: underline;
+  transition: all 0.2s ease-out;
+}

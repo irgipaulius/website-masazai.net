@@ -1,22 +1,22 @@
 import React from "react";
-import CssBaseline from "@material-ui/core/CssBaseline";
-import "fontsource-roboto";
+// import CssBaseline from "@material-ui/core/CssBaseline";
+// import "fontsource-roboto";
 
 import NavBar from "./components/NavBar";
 import Hero from "./components/Hero";
 import About from "./components/About";
 import Main from "./components/Main";
-import Contact from "./components/Contact";
+import Contacts from "./components/Contacts";
 
 function App() {
   return (
     <div className="container">
-      <CssBaseline />
+      {/* <CssBaseline /> */}
       <NavBar />
       <Hero />
       <About />
       <Main />
-      <Contact />
+      <Contacts />
     </div>
   );
 }
