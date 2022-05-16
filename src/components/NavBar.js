@@ -9,21 +9,33 @@ export default function Navbar() {
 
   const closeMobileMenu = () => setClick(false);
 
+  const {
+    navbar,
+    navbar_mob_container,
+    navbar_line_container,
+    navbar_mob,
+    navbar_line,
+    navbar_menu_container,
+    nav_menu,
+    nav_item,
+    nav_links,
+  } = styles;
+
   return (
     <>
-      <nav className={styles.navbar}>
-        <div className={styles.navbar_mob_container}>
+      <nav className={navbar}>
+        <div className={navbar_mob_container}>
           {/* <div className={styles["navbar-mob"]}>+370 612 121 21</div> */}
-          <div className={styles.navbar_mob}>+370 612 121 21</div>
+          <div className={navbar_mob}>+370 612 121 21</div>
         </div>
-        <div className={styles.navbar_line_container}>
-          <div className={styles.navbar_line} />
+        <div className={navbar_line_container}>
+          <div className={navbar_line} />
         </div>
-        <nav className={styles.navbar_menu_container}>
-          <ul className={styles.nav_menu}>
+        <nav className={navbar_menu_container}>
+          <ul className={nav_menu}>
             {navItems.map((buttonText, index) => (
-              <li className={styles.nav_item} key={index}>
-                <div className={styles.nav_links} onClick={closeMobileMenu}>
+              <li className={nav_item} key={index}>
+                <div className={nav_links} onClick={closeMobileMenu}>
                   {buttonText}
                 </div>
               </li>
