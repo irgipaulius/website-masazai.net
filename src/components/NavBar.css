@@ -21,13 +21,15 @@
 
 .navbar-line-container {
   background-color: white;
+  display: flex;
+  justify-content: center;
 }
 .navbar-line {
-  max-width: 120rem;
-  margin: 0 20%;
-  padding: 0 3.2rem;
-
+  max-width: 96rem;
   height: 0.8rem;
+
+  margin: 0 20%;
+  flex-basis: 100%;
 
   background-color: #ff59cd;
 

@@ -25,7 +25,8 @@
   border: 1px solid red;
 }
 .main-texts {
-  max-width: 60rem;
+  /* 64 - 3.2 - 3.2 = 53.6 */
+  max-width: 53.6rem;
   margin: 4.8rem 3.2rem;
 
   flex-basis: 100%;
@@ -82,7 +83,8 @@
   border: 1px solid green;
 }
 .points-container {
-  max-width: 60rem;
+  /* 64 - 3.2 - 3.2 = 53.6 */
+  max-width: 53.6rem;
   margin: 4.8rem 3.2rem;
 
   flex-basis: 100%;
@@ -112,7 +114,6 @@
   background-color: white;
 
   flex-basis: 100%;
-  /* align-self: stretch; */
 
   padding: 1rem 1.6rem;
 
@@ -124,11 +125,3 @@
   background-color: #ff59cd;
   color: white;
 }
-
-/* 
-- Font sizes (px)
-10 / 12 / 14 / 16 / 18 / 20 / 24 / 30 / 36 / 44 / 52 / 62 / 74 / 86 / 98 
-
-- Spacing system (px)
-2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 80 / 96 / 128
-*/
