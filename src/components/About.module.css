@@ -2,7 +2,7 @@
   background-color: #464d56;
 }
 
-.about-container {
+.about_container {
   max-width: 120rem;
   margin: 0 auto;
   padding: 6.4rem;
@@ -16,7 +16,7 @@
   border: 1px solid blue;
 }
 
-.about-text-container {
+.about_text_container {
   width: 55%;
   color: white;
   font-size: 1.8rem;
@@ -25,19 +25,19 @@
 
   border: 1px solid red;
 }
-.about-title {
+.about_title {
   font-size: 6.2rem;
   font-weight: 500;
   margin-bottom: 0.8rem;
 }
-.about-subtitle {
+.about_subtitle {
   font-size: 4.4rem;
   font-weight: 500;
   margin-bottom: 2.4rem;
   color: #ff59cd;
 }
 
-.about-text {
+.about_text {
   font-size: 2rem;
   line-height: 1.6;
   list-style: none;
@@ -46,31 +46,31 @@
   flex-direction: column;
   gap: 1.2rem;
 }
-.about-text-list-item {
+.about_text_list_item {
   display: flex;
   align-items: center;
   gap: 1.2rem;
 }
-.about-checkmark {
+.about_checkmark {
   min-width: 3rem;
   height: 3rem;
   /* color: #ff59cd; */
 }
 
-.about-image-container {
+.about_image_container {
   width: 45%;
   /* height: 300px; */
   overflow: hidden;
 
   border: 1px solid green;
 }
-.about-image {
+.about_image {
   object-fit: cover;
   width: 100%;
   height: 100%;
 }
 
-.about-btn {
+.about_btn {
   font-family: inherit;
   font-size: 2rem;
   letter-spacing: 1px;
@@ -82,7 +82,7 @@
   padding: 1.6rem 2.4rem;
   cursor: pointer;
 }
-.about-btn:hover {
+.about_btn:hover {
   background-color: #cc47a4;
   transition: all 0.2s ease-out;
 }

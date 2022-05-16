@@ -1,19 +1,19 @@
 import React from "react";
 
-import "./About.css";
+import styles from "./About.module.css";
 
 export default function About() {
   return (
-    <div className="about">
-      <div className="about-container">
-        <div className="about-text-container">
-          <p className="about-title">Sveiki,</p>
-          <p className="about-subtitle">aš esu Jelena</p>
-          <ul className="about-text">
-            <li className="about-text-list-item">
+    <div className={styles.about}>
+      <div className={styles.about_container}>
+        <div className={styles.about_text_container}>
+          <p className={styles.about_title}>Sveiki,</p>
+          <p className={styles.about_subtitle}>aš esu Jelena</p>
+          <ul className={styles.about_text}>
+            <li className={styles.about_text_list_item}>
               <svg
                 xmlns="http://www.w3.org/2000/svg"
-                className="h-5 w-5 about-checkmark"
+                className={styles.about_checkmark}
                 viewBox="0 0 20 20"
                 fill="currentColor"
               >
@@ -25,10 +25,10 @@ export default function About() {
               </svg>
               <span>Pilnai kvalifikuota masažuotoja ir profesionali kinezeterapeutė.</span>
             </li>
-            <li className="about-text-list-item">
+            <li className={styles.about_text_list_item}>
               <svg
                 xmlns="http://www.w3.org/2000/svg"
-                className="h-5 w-5 about-checkmark"
+                className={styles.about_checkmark}
                 viewBox="0 0 20 20"
                 fill="currentColor"
               >
@@ -40,10 +40,10 @@ export default function About() {
               </svg>
               <span>32 metų ir 15,000 valandų patirtis.</span>
             </li>
-            <li className="about-text-list-item">
+            <li className={styles.about_text_list_item}>
               <svg
                 xmlns="http://www.w3.org/2000/svg"
-                className="h-5 w-5 about-checkmark"
+                className={styles.about_checkmark}
                 viewBox="0 0 20 20"
                 fill="currentColor"
               >
@@ -55,10 +55,10 @@ export default function About() {
               </svg>
               <span>Draugiška, linksma, švelniom rankom, taip toliau t.t.</span>
             </li>
-            <li className="about-text-list-item">
+            <li className={styles.about_text_list_item}>
               <svg
                 xmlns="http://www.w3.org/2000/svg"
-                className="h-5 w-5 about-checkmark"
+                className={styles.about_checkmark}
                 viewBox="0 0 20 20"
                 fill="currentColor"
               >
@@ -75,10 +75,10 @@ export default function About() {
             </li>
           </ul>
 
-          <button className="about-btn">Išsami informacija</button>
+          <button className={styles.about_btn}>Išsami informacija</button>
         </div>
-        <div className="about-image-container">
-          <img className="about-image" src="/images/profile.jpeg" alt="" />
+        <div className={styles.about_image_container}>
+          <img className={styles.about_image} src="/images/profile.jpeg" alt="" />
         </div>
       </div>
     </div>

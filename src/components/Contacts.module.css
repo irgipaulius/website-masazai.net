@@ -3,7 +3,7 @@
   max-width: 100%;
 }
 
-.contacts-container {
+.contacts_container {
   max-width: 120rem;
   margin: 0 auto;
   padding: 4.8rem 3.2rem 6.4rem 3.2rem;
@@ -21,18 +21,18 @@
   border: 1px solid blue;
 }
 
-.contacts-title {
+.contacts_title {
   font-size: 3.6rem;
   font-weight: 500;
   letter-spacing: 4px;
 }
 
-.contacts-subtitle {
+.contacts_subtitle {
   font-size: 2rem;
   font-weight: 300;
 }
 
-.contacts-mob-email {
+.contacts_mob_email {
 }
 
 .mob {
@@ -46,7 +46,7 @@
   font-weight: 300;
 }
 
-.contacts-facebook {
+.contacts_facebook {
   font-size: 2.4rem;
 }
 

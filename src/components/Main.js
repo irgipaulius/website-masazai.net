@@ -1,22 +1,22 @@
 import React from "react";
 
-import "./Main.css";
+import styles from "./Main.module.css";
 
 function Main() {
   return (
-    <div className="main">
-      <div className="main-content">
-        <div className="main-text-container">
-          <div className="main-texts">
-            <p className="main-title">Masažo paslaugos</p>
-            <p className="main-text">
+    <div className={styles.main}>
+      <div className={styles.main_content}>
+        <div className={styles.main_text_container}>
+          <div className={styles.main_texts}>
+            <p className={styles.main_title}>Masažo paslaugos</p>
+            <p className={styles.main_text}>
               Siūlau pasirinkimą iš įvairių masažo technikų, bei galiu padėti išsirinkti tinkamą
               procedūrą pagal asmeninius poreikius.
             </p>
-            <p className="main-text">
+            <p className={styles.main_text}>
               Taip pat siūlau rekomendacijas masažo ilgalaikiams kursams.{" "}
             </p>
-            <p className="main-text">
+            <p className={styles.main_text}>
               Šitą tekstą reikia patvarkyti, kol kas tiesiog prirašiau laikinų sakinių. Šita
               pastraipa gali aprašyti daug įvairaus teksto apie siūlomas procedūras ir masažus,
               kurias galima siūlyti klientams. Šita pastraipa gali aprašyti daug įvairaus teksto
@@ -24,18 +24,18 @@ function Main() {
               gali aprašyti daug įvairaus teksto apie siūlomas procedūras ir masažus, kurias galima
               siūlyti klientams.
             </p>
-            <p className="main-text">Dėl kainų teiraukitės telefonu.</p>
-            <button className="main-btn">Išsami informacija</button>
+            <p className={styles.main_text}>Dėl kainų teiraukitės telefonu.</p>
+            <button className={styles.main_btn}>Išsami informacija</button>
           </div>
         </div>
-        <div className="main-image-container">
-          <div className="points-container">
-            <p className="points-container-title">POPULIARIAUSI</p>
-            <ul className="points-text">
-              <li className="points-text-list-item">
+        <div className={styles.main_image_container}>
+          <div className={styles.points_container}>
+            <p className={styles.points_container_title}>POPULIARIAUSI</p>
+            <ul className={styles.points_text}>
+              <li className={styles.points_text_list_item}>
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
-                  className="h-5 w-5 points-text-checkmark"
+                  className={styles.points_text_checkmark}
                   viewBox="0 0 20 20"
                   fill="currentColor"
                 >
@@ -47,10 +47,10 @@ function Main() {
                 </svg>
                 <span>Klasikinis viso kūno masažas</span>
               </li>
-              <li className="points-text-list-item">
+              <li className={styles.points_text_list_item}>
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
-                  className="h-5 w-5 points-text-checkmark"
+                  className={styles.points_text_checkmark}
                   viewBox="0 0 20 20"
                   fill="currentColor"
                 >
@@ -62,10 +62,10 @@ function Main() {
                 </svg>
                 <span>Medaus masažas</span>
               </li>
-              <li className="points-text-list-item">
+              <li className={styles.points_text_list_item}>
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
-                  className="h-5 w-5 points-text-checkmark"
+                  className={styles.points_text_checkmark}
                   viewBox="0 0 20 20"
                   fill="currentColor"
                 >
@@ -77,10 +77,10 @@ function Main() {
                 </svg>
                 <span>Limfodrenažinis masažas</span>
               </li>
-              <li className="points-text-list-item">
+              <li className={styles.points_text_list_item}>
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
-                  className="h-5 w-5 points-text-checkmark"
+                  className={styles.points_text_checkmark}
                   viewBox="0 0 20 20"
                   fill="currentColor"
                 >
@@ -92,10 +92,10 @@ function Main() {
                 </svg>
                 <span>Chiromasažas masažas</span>
               </li>
-              <li className="points-text-list-item">
+              <li className={styles.points_text_list_item}>
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
-                  className="h-5 w-5 points-text-checkmark"
+                  className={styles.points_text_checkmark}
                   viewBox="0 0 20 20"
                   fill="currentColor"
                 >
@@ -107,10 +107,10 @@ function Main() {
                 </svg>
                 <span>Neurosedatyvinis-antistresinis masažas</span>
               </li>
-              <li className="points-text-list-item">
+              <li className={styles.points_text_list_item}>
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
-                  className="h-5 w-5 points-text-checkmark"
+                  className={styles.points_text_checkmark}
                   viewBox="0 0 20 20"
                   fill="currentColor"
                 >

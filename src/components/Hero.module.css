@@ -10,7 +10,7 @@
   align-items: flex-end;
 }
 
-.hero-container {
+.hero_container {
   max-width: 120rem;
   margin: 0 auto 9.6rem auto;
   padding: 0 3.2rem;
@@ -23,26 +23,26 @@
   border: 1px solid grey;
 }
 
-.hero-title {
+.hero_title {
   font-size: 8.6rem;
   font-weight: 500;
   letter-spacing: 1rem;
   padding-bottom: 1.6rem;
 }
-.hero-subtitle {
+.hero_subtitle {
   font-size: 4.4rem;
   font-weight: 400;
   letter-spacing: 0.75rem;
   padding-bottom: 1.6rem;
 }
-.hero-about {
+.hero_about {
   font-size: 3.6rem;
   font-weight: 300;
   letter-spacing: 0.25rem;
   padding: 1.6rem 0 0 0;
 }
 
-.hero-line {
+.hero_line {
   margin: 0 20%;
   height: 0.4rem;
   background-color: #ff59cd;

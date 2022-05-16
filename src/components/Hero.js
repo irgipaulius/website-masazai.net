@@ -1,15 +1,15 @@
 import React from "react";
 
-import "./Hero.css";
+import styles from "./Hero.module.css";
 
 export default function Hero() {
   return (
-    <div className="hero">
-      <div className="hero-container">
-        <p className="hero-title">MASAŽAS</p>
-        <p className="hero-subtitle">PAS JELENĄ</p>
-        <div className="hero-line"></div>
-        <p className="hero-about">Profesionalus masažas Kaune</p>
+    <div className={styles.hero}>
+      <div className={styles.hero_container}>
+        <p className={styles.hero_title}>MASAŽAS</p>
+        <p className={styles.hero_subtitle}>PAS JELENĄ</p>
+        <div className={styles.hero_line}></div>
+        <p className={styles.hero_about}>Profesionalus masažas Kaune</p>
       </div>
     </div>
   );
