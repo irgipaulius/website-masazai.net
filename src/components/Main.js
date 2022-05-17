@@ -35,10 +35,7 @@ function Main() {
             <p className={main_text}>
               Šitą tekstą reikia patvarkyti, kol kas tiesiog prirašiau laikinų sakinių. Šita
               pastraipa gali aprašyti daug įvairaus teksto apie siūlomas procedūras ir masažus,
-              kurias galima siūlyti klientams. Šita pastraipa gali aprašyti daug įvairaus teksto
-              apie siūlomas procedūras ir masažus, kurias galima siūlyti klientams. Šita pastraipa
-              gali aprašyti daug įvairaus teksto apie siūlomas procedūras ir masažus, kurias galima
-              siūlyti klientams.
+              kurias galima siūlyti klientams. 
             </p>
             <p className={main_text}>Dėl kainų teiraukitės telefonu.</p>
             <button className={main_btn}>Išsami informacija</button>

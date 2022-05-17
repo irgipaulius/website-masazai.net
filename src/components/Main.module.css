@@ -45,6 +45,7 @@
 }
 .main_text {
   font-size: 2rem;
+  line-height: 1.4;
   margin-bottom: 1.6rem;
 }
 .main_text:last-of-type {
@@ -97,17 +98,16 @@
   display: flex;
   flex-direction: column;
   gap: 1.6rem;
-
 }
 .points_text_list_item {
   font-size: 2.4rem;
   font-weight: 600;
-  
+
   display: flex;
   align-items: center;
-  
+
   gap: 1.2rem;
-  
+
   cursor: pointer;
 }
 .points_text_list_item span {
@@ -116,7 +116,6 @@
   flex-basis: 100%;
 
   padding: 1rem 1.6rem;
-
 }
 .points_text_checkmark {
   min-width: 4.4rem;
@@ -125,3 +124,89 @@
   background-color: #ff59cd;
   color: white;
 }
+
+/**************************/
+/* BELOW 640px (Tablet) */
+/**************************/
+
+/* 640 / 16 = 40 */
+@media (max-width: 40em) {
+  .main_content {
+    flex-direction: column;
+  }
+
+  .main_text_container {
+    width: 100%;
+
+    /* display: flex; */
+    justify-content: center;
+
+    /* align-self: stretch; */
+
+    /* border: 1px solid red; */
+  }
+  .main_texts {
+    /* 64 - 3.2 - 3.2 = 53.6 */
+    max-width: 100%;
+    margin: 3.2rem 4.8rem;
+
+    display: flex;
+    flex-direction: column;
+    /* gap: 1.6rem; */
+    /* flex-basis: 100%; */
+
+    /* border: 1px solid goldenrod; */
+  }
+  .main_title,
+  .points_container_title {
+    /* font-size: 3.6rem; */
+    text-align: center;
+    margin-bottom: 1.6rem;
+  }
+  .main_text {
+    /* font-size: 2rem; */
+    /* line-height: 1.4; */
+
+    margin-bottom: 1.6rem;
+  }
+  .main_btn {
+    /* margin-top: 2.4rem; */
+    margin: 2.4rem auto 0 auto;
+  }
+
+  .main_image_container {
+    width: 100%;
+
+    justify-content: center;
+  
+    /* align-self: stretch; */
+  
+    /* background-image: url("/public/images/temp_main-image-container.jpg"); */
+    /* background-position: center; */
+    /* background-repeat: no-repeat; */
+    /* background-size: cover; */
+  
+    /* display: flex; */
+    /* justify-content: flex-start; */
+  
+    border: 1px solid green;
+  }
+
+  .points_container {
+    /* 64 - 3.2 - 3.2 = 53.6 */
+    max-width: 100%;
+    margin: 3.2rem 4.8rem;
+  
+    /* flex-basis: 100%; */
+  
+    border: 1px dotted blue;
+  }
+}
+
+/*
+- Font sizes (px)
+10 / 12 / 14 / 16 / 18 / 20 / 24 / 30 / 36 / 44 / 52 / 62 / 74 / 86 / 98
+
+- Spacing system (px)
+2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 80 / 96 / 128
+*/
