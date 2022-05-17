@@ -18,7 +18,8 @@
   color: white;
   text-align: center;
 
-  flex-basis: 100%;
+  flex-grow: 1;
+  /* flex-basis: 100%; */
 
   border: 1px solid grey;
 }
@@ -112,7 +113,7 @@
   }
   .hero_about {
     font-size: 2.4rem;
-    letter-spacing: 0.15rem;
+    letter-spacing: 0.05rem;
     padding: 1.6rem 0 0 0;
   }
 

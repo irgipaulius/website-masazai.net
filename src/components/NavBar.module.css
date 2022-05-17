@@ -27,9 +27,10 @@
 .navbar_line {
   max-width: 96rem;
   height: 0.8rem;
-
   margin: 0 20%;
-  flex-basis: 100%;
+
+  flex-grow: 1;
+  /* flex-basis: 100%; */
 
   background-color: #ff59cd;
 

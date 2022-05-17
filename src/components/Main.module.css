@@ -29,7 +29,8 @@
   max-width: 53.6rem;
   margin: 4.8rem 3.2rem;
 
-  flex-basis: 100%;
+  flex-grow: 1;
+  /* flex-basis: 100%; */
 
   border: 1px solid goldenrod;
 }
@@ -88,7 +89,8 @@
   max-width: 53.6rem;
   margin: 4.8rem 3.2rem;
 
-  flex-basis: 100%;
+  flex-grow: 1;
+  /* flex-basis: 100%; */
 
   border: 1px solid blue;
 }
@@ -113,7 +115,8 @@
 .points_text_list_item span {
   background-color: white;
 
-  flex-basis: 100%;
+  flex-grow: 1;
+  /* flex-basis: 100%; */
 
   padding: 1rem 1.6rem;
 }
@@ -141,8 +144,6 @@
     /* display: flex; */
     justify-content: center;
 
-    /* align-self: stretch; */
-
     /* border: 1px solid red; */
   }
   .main_texts {
@@ -153,7 +154,6 @@
     display: flex;
     flex-direction: column;
     /* gap: 1.6rem; */
-    /* flex-basis: 100%; */
 
     /* border: 1px solid goldenrod; */
   }
@@ -196,8 +196,6 @@
     /* 64 - 3.2 - 3.2 = 53.6 */
     max-width: 100%;
     margin: 3.2rem 4.8rem;
-  
-    /* flex-basis: 100%; */
   
     border: 1px dotted blue;
   }
