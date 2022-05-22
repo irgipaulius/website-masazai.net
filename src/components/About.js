@@ -1,5 +1,7 @@
 import React from "react";
 
+import PanelButton from "./PanelButton";
+
 import styles from "./About.module.css";
 
 export default function About() {
@@ -37,7 +39,9 @@ export default function About() {
                   clipRule="evenodd"
                 />
               </svg>
-              <span>Pilnai kvalifikuota masažuotoja ir profesionali kinezeterapeutė.</span>
+              <span>
+                Pilnai kvalifikuota masažuotoja ir profesionali kinezeterapeutė.
+              </span>
             </li>
             <li className={about_text_list_item}>
               <svg
@@ -83,13 +87,14 @@ export default function About() {
                 />
               </svg>
               <span>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic laborum quae dicta
-                repellendus cumque sit nostrum aliquam aliquid libero eveniet?
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic
+                laborum quae dicta repellendus cumque sit nostrum aliquam
+                aliquid libero eveniet?
               </span>
             </li>
           </ul>
 
-          <button className={about_btn}>Išsami informacija</button>
+          <PanelButton text="Išsami informacija" type="about" />
         </div>
         <div className={about_image_container}>
           <img className={about_image} src="/images/profile.jpeg" alt="" />
