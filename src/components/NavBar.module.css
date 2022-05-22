@@ -1,0 +1,123 @@
+.navbar {
+  position: sticky;
+  top: 0;
+  z-index: 999;
+}
+
+.navbar_mob_container {
+  background-color: white;
+}
+.navbar_mob {
+  max-width: 120rem;
+  margin: 0 auto;
+  padding: 0.8rem 3.2rem;
+
+  font-size: 3.2rem;
+  font-weight: 600;
+  text-align: center;
+
+  border: 1px solid blue;
+}
+
+.navbar_line_container {
+  background-color: white;
+  display: flex;
+  justify-content: center;
+}
+.navbar_line {
+  max-width: 96rem;
+  height: 0.8rem;
+  margin: 0 20%;
+
+  flex-grow: 1;
+  /* flex-basis: 100%; */
+
+  background-color: #ff59cd;
+
+  /* border: 1px solid green; */
+}
+
+.navbar_menu_container {
+  background: linear-gradient(90deg, rgb(83, 79, 79) 0%, rgb(42, 34, 42) 100%);
+}
+.nav_menu {
+  max-width: 120rem;
+  margin: 0 auto;
+  padding: 0 3.2rem;
+  height: 5.6rem;
+
+  display: flex;
+  justify-content: center;
+  gap: 3.2rem;
+
+  list-style: none;
+  color: white;
+  font-size: 2.4rem;
+  font-weight: 300;
+
+  border: 1px solid red;
+}
+.nav_item {
+  cursor: pointer;
+
+  /* border: 1px solid green; */
+}
+
+.nav_links {
+  height: 100%;
+  display: flex;
+  align-items: center;
+
+  /* border: 1px solid red; */
+}
+.nav_links:hover {
+  border-bottom: 0.8rem solid #ff59cd;
+  transition: all 0.2s ease-out;
+}
+
+/**************************/
+/* BELOW 640px (Tablet) */
+/**************************/
+
+/* 640 / 16 = 40 */
+@media (max-width: 40em) {
+  .navbar_line {
+    margin: 0 15%;
+  }
+}
+
+/**************************/
+/* BELOW 432px (Mobile) */
+/**************************/
+
+/* 432 / 16 = 40 */
+@media (max-width: 27em) {
+  .nav_menu {
+    padding: 0 15%;
+    height: auto;
+
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 5.6rem 5.6rem;
+    column-gap: 0;
+    row-gap: 0;
+
+    justify-items: center;
+    align-items: center;
+
+    border: 1px solid red;
+  }
+  .nav_item {
+    height: 100%;
+  
+    /* border: 1px solid green; */
+  }
+}
+
+/*
+- Font sizes (px)
+10 / 12 / 14 / 16 / 18 / 20 / 24 / 30 / 36 / 44 / 52 / 62 / 74 / 86 / 98
+
+- Spacing system (px)
+2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 80 / 96 / 128
+*/
