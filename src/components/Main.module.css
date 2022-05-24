@@ -120,13 +120,13 @@
 
   padding: 1rem 1.6rem;
 }
-.points_text_checkmark {
+/* .points_text_checkmark {
   min-width: 4.4rem;
   height: 4.4rem;
   padding: 0.4rem;
   background-color: #ff59cd;
   color: white;
-}
+} */
 
 /**************************/
 /* BELOW 640px (Tablet) */
