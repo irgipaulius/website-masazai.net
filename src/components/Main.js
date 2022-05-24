@@ -1,8 +1,7 @@
 import React from "react";
 
 import styles from "./Main.module.css";
-import CheckIcon from "@material-ui/icons/Check";
-import MainCheckmark from "./MainCheckmark";
+import { MainCheckmark } from "./MuiIcons";
 
 function Main() {
   const {
@@ -18,7 +17,6 @@ function Main() {
     points_container,
     points_text,
     points_text_list_item,
-    points_text_checkmark,
   } = styles;
 
   return (

@@ -1,8 +1,7 @@
 import React from "react";
 
 import styles from "./About.module.css";
-import CheckIcon from "@material-ui/icons/Check";
-import AboutCheckmark from "./AboutCheckmark";
+import { AboutCheckmark } from "./MuiIcons";
 
 export default function About() {
   const {
@@ -13,7 +12,6 @@ export default function About() {
     about_subtitle,
     about_text,
     about_text_list_item,
-    about_checkmark,
     about_image_container,
     about_image,
     about_btn,
