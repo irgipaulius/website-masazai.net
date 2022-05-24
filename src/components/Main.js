@@ -3,6 +3,7 @@ import React from "react";
 import PanelButton from "./PanelButton";
 
 import styles from "./Main.module.css";
+import { MainCheckmark } from "./MuiIcons";
 
 function Main() {
   const {
@@ -18,7 +19,6 @@ function Main() {
     points_container,
     points_text,
     points_text_list_item,
-    points_text_checkmark,
   } = styles;
 
   return (
@@ -35,9 +35,9 @@ function Main() {
               Taip pat siūlau rekomendacijas masažo ilgalaikiams kursams.{" "}
             </p>
             <p className={main_text}>
-              Šitą tekstą reikia patvarkyti, kol kas tiesiog prirašiau laikinų
-              sakinių. Šita pastraipa gali aprašyti daug įvairaus teksto apie
-              siūlomas procedūras ir masažus, kurias galima siūlyti klientams.
+              Šitą tekstą reikia patvarkyti, kol kas tiesiog prirašiau laikinų sakinių. Šita
+              pastraipa gali aprašyti daug įvairaus teksto apie siūlomas procedūras ir masažus,
+              kurias galima siūlyti klientams.
             </p>
             <p className={main_text}>Dėl kainų teiraukitės telefonu.</p>
 
@@ -49,93 +49,27 @@ function Main() {
             <p className={points_container_title}>POPULIARIAUSI</p>
             <ul className={points_text}>
               <li className={points_text_list_item}>
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  className={points_text_checkmark}
-                  viewBox="0 0 20 20"
-                  fill="currentColor"
-                >
-                  <path
-                    fillRule="evenodd"
-                    d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
-                    clipRule="evenodd"
-                  />
-                </svg>
+                <MainCheckmark />
                 <span>Klasikinis viso kūno masažas</span>
               </li>
               <li className={points_text_list_item}>
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  className={points_text_checkmark}
-                  viewBox="0 0 20 20"
-                  fill="currentColor"
-                >
-                  <path
-                    fillRule="evenodd"
-                    d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
-                    clipRule="evenodd"
-                  />
-                </svg>
+                <MainCheckmark />
                 <span>Medaus masažas</span>
               </li>
               <li className={points_text_list_item}>
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  className={points_text_checkmark}
-                  viewBox="0 0 20 20"
-                  fill="currentColor"
-                >
-                  <path
-                    fillRule="evenodd"
-                    d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
-                    clipRule="evenodd"
-                  />
-                </svg>
+                <MainCheckmark />
                 <span>Limfodrenažinis masažas</span>
               </li>
               <li className={points_text_list_item}>
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  className={points_text_checkmark}
-                  viewBox="0 0 20 20"
-                  fill="currentColor"
-                >
-                  <path
-                    fillRule="evenodd"
-                    d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
-                    clipRule="evenodd"
-                  />
-                </svg>
+                <MainCheckmark />
                 <span>Chiromasažas masažas</span>
               </li>
               <li className={points_text_list_item}>
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  className={points_text_checkmark}
-                  viewBox="0 0 20 20"
-                  fill="currentColor"
-                >
-                  <path
-                    fillRule="evenodd"
-                    d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
-                    clipRule="evenodd"
-                  />
-                </svg>
+                <MainCheckmark />
                 <span>Neurosedatyvinis-antistresinis masažas</span>
               </li>
               <li className={points_text_list_item}>
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  className={points_text_checkmark}
-                  viewBox="0 0 20 20"
-                  fill="currentColor"
-                >
-                  <path
-                    fillRule="evenodd"
-                    d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
-                    clipRule="evenodd"
-                  />
-                </svg>
+                <MainCheckmark />
                 <span>Anticeliulitinis masažas</span>
               </li>
             </ul>
