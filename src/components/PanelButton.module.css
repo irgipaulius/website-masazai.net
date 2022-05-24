@@ -1,0 +1,27 @@
+.panel_btn {
+  font-family: inherit;
+  font-size: 2rem;
+  letter-spacing: 1px;
+  color: white;
+  background-color: #ff59cd;
+  border: none;
+  border-radius: 8px;
+  margin-top: 3.2rem;
+  padding: 1.6rem 2.4rem;
+  cursor: pointer;
+}
+.panel_btn:hover {
+  background-color: #cc47a4;
+  transition: all 0.2s ease-out;
+}
+
+.panel_modal {
+  height: 80%;
+  width: 80%;
+  /* background-color: lightblue; */
+}
+
+.panel_overlay {
+  height: 100%;
+  width: 100%;
+}

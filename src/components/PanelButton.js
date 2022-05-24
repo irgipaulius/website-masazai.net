@@ -1,12 +1,12 @@
 import React, { useState } from "react";
-import Rodal from "rodal";
+import { Modal } from "react-responsive-modal";
 
 import { AboutPanelContents } from "./panel/AboutPanel";
 import { PricingPanelContents } from "./panel/PricingPanel";
 import { ErrorPanelContents } from "./panel/ErrorPanel";
 
-import "rodal/lib/rodal.css";
-import styles from "./About.module.css";
+import "react-responsive-modal/styles.css";
+import styles from "./PanelButton.module.css";
 
 /**
  * @param {*} type "about" or "pricing"
@@ -52,7 +52,7 @@ export default function PanelButton({ text, type, focus = 0 }) {
 2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 80 / 96 / 128
 */
 
-  const { about_btn } = styles;
+  const { panel_btn, panel_modal, panel_overlay } = styles;
 
   const panel_container = {
     backgroundColor: "lightgrey",
@@ -108,26 +108,18 @@ export default function PanelButton({ text, type, focus = 0 }) {
 
   return (
     <div>
-      <button className={about_btn} onClick={toggleVisible}>
+      <button className={panel_btn} onClick={toggleVisible}>
         {text}
       </button>
-      <Rodal
-        customStyles={{
-          width: "80%",
-          height: "80%",
-          top: "11.2rem", // from top 11.2rem (48 + 8 + 56 = NavBar)
-
-          margin: "2.4rem auto 0 auto",
-          padding: "2.4rem",
-
-          borderRadius: "8px",
+      <Modal
+        classNames={{
+          modal: panel_modal,
+          overlay: panel_overlay,
         }}
-        //
-        visible={visible}
+        open={visible}
         onClose={setHidden}
-        closeOnEsc={true}
-        animation="slideDown"
-        duration={300}
+        center={true}
+        animationDuration={500}
       >
         {/* these classNames are placeholders. please fix them all. */}
         <div style={panel_container} className="panel_container">
@@ -136,7 +128,10 @@ export default function PanelButton({ text, type, focus = 0 }) {
             <ul style={panel_menu}>
               {Object.keys(contents).map((menuItem, index) => (
                 <li style={panel_item} key={index}>
-                  <div style={panel_link} onClick={() => setContentItem(menuItem)}>
+                  <div
+                    style={panel_link}
+                    onClick={() => setContentItem(menuItem)}
+                  >
                     {menuItem}
                   </div>
                 </li>
@@ -145,7 +140,7 @@ export default function PanelButton({ text, type, focus = 0 }) {
             <div style={panel_content}>{contents[contentItem]}</div>
           </div>
         </div>
-      </Rodal>
+      </Modal>
     </div>
   );
 }
