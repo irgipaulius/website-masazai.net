@@ -2,6 +2,7 @@ import React from "react";
 
 import styles from "./Main.module.css";
 import CheckIcon from "@material-ui/icons/Check";
+import MainCheckmark from "./MainCheckmark";
 
 function Main() {
   const {
@@ -47,69 +48,27 @@ function Main() {
             <p className={points_container_title}>POPULIARIAUSI</p>
             <ul className={points_text}>
               <li className={points_text_list_item}>
-                <CheckIcon
-                  style={{
-                    fontSize: "4.4rem",
-                    padding: "0.4rem",
-                    backgroundColor: "#ff59cd",
-                    color: "white",
-                  }}
-                />
+                <MainCheckmark />
                 <span>Klasikinis viso kūno masažas</span>
               </li>
               <li className={points_text_list_item}>
-                <CheckIcon
-                  style={{
-                    fontSize: "4.4rem",
-                    padding: "0.4rem",
-                    backgroundColor: "#ff59cd",
-                    color: "white",
-                  }}
-                />
+                <MainCheckmark />
                 <span>Medaus masažas</span>
               </li>
               <li className={points_text_list_item}>
-                <CheckIcon
-                  style={{
-                    fontSize: "4.4rem",
-                    padding: "0.4rem",
-                    backgroundColor: "#ff59cd",
-                    color: "white",
-                  }}
-                />
+                <MainCheckmark />
                 <span>Limfodrenažinis masažas</span>
               </li>
               <li className={points_text_list_item}>
-                <CheckIcon
-                  style={{
-                    fontSize: "4.4rem",
-                    padding: "0.4rem",
-                    backgroundColor: "#ff59cd",
-                    color: "white",
-                  }}
-                />
+                <MainCheckmark />
                 <span>Chiromasažas masažas</span>
               </li>
               <li className={points_text_list_item}>
-                <CheckIcon
-                  style={{
-                    fontSize: "4.4rem",
-                    padding: "0.4rem",
-                    backgroundColor: "#ff59cd",
-                    color: "white",
-                  }}
-                />
+                <MainCheckmark />
                 <span>Neurosedatyvinis-antistresinis masažas</span>
               </li>
               <li className={points_text_list_item}>
-                <CheckIcon
-                  style={{
-                    fontSize: "4.4rem",
-                    padding: "0.4rem",
-                    backgroundColor: "#ff59cd",
-                    color: "white",
-                  }}
-                />
+                <MainCheckmark />
                 <span>Anticeliulitinis masažas</span>
               </li>
             </ul>
