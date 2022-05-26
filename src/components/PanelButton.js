@@ -45,10 +45,12 @@ export default function PanelButton({ text, type, focus = 0 }) {
   const setHidden = () => setVisible(false);
 
   const {
-    panel_overlay,
-    panel_modal,
-    panel_close_button,
-    panel_close_icon,
+    A_modal_overlay,
+    A_modal_container,
+    A_modal,
+    A_modal_close_button,
+    A_modal_close_icon,
+
     panel_btn,
     panel_container,
     panel_title,
@@ -66,10 +68,11 @@ export default function PanelButton({ text, type, focus = 0 }) {
       </button>
       <Modal
         classNames={{
-          overlay: panel_overlay,
-          modal: panel_modal,
-          closeButton: panel_close_button,
-          closeIcon: panel_close_icon,
+          overlay: A_modal_overlay,
+          modalContainer: A_modal_container,
+          modal: A_modal,
+          closeButton: A_modal_close_button,
+          closeIcon: A_modal_close_icon,
         }}
         open={visible}
         onClose={setHidden}
