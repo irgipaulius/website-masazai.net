@@ -22,7 +22,7 @@
 
   align-self: stretch;
 
-  border: 1px solid red;
+  /* border: 1px solid red; */
 }
 .main_texts {
   /* 64 - 3.2 - 3.2 = 53.6 */
@@ -32,7 +32,7 @@
   flex-grow: 1;
   /* flex-basis: 100%; */
 
-  border: 1px solid goldenrod;
+  /* border: 1px solid goldenrod; */
 }
 .main_title,
 .points_container_title {
@@ -82,7 +82,7 @@
   display: flex;
   justify-content: flex-start;
 
-  border: 1px solid green;
+  /* border: 1px solid green; */
 }
 .points_container {
   /* 64 - 3.2 - 3.2 = 53.6 */
@@ -92,7 +92,7 @@
   flex-grow: 1;
   /* flex-basis: 100%; */
 
-  border: 1px solid blue;
+  /* border: 1px solid blue; */
 }
 .points_text {
   list-style: none;
@@ -189,7 +189,7 @@
     /* display: flex; */
     /* justify-content: flex-start; */
   
-    border: 1px solid green;
+    /* border: 1px solid green; */
   }
 
   .points_container {
@@ -197,7 +197,7 @@
     max-width: 100%;
     margin: 3.2rem 4.8rem;
   
-    border: 1px dotted blue;
+    /* border: 1px dotted blue; */
   }
 }
 
