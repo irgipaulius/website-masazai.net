@@ -1,9 +1,3 @@
-/* * {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-} */
-
 .panel_btn {
   font-family: inherit;
   font-size: 2rem;
@@ -24,15 +18,11 @@
 .panel_overlay {
   width: 100%;
   height: 100%;
-  /* background-color: lightblue; */
 }
 
 .panel_modal {
   max-width: calc(120rem - 12.8rem);
-  /* max-width: 85%; */
   width: 100%;
-
-  /* margin: 0 6.4rem; */
   padding: 3.2rem;
   border-radius: 8px;
 }
@@ -40,7 +30,6 @@
 .panel_close_button {
   width: 3rem;
   height: 3rem;
-
   top: 1.6rem;
   right: 1.6rem;
 
@@ -50,14 +39,12 @@
 .panel_close_icon {
   width: 100%;
   height: 100%;
-
   fill: white;
   background-color: #333;
   border-radius: 50%;
 }
 
 .panel_container {
-  background-color: lightblue;
   color: #333;
 }
 
@@ -67,56 +54,62 @@
   margin: 0 auto 3.2rem auto;
   padding: 0 0 2.4rem 0;
   color: #333;
-  border-bottom: 3px solid #555;
+  border-bottom: 2px solid #555;
 }
 
 /* Menu + Content */
 .panel_menu_content_container {
-  color: red;
-  border: 2px dotted blue;
-  background-color: lightgrey;
-
   display: flex;
   gap: 2.4rem;
+
+  /* border: 2px dotted blue; */
 }
 
 .panel_menu {
   list-style: none;
-
   width: 30%;
-  flex: 1 1 auto;
-
   color: #555;
 
-  border: 1px solid grey;
-
+  flex: 1 1 auto;
   display: flex;
   flex-direction: column;
   gap: 1.6rem;
+
+  /* border: 1px solid grey; */
 }
-.panel_item {
-  border: 1px solid green;
+.panel_item,
+.panel_item:link,
+.panel_item:visited {
+  color: #333;
+
+  /* border: 1px solid green; */
 }
+.panel_item:hover,
+.panel_item:active {
+  color: #cc47a4;
+  transition: all 0.2s ease-out;
+}
+
 .panel_link {
   font-size: 2rem;
-  font-weight: 600;
+  font-weight: 700;
   line-height: 1.1;
-  border: 1px solid orange;
   cursor: pointer;
-  display: inline;
+  display: inline-block;
+
+  /* border: 1px solid orange; */
 }
 
 .panel_content {
   width: 70%;
+  height: 50vh;
   flex: 1 1 auto;
 
   font-size: 2rem;
   line-height: 1.6;
-
-  height: 50vh;
   overflow-y: auto;
 
-  border: 2px solid red;
+  /* border: 2px solid red; */
 }
 
 /**************************/
@@ -125,9 +118,7 @@
 
 @media (max-width: 75em) {
   .panel_modal {
-    /* max-width: calc(120rem - 12.8rem); */
     max-width: 85%;
-    /* width: 100%; */
 
     background-color: lightsalmon;
   }
@@ -148,7 +139,7 @@
 
   .panel_modal {
     max-width: 85%;
-    /* margin: 0 4.8rem; */
+
     background-color: lightgreen;
   }
 }
@@ -161,7 +152,7 @@
 @media (max-width: 40em) {
   .panel_modal {
     max-width: 85%;
-    /* margin: 0 3.2rem; */
+
     background-color: lightskyblue;
   }
 }
@@ -174,12 +165,17 @@
 @media (max-width: 35em) {
   .panel_modal {
     max-width: 80%;
-    /* margin: 0 4.8rem; */
+
     background-color: white;
+  }
+
+  .panel_title {
+    margin-bottom: 2.4rem;
   }
 
   .panel_menu_content_container {
     flex-direction: column;
+    gap: 3.2rem;
   }
 
   .panel_menu {
@@ -189,6 +185,8 @@
     justify-content: center;
     flex-wrap: wrap;
     column-gap: 2.4rem;
+    padding-bottom: 2.4rem;
+    border-bottom: 1px solid #555;
   }
 
   .panel_content {

@@ -3,12 +3,12 @@ export const PricingPanelContents = {
   contents: {
     "masazas rankom": (
       <>
-        <p style={{ color: "red" }}>100 euru</p>
+        <p>100 euru</p>
       </>
     ),
     "masazas kojom": (
       <>
-        <p style={{ color: "red" }}>200 euru</p>
+        <p>200 euru</p>
       </>
     ),
   },
