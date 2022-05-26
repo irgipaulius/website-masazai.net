@@ -44,77 +44,30 @@ export default function PanelButton({ text, type, focus = 0 }) {
 
   const setHidden = () => setVisible(false);
 
-  /*
-- Font sizes (px)
-10 / 12 / 14 / 16 / 18 / 20 / 24 / 30 / 36 / 44 / 52 / 62 / 74 / 86 / 98
-
-- Spacing system (px)
-2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 80 / 96 / 128
-*/
-
-  const { panel_btn, panel_modal, panel_overlay } = styles;
-
-  const panel_container = {
-    backgroundColor: "lightgrey",
-    // color: "#333",
-  };
-  const panel_title = {
-    fontSize: "3rem",
-    textAlign: "center",
-    margin: "0 auto 3.2rem auto",
-    padding: "0 0 2.4rem 0",
-    color: "#333",
-    borderBottom: "3px solid #555",
-  };
-  const panel_menu_container = {
-    color: "red",
-    border: "1px dotted blue",
-
-    display: "flex",
-    gap: "2.4rem",
-  };
-  const panel_menu = {
-    listStyle: "none",
-
-    width: "30%",
-    color: "#555",
-
-    border: "1px solid grey",
-
-    display: "flex",
-    flexDirection: "column",
-    gap: "1.6rem",
-  };
-  const panel_item = {
-    border: "1px solid green",
-  };
-  const panel_link = {
-    fontSize: "2rem",
-    fontWeight: "600",
-    lineHeight: "1.1",
-    border: "1px solid orange",
-    cursor: "pointer",
-    display: "inline",
-    // width: "auto",
-  };
-
-  const panel_content = {
-    fontSize: "2rem",
-    lineHeight: "1.6",
-    width: "70%",
-
-    border: "1px solid red",
-  };
+  const {
+    panel_overlay,
+    panel_modal,
+    panel_close_icon,
+    panel_btn,
+    panel_container,
+    panel_title,
+    panel_menu_content_container,
+    panel_menu,
+    panel_item,
+    panel_link,
+    panel_content,
+  } = styles;
 
   return (
-    <div>
+    <>
       <button className={panel_btn} onClick={toggleVisible}>
         {text}
       </button>
       <Modal
         classNames={{
-          modal: panel_modal,
           overlay: panel_overlay,
+          modal: panel_modal,
+          closeIcon: panel_close_icon
         }}
         open={visible}
         onClose={setHidden}
@@ -122,25 +75,22 @@ export default function PanelButton({ text, type, focus = 0 }) {
         animationDuration={500}
       >
         {/* these classNames are placeholders. please fix them all. */}
-        <div style={panel_container} className="panel_container">
-          <div style={panel_title}>{title}</div>
-          <div style={panel_menu_container}>
-            <ul style={panel_menu}>
+        <div className={panel_container}>
+          <div className={panel_title}>{title}</div>
+          <div className={panel_menu_content_container}>
+            <ul className={panel_menu}>
               {Object.keys(contents).map((menuItem, index) => (
-                <li style={panel_item} key={index}>
-                  <div
-                    style={panel_link}
-                    onClick={() => setContentItem(menuItem)}
-                  >
+                <li className={panel_item} key={index}>
+                  <div className={panel_link} onClick={() => setContentItem(menuItem)}>
                     {menuItem}
                   </div>
                 </li>
               ))}
             </ul>
-            <div style={panel_content}>{contents[contentItem]}</div>
+            <div className={panel_content}>{contents[contentItem]}</div>
           </div>
         </div>
       </Modal>
-    </div>
+    </>
   );
 }
