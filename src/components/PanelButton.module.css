@@ -35,24 +35,25 @@
   /* margin: 0 6.4rem; */
   padding: 3.2rem;
   border-radius: 8px;
+}
 
-  position: relative;
+.panel_close_button {
+  width: 3rem;
+  height: 3rem;
+
+  top: 1.6rem;
+  right: 1.6rem;
+
+  /* border: 1px solid green; */
 }
 
 .panel_close_icon {
-  fill: red;
-  background-color: blue;
-  font-weight: 600;
+  width: 100%;
+  height: 100%;
 
-  width: 3rem;
-  height: 3rem;
+  fill: white;
+  background-color: #333;
   border-radius: 50%;
-
-  margin: 0;
-  position: absolute;
-  top: calc(3.2rem / 2 - 14px);
-  right: calc(3.2rem / 2 - 14px);
-  /* transform: translate(3.2rem, 3.2rem); */
 }
 
 .panel_container {

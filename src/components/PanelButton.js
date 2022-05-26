@@ -47,6 +47,7 @@ export default function PanelButton({ text, type, focus = 0 }) {
   const {
     panel_overlay,
     panel_modal,
+    panel_close_button,
     panel_close_icon,
     panel_btn,
     panel_container,
@@ -67,7 +68,8 @@ export default function PanelButton({ text, type, focus = 0 }) {
         classNames={{
           overlay: panel_overlay,
           modal: panel_modal,
-          closeIcon: panel_close_icon
+          closeButton: panel_close_button,
+          closeIcon: panel_close_icon,
         }}
         open={visible}
         onClose={setHidden}
