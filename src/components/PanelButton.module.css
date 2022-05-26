@@ -87,7 +87,7 @@
   /* min-height: 100vh; */
   /* height: 30rem; */
 
-  border: 2px dotted blue;
+  /* border: 2px dotted blue; */
 }
 
 .panel_menu {
@@ -100,7 +100,7 @@
   flex-direction: column;
   gap: 1.6rem;
 
-  border: 1px solid grey;
+  /* border: 1px solid grey; */
 }
 .panel_item {
   color: #333;
@@ -135,7 +135,7 @@
   line-height: 1.6;
   overflow-y: auto;
 
-  border: 2px solid red;
+  /* border: 2px solid red; */
 }
 
 /**************************/
@@ -147,7 +147,7 @@
     /* max-width: calc(120rem - 12.8rem); */
     margin: 0 6.4rem;
 
-    background-color: lightsalmon;
+    /* background-color: lightsalmon; */
   }
 }
 
@@ -167,7 +167,7 @@
   .A_modal {
     margin: 0 3.2rem;
 
-    background-color: lightgreen;
+    /* background-color: lightgreen; */
   }
 }
 
@@ -180,7 +180,7 @@
   .A_modal {
     margin: 0 3.2rem;
 
-    background-color: lightskyblue;
+    /* background-color: lightskyblue; */
   }
 }
 
