@@ -45,6 +45,7 @@ export default function PanelButton({ text, type, focus = 0 }) {
   const setHidden = () => setVisible(false);
 
   const {
+    A_modal_root,
     A_modal_overlay,
     A_modal_container,
     A_modal,
@@ -68,6 +69,7 @@ export default function PanelButton({ text, type, focus = 0 }) {
       </button>
       <Modal
         classNames={{
+          root: A_modal_root,
           overlay: A_modal_overlay,
           modalContainer: A_modal_container,
           modal: A_modal,
