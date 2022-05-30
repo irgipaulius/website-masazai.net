@@ -53,7 +53,6 @@ export default function PanelButton({ text, type, focus = 0 }) {
     A_modal_close_icon,
 
     panel_btn,
-    panel_container,
     panel_title,
     panel_menu_content_container,
     panel_menu,
@@ -81,21 +80,18 @@ export default function PanelButton({ text, type, focus = 0 }) {
         center={true}
         animationDuration={500}
       >
-        {/* these classNames are placeholders. please fix them all. */}
-        <div className={panel_container}>
-          <div className={panel_title}>{title}</div>
-          <div className={panel_menu_content_container}>
-            <ul className={panel_menu}>
-              {Object.keys(contents).map((menuItem, index) => (
-                <li className={panel_item} key={index}>
-                  <div className={panel_link} onClick={() => setContentItem(menuItem)}>
-                    {menuItem}
-                  </div>
-                </li>
-              ))}
-            </ul>
-            <div className={panel_content}>{contents[contentItem]}</div>
-          </div>
+        <div className={panel_title}>{title}</div>
+        <div className={panel_menu_content_container}>
+          <ul className={panel_menu}>
+            {Object.keys(contents).map((menuItem, index) => (
+              <li className={panel_item} key={index}>
+                <div className={panel_link} onClick={() => setContentItem(menuItem)}>
+                  {menuItem}
+                </div>
+              </li>
+            ))}
+          </ul>
+          <div className={panel_content}>{contents[contentItem]}</div>
         </div>
       </Modal>
     </>
