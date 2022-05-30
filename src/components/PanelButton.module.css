@@ -209,7 +209,7 @@
 @media (max-width: 35em) {
   .A_modal {
     margin: 4.8rem 3.2rem;
-    height: calc(100vh - (4.8rem * 2));
+    height: calc(95vh - (4.8rem * 2));
 
     background-color: white;
   }
@@ -221,7 +221,7 @@
   .panel_menu_content_container {
     flex-direction: column;
     gap: 3.2rem;
-    height: calc(100vh - (4.8rem * 2) - (3.2rem * 4.75));
+    height: calc(95vh - (4.8rem * 2) - (3.2rem * 4.75));
   }
 
   .panel_menu {
