@@ -26,7 +26,9 @@ export default function Navbar() {
       <nav className={navbar}>
         <div className={navbar_mob_container}>
           {/* <div className={styles["navbar-mob"]}>+370 612 121 21</div> */}
-          <div className={navbar_mob}>+370 612 121 21</div>
+          <a className={navbar_mob} href="tel:+370612013136">
+            +370 612 121 21
+          </a>
         </div>
         <div className={navbar_line_container}>
           <div className={navbar_line} />

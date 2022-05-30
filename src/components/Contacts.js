@@ -11,6 +11,7 @@ export default function Contacts() {
     contacts_mob_email,
     mob,
     email,
+    email_link,
     contacts_facebook,
   } = styles;
 
@@ -20,15 +21,20 @@ export default function Contacts() {
         <p className={contacts_title}>KONTAKTAI</p>
         <p className={contacts_subtitle}>Prieš atvykstant privaloma užseregistruoti telefonu:</p>
         <div className={contacts_mob_email}>
-          <p className={mob}>+370 612 312 32</p>
+          {/* <p className={mob}>+370 612 312 32</p> */}
+          <a className={mob} href="tel:+370612013136">
+            +370 612 121 21
+          </a>
           <p className={email}>
             arba el. paštu:{" "}
-            <a href="mailto:jelena.jacinkeviciene@gmail.com">jelena.jacinkeviciene@gmail.com</a>
+            <a className={email_link} href="mailto:jelena.jacinkeviciene@gmail.com">
+              jelena.jacinkeviciene@gmail.com
+            </a>
           </p>
         </div>
-        <p className={contacts_facebook}>
-          <a href="https://www.facebook.com/Masazuotoja">https://www.facebook.com/Masazuotoja</a>
-        </p>
+        <a className={contacts_facebook} href="https://www.facebook.com/Masazuotoja">
+          https://www.facebook.com/Masazuotoja
+        </a>
       </div>
     </div>
   );
