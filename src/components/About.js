@@ -1,5 +1,7 @@
 import React from "react";
 
+import PanelButton from "./PanelButton";
+
 import styles from "./About.module.css";
 import { AboutCheckmark } from "./MuiIcons";
 
@@ -14,7 +16,6 @@ export default function About() {
     about_text_list_item,
     about_image_container,
     about_image,
-    about_btn,
   } = styles;
 
   return (
@@ -45,7 +46,7 @@ export default function About() {
             </li>
           </ul>
 
-          <button className={about_btn}>Išsami informacija</button>
+          <PanelButton text="Išsami informacija" type="about" />
         </div>
         <div className={about_image_container}>
           <img className={about_image} src="/images/profile.jpeg" alt="" />
