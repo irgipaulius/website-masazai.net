@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { Link, animateScroll as scroll } from "react-scroll";
 
 import styles from "./NavBar.module.css";
 
@@ -23,7 +24,7 @@ export default function Navbar() {
 
   return (
     <>
-      <nav className={navbar}>
+      <nav className={navbar} id="navbar">
         <div className={navbar_mob_container}>
           {/* <div className={styles["navbar-mob"]}>+370 612 121 21</div> */}
           <a className={navbar_mob} href="tel:+370612013136">
@@ -34,11 +35,22 @@ export default function Navbar() {
           <div className={navbar_line} />
         </div>
         <nav className={navbar_menu_container}>
-          <ul className={nav_menu}>
+          {/* <ul className={nav_menu}>
             {navItems.map((buttonText, index) => (
               <li className={nav_item} key={index}>
                 <div className={nav_links} onClick={closeMobileMenu}>
                   {buttonText}
+                </div>
+              </li>
+            ))}
+          </ul> */}
+          <ul className={nav_menu}>
+            {navItems.map((buttonText, index) => (
+              <li className={nav_item} key={index}>
+                <div className={nav_links} onClick={closeMobileMenu}>
+                  <Link to={buttonText} smooth={true} offset={-112} duration={1000}>
+                    {buttonText}
+                  </Link>
                 </div>
               </li>
             ))}

@@ -19,7 +19,7 @@ export default function About() {
   } = styles;
 
   return (
-    <div className={about}>
+    <div className={about} id="Apie">
       <div className={about_container}>
         <div className={about_text_container}>
           <p className={about_title}>Sveiki,</p>

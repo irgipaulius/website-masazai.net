@@ -16,7 +16,7 @@ export default function Contacts() {
   } = styles;
 
   return (
-    <div className={contacts}>
+    <div className={contacts} id="Kontaktai">
       <div className={contacts_container}>
         <p className={contacts_title}>KONTAKTAI</p>
         <p className={contacts_subtitle}>Prieš atvykstant privaloma užseregistruoti telefonu:</p>
