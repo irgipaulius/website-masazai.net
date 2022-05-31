@@ -1,6 +1,7 @@
-import React, { useState } from "react";
+import React, { useState, useContext } from "react";
 
 import styles from "./NavBar.module.css";
+import { AboutRefContext } from "./About";
 
 export default function Navbar() {
   const navItems = ["Pradžia", "Apie", "Masažai", "Kontaktai"];
@@ -20,6 +21,10 @@ export default function Navbar() {
     nav_item,
     nav_links,
   } = styles;
+
+  // const RefToAbout = useContext(AboutRefContext);
+
+  // const AboutRef = useRef(RefToAbout);
 
   return (
     <>
@@ -42,6 +47,13 @@ export default function Navbar() {
                 </div>
               </li>
             ))}
+            {/* <button
+              onClick={() =>
+                AboutRef.current.scrollIntoView({ behavior: "smooth", block: "center" })
+              }
+            >
+              Test
+            </button> */}
           </ul>
         </nav>
       </nav>
