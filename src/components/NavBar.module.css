@@ -5,26 +5,27 @@
 }
 
 .navbar_mob_container {
+  max-width: 120rem;
+  margin: 0 auto;
+  text-align: center;
   background-color: white;
+  
+  /* border: 1px solid blue; */
 }
 .navbar_mob,
 .navbar_mob:link,
 .navbar_mob:visited {
-  max-width: 120rem;
-  margin: 0 auto;
-  padding: 0.8rem 3.2rem;
-
+  padding: 0.8rem 0;
   font-size: 3.2rem;
   font-weight: 600;
-  text-align: center;
-  display: block;
+  display: inline-block;
   color: #333;
 
   text-decoration: none;
   cursor: pointer;
   transition: all 0.3s;
 
-  /* border: 1px solid blue; */
+  /* border: 1px solid red; */
 }
 .navbar_mob:hover,
 .navbar_mob:active {

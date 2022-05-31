@@ -41,7 +41,7 @@
   font-size: 3.6rem;
   font-weight: 500;
   margin-bottom: 0.8rem;
-  display: block;
+  display: inline-block;
   color: white;
 
   text-decoration: none;
