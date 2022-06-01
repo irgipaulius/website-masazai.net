@@ -47,11 +47,11 @@ export default function Navbar() {
           <ul className={nav_menu}>
             {navItems.map((buttonText, index) => (
               <li className={nav_item} key={index}>
-                <div className={nav_links} onClick={closeMobileMenu}>
-                  <Link to={buttonText} smooth={true} offset={-112} duration={1000}>
+                <Link to={buttonText} smooth={true} offset={-112} duration={1000}>
+                  <div className={nav_links} onClick={closeMobileMenu}>
                     {buttonText}
-                  </Link>
-                </div>
+                  </div>
+                </Link>
               </li>
             ))}
           </ul>
