@@ -1,8 +1,8 @@
 import React from "react";
 
-import styles from "./Main.module.css";
 import Services from "./Main/Services";
 import Popular from "./Main/Popular";
+import styles from "./Main.module.css";
 
 function Main() {
   const {

@@ -1,9 +1,9 @@
 import React from "react";
 
-import styles from "../Main.module.css";
 import PanelButton from "../PanelButton";
+import styles from "../Main.module.css";
 
-function Services(visibility) {
+export default function Services() {
   const { main_text_container, main_texts, main_title, main_text } = styles;
 
   return (
@@ -29,5 +29,3 @@ function Services(visibility) {
     </>
   );
 }
-
-export default Services;

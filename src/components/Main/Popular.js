@@ -1,9 +1,9 @@
 import React from "react";
 
-import styles from "../Main.module.css";
 import { MainCheckmark } from "../MuiIcons";
+import styles from "../Main.module.css";
 
-function Popular(visibility) {
+export default function Popular() {
   const {
     main_image_container,
     points_container,
@@ -48,5 +48,3 @@ function Popular(visibility) {
     </>
   );
 }
-
-export default Popular;
