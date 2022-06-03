@@ -38,24 +38,39 @@ export default function Navbar() {
         <div className={navbar_line_container}>
           <div className={navbar_line} />
         </div>
-        <nav className={navbar_menu_container}>
-          <ul className={nav_menu}>
+        <div className={navbar_menu_container}>
+          {/* <ul className={nav_menu}>
             {navItems.map((buttonText, index) => (
               <li className={nav_item} key={index}>
                 <div className={nav_links} onClick={closeMobileMenu}>
                   {buttonText}
                 </div>
               </li>
-            ))}
-            {/* <button
+            ))} */}
+          {/* <button
               onClick={() =>
                 AboutRef.current.scrollIntoView({ behavior: "smooth", block: "center" })
               }
             >
               Test
             </button> */}
+          {/* </ul> */}
+
+          <ul className={nav_menu}>
+            <li className={nav_item}>
+              <div className={nav_links}>Pradžia</div>
+            </li>
+            <li className={nav_item}>
+              <div className={nav_links}>Apie</div>
+            </li>
+            <li className={nav_item}>
+              <div className={nav_links}>Masažai</div>
+            </li>
+            <li className={nav_item}>
+              <div className={nav_links}>Kontaktai</div>
+            </li>
           </ul>
-        </nav>
+        </div>
       </nav>
     </>
   );
