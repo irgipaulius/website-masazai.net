@@ -1,9 +1,9 @@
 import React from "react";
 
 import PanelButton from "./PanelButton";
+import { AboutCheckmark } from "./MuiIcons";
 
 import styles from "./About.module.css";
-import { AboutCheckmark } from "./MuiIcons";
 
 export default function About() {
   const {
