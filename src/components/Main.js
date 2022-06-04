@@ -2,6 +2,7 @@ import React from "react";
 
 import Services from "./Main/Services";
 import Popular from "./Main/Popular";
+
 import styles from "./Main.module.css";
 
 function Main() {
@@ -21,13 +22,11 @@ function Main() {
     points_text_list_item,
   } = styles;
 
-  const visibility = null;
-
   return (
     <div className={main}>
       <div className={main_content}>
-        <Services visibility={visibility} />
-        <Popular visibility={visibility} />
+        <Services />
+        <Popular />
       </div>
     </div>
   );

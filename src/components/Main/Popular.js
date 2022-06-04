@@ -1,6 +1,7 @@
 import React from "react";
 
 import { MainCheckmark } from "../MuiIcons";
+
 import styles from "../Main.module.css";
 
 export default function Popular() {
