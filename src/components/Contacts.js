@@ -1,5 +1,7 @@
 import React from "react";
 
+import { PhoneIconSvg, EmailIconSvg, FacebookIconSvg } from "./MuiIcons";
+
 import styles from "./Contacts.module.css";
 
 export default function Contacts() {
@@ -23,16 +25,21 @@ export default function Contacts() {
         <div className={contacts_mob_email}>
           {/* <p className={mob}>+370 612 312 32</p> */}
           <a className={mob} href="tel:+370612013136">
+            <PhoneIconSvg />
             +370 612 121 21
           </a>
-          <p className={email}>
+          <div className={email}>
             arba el. paštu:{" "}
             <a className={email_link} href="mailto:jelena.jacinkeviciene@gmail.com">
+              {" "}
+              <EmailIconSvg />
               jelena.jacinkeviciene@gmail.com
             </a>
-          </p>
+          </div>
         </div>
         <a className={contacts_facebook} href="https://www.facebook.com/Masazuotoja">
+          {" "}
+          <FacebookIconSvg />
           https://www.facebook.com/Masazuotoja
         </a>
       </div>

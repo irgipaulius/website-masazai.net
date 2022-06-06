@@ -1,5 +1,7 @@
 import React, { useState } from "react";
 
+import { PhoneIconSvg } from "./MuiIcons";
+
 import styles from "./NavBar.module.css";
 
 export default function Navbar() {
@@ -25,8 +27,8 @@ export default function Navbar() {
     <>
       <nav className={navbar}>
         <div className={navbar_mob_container}>
-          {/* <div className={styles["navbar-mob"]}>+370 612 121 21</div> */}
           <a className={navbar_mob} href="tel:+370612013136">
+            <PhoneIconSvg />
             +370 612 121 21
           </a>
         </div>
