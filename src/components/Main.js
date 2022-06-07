@@ -1,11 +1,11 @@
-import React from "react";
+import React, { forwardRef } from "react";
 
 import PanelButton from "./PanelButton";
 
 import styles from "./Main.module.css";
 import { MainCheckmark } from "./MuiIcons";
 
-function Main() {
+const Main = forwardRef((props, ref) => {
   const {
     main,
     main_content,
@@ -22,7 +22,7 @@ function Main() {
   } = styles;
 
   return (
-    <div className={main}>
+    <div className={main} ref={ref}>
       <div className={main_content}>
         <div className={main_text_container}>
           <div className={main_texts}>
@@ -35,9 +35,9 @@ function Main() {
               Taip pat siūlau rekomendacijas masažo ilgalaikiams kursams.{" "}
             </p>
             <p className={main_text}>
-              Šitą tekstą reikia patvarkyti, kol kas tiesiog prirašiau laikinų sakinių. Šita
-              pastraipa gali aprašyti daug įvairaus teksto apie siūlomas procedūras ir masažus,
-              kurias galima siūlyti klientams.
+              Šitą tekstą reikia patvarkyti, kol kas tiesiog prirašiau laikinų
+              sakinių. Šita pastraipa gali aprašyti daug įvairaus teksto apie
+              siūlomas procedūras ir masažus, kurias galima siūlyti klientams.
             </p>
             <p className={main_text}>Dėl kainų teiraukitės telefonu.</p>
 
@@ -78,6 +78,6 @@ function Main() {
       </div>
     </div>
   );
-}
+});
 
 export default Main;

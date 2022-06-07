@@ -1,12 +1,19 @@
-import React from "react";
+import React, { forwardRef } from "react";
 
 import styles from "./Hero.module.css";
 
-export default function Hero() {
-  const { hero, hero_container, hero_title, hero_subtitle, hero_about, hero_line } = styles;
+const Hero = forwardRef((props, ref) => {
+  const {
+    hero,
+    hero_container,
+    hero_title,
+    hero_subtitle,
+    hero_about,
+    hero_line,
+  } = styles;
 
   return (
-    <div className={hero}>
+    <div className={hero} ref={ref}>
       <div className={hero_container}>
         <p className={hero_title}>MASAŽAS</p>
         <p className={hero_subtitle}>PAS JELENĄ</p>
@@ -15,4 +22,6 @@ export default function Hero() {
       </div>
     </div>
   );
-}
+});
+
+export default Hero;

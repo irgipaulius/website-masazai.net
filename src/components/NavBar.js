@@ -1,14 +1,10 @@
-import React, { useState, useContext } from "react";
+import React, { useEffect } from "react";
+import { NavLink, useLocation } from "react-router-dom";
 
 import styles from "./NavBar.module.css";
-import { AboutRefContext } from "./About";
 
-export default function Navbar() {
+export default function Navbar({ refs }) {
   const navItems = ["Pradžia", "Apie", "Masažai", "Kontaktai"];
-
-  const [click, setClick] = useState(false);
-
-  const closeMobileMenu = () => setClick(false);
 
   const {
     navbar,
@@ -22,9 +18,30 @@ export default function Navbar() {
     nav_links,
   } = styles;
 
-  // const RefToAbout = useContext(AboutRefContext);
+  const location = useLocation();
 
-  // const AboutRef = useRef(RefToAbout);
+  const scrollSmoothHandler = (ref) => {
+    console.log("Triggered.");
+    ref.current.scrollIntoView({ behavior: "smooth", block: "start" });
+  };
+
+  useEffect(() => {
+    console.log("location", location.pathname);
+    switch (location.pathname) {
+      case "/hero":
+        scrollSmoothHandler(refs.heroRef);
+        break;
+      case "/about":
+        scrollSmoothHandler(refs.aboutRef);
+        break;
+      case "/main":
+        scrollSmoothHandler(refs.mainRef);
+        break;
+      default:
+        scrollSmoothHandler(refs.contactsRef);
+        break;
+    }
+  }, [location, refs]);
 
   return (
     <>
@@ -40,13 +57,15 @@ export default function Navbar() {
         </div>
         <nav className={navbar_menu_container}>
           <ul className={nav_menu}>
-            {navItems.map((buttonText, index) => (
+            {/* {navItems.map((buttonText, index) => (
               <li className={nav_item} key={index}>
-                <div className={nav_links} onClick={closeMobileMenu}>
-                  {buttonText}
+                <div className={nav_links}>
+                  <NavLink to="/main" activeClassName="selected">
+                    {buttonText}
+                  </NavLink>
                 </div>
               </li>
-            ))}
+            ))} */}
             {/* <button
               onClick={() =>
                 AboutRef.current.scrollIntoView({ behavior: "smooth", block: "center" })
@@ -54,6 +73,20 @@ export default function Navbar() {
             >
               Test
             </button> */}
+            <li className={nav_item}>
+                <NavLink to="/hero">
+                  Hero
+                </NavLink>
+            </li>
+            <li className={nav_item}>
+              <NavLink to="/about">About</NavLink>
+            </li>
+            <li className={nav_item}>
+              <NavLink to="/main">Main</NavLink>
+            </li>
+            <li className={nav_item}>
+              <NavLink to="/contacts">Contacts</NavLink>
+            </li>
           </ul>
         </nav>
       </nav>
