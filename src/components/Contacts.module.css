@@ -58,6 +58,9 @@
 .email {
   font-size: 1.6rem;
   font-weight: 300;
+  
+  display: flex;
+  align-items: baseline;
 }
 .email_link,
 .email_link:link,
