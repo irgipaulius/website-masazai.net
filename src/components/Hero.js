@@ -13,7 +13,7 @@ const Hero = forwardRef((props, ref) => {
   } = styles;
 
   return (
-    <div className={hero} ref={ref}>
+    <div className={hero} ref={ref} id="hero">
       <div className={hero_container}>
         <p className={hero_title}>MASAŽAS</p>
         <p className={hero_subtitle}>PAS JELENĄ</p>

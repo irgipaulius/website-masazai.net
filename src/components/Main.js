@@ -22,7 +22,7 @@ const Main = forwardRef((props, ref) => {
   } = styles;
 
   return (
-    <div className={main} ref={ref}>
+    <div className={main} ref={ref} id="main">
       <div className={main_content}>
         <div className={main_text_container}>
           <div className={main_texts}>

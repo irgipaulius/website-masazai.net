@@ -16,7 +16,7 @@ const Contacts = forwardRef((props, ref) => {
   } = styles;
 
   return (
-    <div className={contacts} ref={ref}>
+    <div className={contacts} ref={ref} id="contacts">
       <div className={contacts_container}>
         <p className={contacts_title}>KONTAKTAI</p>
         <p className={contacts_subtitle}>

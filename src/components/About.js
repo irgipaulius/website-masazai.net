@@ -20,7 +20,7 @@ const About = forwardRef((props, ref) => {
 
   return (
     <>
-      <div className={about} ref={ref}>
+      <div className={about} ref={ref} id="about">
         <div className={about_container}>
           <div className={about_text_container}>
             <p className={about_title}>Sveiki,</p>
@@ -28,10 +28,7 @@ const About = forwardRef((props, ref) => {
             <ul className={about_text}>
               <li className={about_text_list_item}>
                 <AboutCheckmark />
-                <span>
-                  Pilnai kvalifikuota masažuotoja ir profesionali
-                  kinezeterapeutė.
-                </span>
+                <span>Pilnai kvalifikuota masažuotoja ir profesionali kinezeterapeutė.</span>
               </li>
               <li className={about_text_list_item}>
                 <AboutCheckmark />
@@ -39,16 +36,13 @@ const About = forwardRef((props, ref) => {
               </li>
               <li className={about_text_list_item}>
                 <AboutCheckmark />
-                <span>
-                  Draugiška, linksma, švelniom rankom, taip toliau t.t.
-                </span>
+                <span>Draugiška, linksma, švelniom rankom, taip toliau t.t.</span>
               </li>
               <li className={about_text_list_item}>
                 <AboutCheckmark />
                 <span>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic
-                  laborum quae dicta repellendus cumque sit nostrum aliquam
-                  aliquid libero eveniet?
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic laborum quae dicta
+                  repellendus cumque sit nostrum aliquam aliquid libero eveniet?
                 </span>
               </li>
             </ul>

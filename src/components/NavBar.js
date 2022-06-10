@@ -1,5 +1,6 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useState, useRef } from "react";
 import { NavLink, useLocation } from "react-router-dom";
+import { Link, scroller } from "react-scroll";
 
 import styles from "./NavBar.module.css";
 
@@ -10,10 +11,10 @@ import styles from "./NavBar.module.css";
 export default function Navbar({ refs }) {
   // const navItems = ["Pradžia", "Apie", "Masažai", "Kontaktai"];
   const navItems = [
-    { text: "Pradžia", id: "/" },
-    { text: "Apie", id: "/about" },
-    { text: "Masažai", id: "/main" },
-    { text: "Kontaktai", id: "/contacts" },
+    { text: "Pradžia", path: "/", id: "hero" },
+    { text: "Apie", path: "/about", id: "about" },
+    { text: "Masažai", path: "/main", id: "main" },
+    { text: "Kontaktai", path: "/contacts", id: "contacts" },
   ];
 
   const {
@@ -30,29 +31,53 @@ export default function Navbar({ refs }) {
 
   const location = useLocation();
 
-  const scrollSmoothHandler = (ref) => {
+  const navBarRef = useRef();
+
+  const [navBarHeight, setNavBarHeight] = useState(0);
+
+  const scrollSmoothHandler = (id) => {
     console.log("Triggered.");
-    ref.current.scrollIntoView({ behavior: "smooth", block: "start" });
+    // ref.current.scrollIntoView({ behavior: "smooth", block: "start" });
+
+    scroller.scrollTo(id, {
+      duration: 1000,
+      smooth: true,
+      offset: -navBarHeight,
+      // containerId: "ContainerElementID",
+    });
   };
 
   useEffect(() => {
+    function handleResize() {
+      setNavBarHeight(navBarRef.current.clientHeight);
+      // console.log(
+      //   "resized to: ",
+      //   window.innerWidth,
+      //   "x",
+      //   window.innerHeight,
+      //   navBarRef.current.clientHeight
+      // );
+    }
+    window.addEventListener("resize", handleResize);
+    handleResize();
+
     console.log("location", location.pathname);
     switch (location.pathname) {
-      case navItems[1].id:
-        scrollSmoothHandler(refs.aboutRef);
+      case navItems[1].path:
+        scrollSmoothHandler(navItems[1].id);
         break;
-      // case replaceSpecialCharacters(navItems[2].id):
-      case navItems[2].id:
-        scrollSmoothHandler(refs.mainRef);
+      // case replaceSpecialCharacters(navItems[2].path):
+      case navItems[2].path:
+        scrollSmoothHandler(navItems[2].id);
         break;
-      case navItems[3].id:
-        scrollSmoothHandler(refs.contactsRef);
+      case navItems[3].path:
+        scrollSmoothHandler(navItems[3].id);
         break;
       default:
-        scrollSmoothHandler(refs.heroRef);
+        scrollSmoothHandler(navItems[0].id);
         break;
     }
-  }, [location, refs]);
+  }, [location]);
 
   // useEffect(() => {
   //   console.log("location", location.pathname);
@@ -74,7 +99,7 @@ export default function Navbar({ refs }) {
 
   return (
     <>
-      <nav className={navbar}>
+      <nav className={navbar} ref={navBarRef}>
         <div className={navbar_mob_container}>
           <a className={navbar_mob} href="tel:+370612013136">
             +370 612 121 21
@@ -88,7 +113,7 @@ export default function Navbar({ refs }) {
             {navItems.map((navItem, index) => (
               <li className={nav_item} key={index}>
                 <div className={nav_links}>
-                  <NavLink to={navItem.id}>{navItem.text}</NavLink>
+                  <NavLink to={navItem.path}>{navItem.text}</NavLink>
                   {/* <NavLink to={`/${replaceSpecialCharacters(buttonText)}`}>{buttonText}</NavLink> */}
                 </div>
               </li>
