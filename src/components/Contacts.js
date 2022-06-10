@@ -21,7 +21,6 @@ export default function Contacts() {
         <p className={contacts_title}>KONTAKTAI</p>
         <p className={contacts_subtitle}>Prieš atvykstant privaloma užseregistruoti telefonu:</p>
         <div className={contacts_mob_email}>
-          {/* <p className={mob}>+370 612 312 32</p> */}
           <a className={mob} href="tel:+370612013136">
             +370 612 121 21
           </a>

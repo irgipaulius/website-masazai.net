@@ -21,25 +21,13 @@ export default function Navbar() {
   } = styles;
 
   const navBarRef = useRef();
-  // console.log("v1", navBarHeight);
 
   useEffect(() => {
-    // console.log("v2", navBarHeight);
-
     function handleResize() {
       setNavBarHeight(navBarRef.current.clientHeight);
-      // console.log(
-      //   "resized to: ",
-      //   window.innerWidth,
-      //   "x",
-      //   window.innerHeight,
-      //   navBarRef.current.clientHeight
-      // );
     }
     window.addEventListener("resize", handleResize);
     handleResize();
-
-    // console.log("v3", navBarHeight);
   }, [navBarHeight]);
 
   return (
