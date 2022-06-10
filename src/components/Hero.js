@@ -6,7 +6,7 @@ export default function Hero() {
   const { hero, hero_container, hero_title, hero_subtitle, hero_about, hero_line } = styles;
 
   return (
-    <div className={hero}>
+    <div className={hero} id="Pradžia">
       <div className={hero_container}>
         <p className={hero_title}>MASAŽAS</p>
         <p className={hero_subtitle}>PAS JELENĄ</p>
