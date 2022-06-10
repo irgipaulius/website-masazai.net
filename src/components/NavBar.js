@@ -45,6 +45,7 @@ export default function Navbar({ refs }) {
       offset: -navBarHeight,
       // containerId: "ContainerElementID",
     });
+    console.log(`scrolling offset: ${-navBarHeight}`);
   };
 
   useEffect(() => {
@@ -60,24 +61,86 @@ export default function Navbar({ refs }) {
     }
     window.addEventListener("resize", handleResize);
     handleResize();
+    console.log(navBarHeight, navBarRef.current.clientHeight);
 
-    console.log("location", location.pathname);
-    switch (location.pathname) {
-      case navItems[1].path:
-        scrollSmoothHandler(navItems[1].id);
-        break;
-      // case replaceSpecialCharacters(navItems[2].path):
-      case navItems[2].path:
-        scrollSmoothHandler(navItems[2].id);
-        break;
-      case navItems[3].path:
-        scrollSmoothHandler(navItems[3].id);
-        break;
-      default:
-        scrollSmoothHandler(navItems[0].id);
-        break;
+    const matchedItem = navItems.find(
+      (navItem) => navItem.path === location.pathname
+    );
+    if (matchedItem) {
+      scrollSmoothHandler(matchedItem.id);
+    } else {
+      scrollSmoothHandler(navItems[0].id);
     }
-  }, [location]);
+  }, [location, navBarHeight]);
+
+  // useEffect(() => {
+  //   // :3000/#/labas
+  //   console.log("location", location.pathname);
+  //   // switch (location.pathname) {
+  //   //   case navItems[1].path:
+  //   //     scrollSmoothHandler(navItems[1].id);
+  //   //     break;
+  //   //   case navItems[2].path:
+  //   //     scrollSmoothHandler(navItems[2].id);
+  //   //     break;
+  //   //   case navItems[3].path:
+  //   //     scrollSmoothHandler(navItems[3].id);
+  //   //     break;
+  //   //   default:
+  //   //     scrollSmoothHandler(navItems[0].id);
+  //   //     break;
+  //   // }
+
+  //   /** sitas spendimas veiktu, bet ugly */
+  //   // const manoFunkcija = () => {
+  //   //   for (const navItem in navItems) {
+  //   //     if (navItem.path === location.pathname) {
+  //   //       scrollSmoothHandler(navItem.id);
+  //   //       return true;
+  //   //     }
+  //   //   }
+  //   // };
+
+  //   /** sitas dar baisiau....  */
+  //   // const results = navItems.map((navItem) => {
+  //   //   if (navItem.path === location.pathname) {
+  //   //     scrollSmoothHandler(navItem.id);
+  //   //     return true;
+  //   //   }
+  //   //   return false;
+  //   // });
+  //   // const isDefault = results.some((result) => !result);
+
+  //   /** sitas optimizuotas. */
+  //   // const matchedItem = navItems.find(
+  //   //   ({ path }) => path === location.pathname
+  //   // );
+
+  //   // scrollSmoothHandler(matchedItem?.id || navItems[0].id);
+
+  //   /** sitas graziausias ir aiskiausias */
+  //   const matchedItem = navItems.find(
+  //     (navItem) => navItem.path === location.pathname
+  //   );
+  //   if (matchedItem) {
+  //     scrollSmoothHandler(matchedItem.id);
+  //   } else {
+  //     scrollSmoothHandler(navItems[0].id);
+  //   }
+
+  //   /** cia net neskaityk sito */
+  //   // else if (index === navItems.length - 1) {
+  //   //   // paskutinis itemas, bet jis irgi neatitiko pathname.
+  //   //   scrollSmoothHandler(navItems.length - 1);
+  //   // }
+
+  //   // const navItems = [
+  //   //   { text: "Pradžia", path: "/", id: "hero" },  //false
+  //   //   { text: "Apie", path: "/about", id: "about" }, //true
+  //   //   { text: "Masažai", path: "/main", id: "main" },  //false
+  //   //   { text: "Kontaktai", path: "/contacts", id: "contacts" },  //false
+  //   // ];             // [false, false, false, false]
+  // }, [location]);
 
   // useEffect(() => {
   //   console.log("location", location.pathname);
