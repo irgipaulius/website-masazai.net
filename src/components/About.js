@@ -1,11 +1,11 @@
-import React, { forwardRef } from "react";
+import React from "react";
 
 import PanelButton from "./PanelButton";
-
-import styles from "./About.module.css";
 import { AboutCheckmark } from "./MuiIcons";
 
-const About = forwardRef((props, ref) => {
+import styles from "./About.module.css";
+
+export default function About() {
   const {
     about,
     about_container,
@@ -20,7 +20,7 @@ const About = forwardRef((props, ref) => {
 
   return (
     <>
-      <div className={about} ref={ref} id="about">
+      <div className={about} id="about">
         <div className={about_container}>
           <div className={about_text_container}>
             <p className={about_title}>Sveiki,</p>
@@ -56,6 +56,4 @@ const About = forwardRef((props, ref) => {
       </div>
     </>
   );
-});
-
-export default About;
+}
