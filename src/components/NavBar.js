@@ -1,3 +1,5 @@
+import { withWidth } from "@material-ui/core";
+import { LastPage } from "@material-ui/icons";
 import React, { useEffect, useState, useRef } from "react";
 import { NavLink, useLocation } from "react-router-dom";
 import { scroller } from "react-scroll";
@@ -28,37 +30,48 @@ export default function Navbar() {
 
   const navBarRef = useRef();
 
-  const [navBarHeight, setNavBarHeight] = useState(0);
+  // const [navBarHeight, setNavBarHeight] = useState(0);
 
   const scrollSmoothHandler = (id) => {
-    console.log("scrollSmoothHandler triggered");
-
     scroller.scrollTo(id, {
       duration: 1000,
       smooth: true,
-      offset: -navBarHeight,
+      offset: -navBarRef.current.clientHeight,
     });
-    console.log(`scrolling offset: ${-navBarHeight}`);
+    // console.log(`scrolling offset: ${-navBarHeight}`);
   };
 
-  const handleResize = () => {
-    setNavBarHeight(navBarRef.current.clientHeight);
-  };
+  // const handleResize = () => {
+  //   setNavBarHeight((previousValue) => {
+  //     console.log(previousValue);
+  //     return navBarRef.current.clientHeight;
+  //   });
+  //   console.log(navBarHeight, navBarRef.current.clientHeight);
+  // };
+
+  // useEffect(() => {
+  //   console.log("navBarHeight effect triggered");
+  //   window.addEventListener("resize", handleResize);
+  //   handleResize();
+  // }, []);
+
+  // useEffect(() => {
+  //   handleResize();
+
+  // }, [navBarHeight]);
 
   useEffect(() => {
-    window.addEventListener("resize", handleResize);
-    handleResize();
+    console.log("location effect triggered");
+    const navLinkToIdItem = navItems.find(
+      (navItemPath) => location.pathname === navItemPath.path
+    );
 
-    console.log(navBarHeight, navBarRef.current.clientHeight);
-
-    const navLinkToIdItem = navItems.find((navItemPath) => location.pathname === navItemPath.path);
-    
     if (navLinkToIdItem) {
       scrollSmoothHandler(navLinkToIdItem.id);
     } else {
       scrollSmoothHandler(navItems[0].id);
     }
-  }, [location, navBarHeight]);
+  }, [location]);
 
   return (
     <>
