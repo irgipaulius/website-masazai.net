@@ -1,5 +1,7 @@
 import React, { useState } from "react";
 import { Modal } from "react-responsive-modal";
+import ReactMarkdown from "react-markdown";
+import remarkGfm from "remark-gfm";
 
 import { AboutPanelContents } from "./panel/AboutPanel";
 import { PricingPanelContents } from "./panel/PricingPanel";
@@ -7,6 +9,7 @@ import { ErrorPanelContents } from "./panel/ErrorPanel";
 
 import "react-responsive-modal/styles.css";
 import styles from "./PanelButton.module.css";
+import mdStyles from "./markdown.module.css";
 
 /**
  * @param {*} type "about" or "pricing"
@@ -61,6 +64,8 @@ export default function PanelButton({ text, type, focus = 0 }) {
     panel_content,
   } = styles;
 
+  const { reactMarkDown } = mdStyles;
+
   return (
     <>
       <button className={panel_btn} onClick={toggleVisible}>
@@ -91,7 +96,13 @@ export default function PanelButton({ text, type, focus = 0 }) {
               </li>
             ))}
           </ul>
-          <div className={panel_content}>{contents[contentItem]}</div>
+          <div className={panel_content}>
+            <ReactMarkdown
+              className={reactMarkDown}
+              children={contents[contentItem]}
+              remarkPlugins={[remarkGfm]}
+            />
+          </div>
         </div>
       </Modal>
     </>
