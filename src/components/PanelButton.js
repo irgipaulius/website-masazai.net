@@ -9,6 +9,7 @@ import { ErrorPanelContents } from "./panel/ErrorPanel";
 
 import "react-responsive-modal/styles.css";
 import styles from "./PanelButton.module.css";
+import mdStyles from "./markdown.module.css";
 
 /**
  * @param {*} type "about" or "pricing"
@@ -63,6 +64,8 @@ export default function PanelButton({ text, type, focus = 0 }) {
     panel_content,
   } = styles;
 
+  const { reactMarkDown } = mdStyles;
+
   return (
     <>
       <button className={panel_btn} onClick={toggleVisible}>
@@ -94,7 +97,11 @@ export default function PanelButton({ text, type, focus = 0 }) {
             ))}
           </ul>
           <div className={panel_content}>
-            <ReactMarkdown children={contents[contentItem]} remarkPlugins={[remarkGfm]} />
+            <ReactMarkdown
+              className={reactMarkDown}
+              children={contents[contentItem]}
+              remarkPlugins={[remarkGfm]}
+            />
           </div>
         </div>
       </Modal>

@@ -4,7 +4,7 @@ export const AboutPanelContents = {
     issilavinimas: `content1`,
     "kvalifikacijos kelimas": `A paragraph with *emphasis* and **strong importance**.
 
-A block quote with ~strikethrough~ and a URL: https://reactjs.org.
+> A block quote with ~strikethrough~ and a URL: https://reactjs.org.
 
 * Lists
 * [ ] todo
