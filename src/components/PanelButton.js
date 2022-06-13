@@ -1,5 +1,7 @@
 import React, { useState } from "react";
 import { Modal } from "react-responsive-modal";
+import ReactMarkdown from "react-markdown";
+import remarkGfm from "remark-gfm";
 
 import { AboutPanelContents } from "./panel/AboutPanel";
 import { PricingPanelContents } from "./panel/PricingPanel";
@@ -91,7 +93,9 @@ export default function PanelButton({ text, type, focus = 0 }) {
               </li>
             ))}
           </ul>
-          <div className={panel_content}>{contents[contentItem]}</div>
+          <div className={panel_content}>
+            <ReactMarkdown children={contents[contentItem]} remarkPlugins={[remarkGfm]} />
+          </div>
         </div>
       </Modal>
     </>
