@@ -1,5 +1,6 @@
 .contacts {
-  background-color: #464d56;
+  background-color: var(--background);
+  background: linear-gradient(180deg, #353535 0%, var(--background));
   max-width: 100%;
 }
 
@@ -38,27 +39,30 @@
 .mob,
 .mob:link,
 .mob:visited {
-  font-size: 3.6rem;
+  font-size: 3rem;
   font-weight: 500;
   margin-bottom: 0.8rem;
-  display: inline-block;
+  /* display: inline-block; */
   color: white;
 
   text-decoration: none;
   cursor: pointer;
   transition: all 0.3s;
 
+  display: inline-flex;
+  align-items: center;
+
   /* border: 1px solid blue; */
 }
 .mob:hover,
 .mob:active {
-  color: #ff59cd;
+  color: var(--hover);
 }
 
 .email {
   font-size: 1.6rem;
   font-weight: 300;
-  
+
   display: flex;
   align-items: baseline;
 }
@@ -68,6 +72,7 @@
   font-size: 1.6rem;
   font-weight: 300;
   color: white;
+  text-decoration: none;
 }
 .email_link:hover,
 .email_link:active {
@@ -76,17 +81,31 @@
   transition: all 0.2s ease-out;
 }
 
+.contacts_facebook_blog {
+}
+
 .contacts_facebook,
 .contacts_facebook:link,
 .contacts_facebook:visited {
-  font-size: 2.4rem;
+  font-size: 2rem;
+  font-weight: 300;
   color: white;
+  text-decoration: none;
+  /* display: inline-block; */
+
+  display: inline-flex;
+  align-items: center;
+
+  /* border: 1px solid blue; */
 }
 .contacts_facebook:hover,
 .contacts_facebook:active {
   color: #ff59cd;
   text-decoration: underline;
   transition: all 0.2s ease-out;
+}
+.contacts_facebook:first-child {
+  margin-bottom: 0.8rem;
 }
 
 /**************************/

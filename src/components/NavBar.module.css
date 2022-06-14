@@ -16,11 +16,14 @@
 .navbar_mob,
 .navbar_mob:link,
 .navbar_mob:visited {
-  padding: 0.8rem 0;
+  padding: 1.2rem 0;
   font-size: 3.2rem;
   font-weight: 600;
-  display: inline-block;
-  color: #333;
+  /* display: inline-block; */
+  color: #444;
+
+  display: inline-flex;
+  align-items: center;
 
   text-decoration: none;
   cursor: pointer;
@@ -30,7 +33,7 @@
 }
 .navbar_mob:hover,
 .navbar_mob:active {
-  color: #cc47a4;
+  color: var(--hover);
 }
 
 .navbar_line_container {
@@ -46,13 +49,14 @@
   flex-grow: 1;
   /* flex-basis: 100%; */
 
-  background-color: #ff59cd;
+  background-color: var(--primary);
 
   /* border: 1px solid green; */
 }
 
 .navbar_menu_container {
-  background: linear-gradient(90deg, rgb(83, 79, 79) 0%, rgb(42, 34, 42) 100%);
+  /* background: linear-gradient(90deg, rgb(83, 79, 79) 0%, rgb(42, 34, 42) 100%); */
+  background: var(--background);
 }
 .nav_menu {
   max-width: 120rem;
@@ -85,7 +89,7 @@
   /* border: 1px solid red; */
 }
 .nav_links:hover {
-  border-bottom: 0.8rem solid #ff59cd;
+  border-bottom: 0.8rem solid var(--primary);
   transition: all 0.2s ease-out;
 }
 

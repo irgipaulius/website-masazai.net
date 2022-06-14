@@ -3,7 +3,7 @@
   font-size: 2rem;
   letter-spacing: 1px;
   color: white;
-  background-color: #ff59cd;
+  background-color: var(--primary);
   border: none;
   border-radius: 8px;
   margin-top: 3.2rem;
@@ -11,7 +11,7 @@
   cursor: pointer;
 }
 .panel_btn:hover {
-  background-color: #cc47a4;
+  background-color: var(--hover);
   transition: all 0.2s ease-out;
 }
 

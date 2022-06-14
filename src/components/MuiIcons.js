@@ -5,6 +5,7 @@ import PhoneIcon from "@material-ui/icons/Phone";
 
 import MailIcon from "@material-ui/icons/Mail";
 import FacebookIcon from "@material-ui/icons/Facebook";
+import MenuBookIcon from "@material-ui/icons/MenuBook";
 
 export function AboutCheckmark() {
   const style = {
@@ -16,10 +17,11 @@ export function AboutCheckmark() {
 
 export function MainCheckmark() {
   const style = {
-    fontSize: "4.4rem",
-    padding: "0.4rem",
-    backgroundColor: "#ff59cd",
+    fontSize: "5.6rem",
+    padding: "0.8rem",
+    backgroundColor: "var(--primary)",
     color: "white",
+    borderRadius: "4px",
   };
 
   return <CheckIcon style={style} />;
@@ -54,4 +56,14 @@ export function FacebookIconSvg() {
   };
 
   return <FacebookIcon style={style} />;
+}
+
+export function BlogIconSvg() {
+  const style = {
+    fontSize: "3rem",
+    marginRight: "1rem",
+    verticalAlign: "middle",
+  };
+
+  return <MenuBookIcon style={style} />;
 }

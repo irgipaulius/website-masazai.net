@@ -56,6 +56,18 @@ Default: 8px
 - Spacing system (px)
 2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 80 / 96 / 128
 */
+/* https://www.colorhunt.co/palette/f7dad9fff5dad6d2c45d534a */
+:root {
+  /* --primary: #F7DAD9; */
+  --primary: #ff7ad7;
+  /* https://maketintsandshades.com/#ff59cd */
+  --secondary: #fff5da;
+  --optional: #d6d2c4;
+  /* --background: #5d534a; */
+  --background: #444;
+  --hover: #cc47a4;
+  --hover2: #b33e90;
+}
 
 * {
   margin: 0;

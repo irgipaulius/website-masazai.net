@@ -1,6 +1,6 @@
 import React from "react";
 
-import { PhoneIconSvg, EmailIconSvg, FacebookIconSvg } from "./MuiIcons";
+import { PhoneIconSvg, EmailIconSvg, FacebookIconSvg, BlogIconSvg } from "./MuiIcons";
 
 import styles from "./Contacts.module.css";
 
@@ -14,6 +14,7 @@ export default function Contacts() {
     mob,
     email,
     email_link,
+    contacts_facebook_blog,
     contacts_facebook,
   } = styles;
 
@@ -21,9 +22,7 @@ export default function Contacts() {
     <div className={contacts} id="Kontaktai">
       <div className={contacts_container}>
         <p className={contacts_title}>KONTAKTAI</p>
-        <p className={contacts_subtitle}>
-          Prieš atvykstant privaloma užseregistruoti telefonu:
-        </p>
+        <p className={contacts_subtitle}>Prieš atvykstant privaloma užseregistruoti telefonu:</p>
         <div className={contacts_mob_email}>
           <a className={mob} href="tel:+37067273695">
             <PhoneIconSvg />
@@ -31,28 +30,22 @@ export default function Contacts() {
           </a>
           <div className={email}>
             arba el. paštu:
-            <a
-              className={email_link}
-              href="mailto:jacinkevicienejelena@gmail.com"
-            >
+            <a className={email_link} href="mailto:jacinkevicienejelena@gmail.com">
               <EmailIconSvg />
               jacinkevicienejelena@gmail.com
             </a>
           </div>
         </div>
-        <a
-          className={contacts_facebook}
-          href="https://www.facebook.com/Masazuotoja"
-        >
-          <FacebookIconSvg />
-          https://www.facebook.com/Masazuotoja
-        </a>
-        <a
-          className={contacts_facebook}
-          href="https://euromasazas.blogspot.com/"
-        >
-          Asmeninis BLOG'as
-        </a>
+        <div className={contacts_facebook_blog}>
+          <a className={contacts_facebook} href="https://www.facebook.com/Masazuotoja">
+            <FacebookIconSvg />
+            https://www.facebook.com/Masazuotoja
+          </a><br/>
+          <a className={contacts_facebook} href="https://euromasazas.blogspot.com/">
+            <BlogIconSvg />
+            Asmeninis BLOG'as
+          </a>
+        </div>
       </div>
     </div>
   );

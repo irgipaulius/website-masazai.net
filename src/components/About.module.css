@@ -1,5 +1,6 @@
 .about {
-  background-color: #464d56;
+  /* background-color: var(--background); */
+  background: linear-gradient(180deg, #353535 0%, var(--background));
 }
 
 .about_container {
@@ -18,7 +19,7 @@
 }
 
 .about_text_container {
-  width: 60%;
+  width: 65%;
   color: white;
   font-size: 1.8rem;
 
@@ -27,15 +28,15 @@
   /* border: 1px solid red; */
 }
 .about_title {
-  font-size: 6.2rem;
-  font-weight: 500;
+  font-size: 5.2rem;
+  font-weight: 600;
   margin-bottom: 0.8rem;
 }
 .about_subtitle {
   font-size: 4.4rem;
   font-weight: 500;
   margin-bottom: 2.4rem;
-  color: #ff59cd;
+  color: var(--primary);
 }
 
 .about_text {
@@ -49,16 +50,12 @@
 }
 .about_text_list_item {
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   gap: 1.2rem;
 }
-/* .about_checkmark {
-  min-width: 3rem;
-  height: 3rem;
-} */
 
 .about_image_container {
-  width: 40%;
+  width: 35%;
   /* height: 300px; */
   overflow: hidden;
 

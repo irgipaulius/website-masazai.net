@@ -40,9 +40,8 @@ export default function About() {
             <li className={about_text_list_item}>
               <AboutCheckmark />
               <blockquote>
-                <i>"Lytėjimas - pirmasis ir svarbiausias žmogaus pojūtis.<br/>
-                Tinkama profesionali masažo technika lytėjimu efektyviai atlieka gydomąją, apsauginę ir
-                raminančiąją funkcijas, bei garantuoja pilnatvės, laimės ir saugumo jausmą."</i>
+                <i>„Lytėjimas - pirmasis ir svarbiausias žmogaus pojūtis. Tinkama profesionali masažo technika lytėjimu efektyviai atlieka gydomąją, apsauginę ir
+                raminančiąją funkcijas, bei garantuoja pilnatvės, laimės ir saugumo jausmą.“</i>
               </blockquote>
             </li>
           </ul>
