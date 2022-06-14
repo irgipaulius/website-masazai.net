@@ -1,6 +1,12 @@
 export const PricingPanelContents = {
   title: "Masažo paslaugos",
   contents: {
+    "Kainininkas": `# Kainos
+|         Paslauga        |  Kaina  |
+|:-----------------------:|:-------:|
+| Chiromasazas            | 10 eur  |
+| Klasikinis kūno masažas | 50 eur  |
+| ...                     | ... eur |`,
     "Klasikinis kūno masažas": `# Klasikinis kūno masažas
 Tai viena iš efektyviausių priemonių gydant įvairias traumas ir susirgimus.
 
@@ -25,7 +31,9 @@ Tai efektyvi masažo technika, išsiskirianti ypatingu raminamuoju (sedatyviniu)
     Chiromasažas: `# Chiromasažas
 Tai įvairių europietiškų bei rytietiškų masažo sistemų, amerikietiškos chiro praktikos ir kineziologijos sintezė. Kiekvienam klientui parenkami individualūs masažo elementai. Priklausomai nuo situacijos, gali būti masažuojama ne tik delnais, pirštų pagalvėlėmis, bet ir alkūnėmis bei dilbiais. Jis ramina, sumažina nervinę įtampą, nemigą, pagerina kraujotaką, raumenų tonusą, medžiagų apytaką, išnyksta patinimai, skausmai, nuovargis, pagerėja nuotaika, bendra savijauta, darbingumas.`,
     "Klasikinis-segmentinis masažas": `# Klasikinis segmentinis masažas 
-Segmentinis masažas yra seniausias sveikatos higienos ir gydymo menas. Naudojamas kaip gydymo taip ir profilaktiniais tikslais. Šis masažas idealiai tinka žmonėms, dirbantiems sėdimą ar sunkų fizinį darbą, kai visa įtampa susikaupia įvairiose stuburo vietose, kaklo ir pečių srityje ir dėl to susiformuoja skausmingi raumenų mazgai. Jo metu atliekami specialūs glostymo, trynimo, maigymo bei vibracijų veiksmai. Šio masažo metu pasišalina mirusios odos ląstelės, pagerėja odos kvėpavimas, padidėja raumenų susitraukimo funkcija bei suaktyvėja medžiagų apykaita. Periodiškai atliekamas masažas padės atsikratyti dažnų nugaros ir galvos skausmų, atpalaiduos įtemptas raumenų grupes, jas stiprins. Segmentinis masažas daug kartų efektyvesnis už tradicinį masažą.`,
+Segmentinis masažas yra seniausias sveikatos higienos ir gydymo menas. Naudojamas kaip gydymo taip ir profilaktiniais tikslais. Šis masažas idealiai tinka žmonėms, dirbantiems sėdimą ar sunkų fizinį darbą, kai visa įtampa susikaupia įvairiose stuburo vietose, kaklo ir pečių srityje ir dėl to susiformuoja skausmingi raumenų mazgai. Jo metu atliekami specialūs glostymo, trynimo, maigymo bei vibracijų veiksmai. Šio masažo metu pasišalina mirusios odos ląstelės, pagerėja odos kvėpavimas, padidėja raumenų susitraukimo funkcija bei suaktyvėja medžiagų apykaita. Periodiškai atliekamas masažas padės atsikratyti dažnų nugaros ir galvos skausmų, atpalaiduos įtemptas raumenų grupes, jas stiprins. Segmentinis masažas daug kartų efektyvesnis už tradicinį masažą.
+
+![Klasikinis segmentinis masazas](images/klasikinis-segmentinis.jpg "Klasikinis segmentinis  masazas")`,
     "Limfodrenažinis masažas": `# Limfodrenažinis masažas
 **Limfinė sistema** - svarbi organizmo dalis, padedanti apsaugoti organizmą nuo įvairių infekcijų, kenksmingų aplinkos veiksnių bei valyti visą kūną. Sutrikusi šios sistemos veikla gali sukelti įvairius sveikatos negalavimus ar odos nelygumus, pavyzdžiui, venų varikozę, celiulitą, prastą emocinę būseną, energijos stoką ar padidėjusį kraujo spaudimą. Puikus būdas išvengti šių sveikatos sutrikimų – limfodrenažinis masažas, kuris padeda ne tik nugalėti jau esamas problemas, bet ir užkirsti kelią naujų atsiradimui. Limfodrenažinis kūno masažas, atliekamas lėtais, ilgais bei giliais judesiais limfos tekėjimo kryptimis, padeda suaktyvinti šio skysčio cirkuliaciją. Teigiamas masažo poveikis yra jaučiamas visame organizme. Limfodrenažinis masažas efektyviai paspartina susikaupusių toksinų pašalinimą bei padidina viso organizmo tonusą. Dėl šios priežasties suaktyvėja ląstelių atsinaujinimo procesai bei gražėja oda, mažėja apimtys, pamažu nyksta celiulitas.`,
     "Nėščiųjų masažas": `# Nėščiųjų masažas

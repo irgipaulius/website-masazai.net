@@ -1,13 +1,13 @@
 export const AboutPanelContents = {
   title: "Masažuotojos kvalifikacija",
   contents: {
-    'Išsilavinimas ir kvalifikacija': `
+    "Išsilavinimas ir kvalifikacija": `
 | Data        |                       Lokacija                       | Kvalifikacijos kėlimo įstaiga                                                                     |
 |:-----------:|:----------------------------------------------------:|---------------------------------------------------------------------------------------------------|
 | 2021        |                      Nuotolinis                      | Klinikiniai masažai. Kaklinės ir krūtininės stuburo dalies patologijos                            |
 | 2021        | Nuotolinis                                           | Nugaros skausmas gydytojo, kineziterapeuto, ergoterapeuto ir masažuotojo praktikoje               |
 | 2021        | Nuotolinis                                           | Miofascijinių ir giliųjų audinių masažo technikų taikymas esant išialgijai                        |
-| 2018        | Vilnius                                              | FOREVER AKADEMIJA                                                                                 |
+| 2018        | Vilnius                                              | FOREVER AKADEMIJA ([foreverliving](https://foreverliving.com/ltu/lt-lt/home))                     |
 | 2013        | Kaunas                                               | "SU DŽOK" terapija                                                                                |
 | 2009        | Kaunas                                               | "STARVAC SP2" prancūziškas aparatas, anticeliulitinė programa ir veido vakuuminis masažas, kursai |
 | 2009        | Vilnius                                              | "Biodroga Academy for Estetic Sciences and Spa Therapy"                                           |
@@ -19,7 +19,7 @@ export const AboutPanelContents = {
 | 2002        | SDTS centras                                         | Manualinės terapijos pagrindai, masažas                                                           |
 | 1993        | UAB "Virginija" Vilniaus psichines sveikatos Centras | Praktinės psichologijos instruktorių kursai, Kijevas                                              |
 | 1988        | LVKKI Visuomeninių profesijų fakultetas              | Visuomeninė sportinio masažo specialybė                                                           |
-| 1985 - 1987 | Kauno P. Mažylio medicinos mokykla                   |                                                                                                   |`,
+| 1985 - 1987 | Kauno P. Mažylio medicinos mokykla                   | Felčerio-laboranto specialybė                                                                     |`,
     "Darbo stažas": `
 | Laikotarpis |                                                                                        Darbovietė                                                                                       |
 |:-----------:|:---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------:|
@@ -31,6 +31,7 @@ export const AboutPanelContents = {
 | 1995 - 2000 | J.Jacinkevičienės **IĮ *Gera Diena***, savininkė. Masažo salonas ***ČIA IR DABAR***. Lygiagrečiai - masažuotojos praktika.                                                              |
 | 1992 - 1993 | **UAB *ŽAVESYS*** - masažuotoja: klasikinio, profilaktinio, kosmetinio masažo atlikimas. Licencija privačiam masažui atlikti.                                                           |
 | 1990 - 1992 | Statybinių medžiagų įmonė ***GRANITAS*** felčerė-masažuotoja: fizioterapinių procedūrų, klasikinio masažo atlikimas. Lygiagrečiai, - masažuotoja ***SILVOS*** fabriko medicinos punkte. |
-| 1987 - 1990 | ***Lietuvos Kūno kultūros* institutas** - laborantė-masažuotoja: biocheminiai tyrimai, injekcijos, sportinio masažo atlikimas.                                                          |`,
+| 1987 - 1990 | ***Lietuvos Kūno kultūros* institutas** - laborantė-masažuotoja: biocheminiai tyrimai, injekcijos, sportinio masažo atlikimas.                                                          |
+| 1981 - 1985 | Kauno radijo gamykla ***BANGA***, EKB. Administratorė.                                                                                                                                  |`,
   },
 };

@@ -27,22 +27,23 @@ export default function About() {
           <ul className={about_text}>
             <li className={about_text_list_item}>
               <AboutCheckmark />
-              <span>Pilnai kvalifikuota masažuotoja ir profesionali kinezeterapeutė.</span>
+              <span>Pilnai kvalifikuota ir profesionali masažuotoja</span>
             </li>
             <li className={about_text_list_item}>
               <AboutCheckmark />
-              <span>32 metų ir 15,000 valandų patirtis.</span>
+              <span>Virš 30 metų patirtis ir 10,000 atliktų masažų</span>
             </li>
             <li className={about_text_list_item}>
               <AboutCheckmark />
-              <span>Draugiška, linksma, švelniom rankom, taip toliau t.t.</span>
+              <span>Dėmesinga, energinga, draugiška, delikačiomis ir švelniomis rankomis</span>
             </li>
             <li className={about_text_list_item}>
               <AboutCheckmark />
-              <span>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic laborum quae dicta
-                repellendus cumque sit nostrum aliquam aliquid libero eveniet?
-              </span>
+              <blockquote>
+                <i>"Lytėjimas - pirmasis ir svarbiausias žmogaus pojūtis.<br/>
+                Tinkama profesionali masažo technika lytėjimu efektyviai atlieka gydomąją, apsauginę ir
+                raminančiąją funkcijas, bei garantuoja pilnatvės, laimės ir saugumo jausmą."</i>
+              </blockquote>
             </li>
           </ul>
 

@@ -36,9 +36,9 @@ export default function Navbar() {
     <>
       <nav className={navbar} id="navbar" ref={navBarRef}>
         <div className={navbar_mob_container}>
-          <a className={navbar_mob} href="tel:+370612013136">
+          <a className={navbar_mob} href="tel:+37067273695">
             <PhoneIconSvg />
-            +370 612 121 21
+            +370 672 736 95
           </a>
         </div>
         <div className={navbar_line_container}>
