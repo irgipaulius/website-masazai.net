@@ -21,23 +21,37 @@ export default function Contacts() {
     <div className={contacts} id="Kontaktai">
       <div className={contacts_container}>
         <p className={contacts_title}>KONTAKTAI</p>
-        <p className={contacts_subtitle}>Prieš atvykstant privaloma užseregistruoti telefonu:</p>
+        <p className={contacts_subtitle}>
+          Prieš atvykstant privaloma užseregistruoti telefonu:
+        </p>
         <div className={contacts_mob_email}>
-          <a className={mob} href="tel:+370612013136">
+          <a className={mob} href="tel:+37067273695">
             <PhoneIconSvg />
-            +370 612 121 21
+            +370 672 736 95
           </a>
           <div className={email}>
             arba el. paštu:
-            <a className={email_link} href="mailto:jelena.jacinkeviciene@gmail.com">
+            <a
+              className={email_link}
+              href="mailto:jacinkevicienejelena@gmail.com"
+            >
               <EmailIconSvg />
-              jelena.jacinkeviciene@gmail.com
+              jacinkevicienejelena@gmail.com
             </a>
           </div>
         </div>
-        <a className={contacts_facebook} href="https://www.facebook.com/Masazuotoja">
+        <a
+          className={contacts_facebook}
+          href="https://www.facebook.com/Masazuotoja"
+        >
           <FacebookIconSvg />
           https://www.facebook.com/Masazuotoja
+        </a>
+        <a
+          className={contacts_facebook}
+          href="https://euromasazas.blogspot.com/"
+        >
+          Asmeninis BLOG'as
         </a>
       </div>
     </div>

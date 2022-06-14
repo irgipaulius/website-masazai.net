@@ -21,11 +21,11 @@ export default function Popular() {
           <ul className={points_text}>
             <li className={points_text_list_item}>
               <MainCheckmark />
-              <span>Klasikinis viso kūno masažas</span>
+              <span>Klasikinis kūno masažas</span>
             </li>
             <li className={points_text_list_item}>
               <MainCheckmark />
-              <span>Medaus masažas</span>
+              <span>Klasikinis-segmentinis masažas</span>
             </li>
             <li className={points_text_list_item}>
               <MainCheckmark />

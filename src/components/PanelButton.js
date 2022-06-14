@@ -90,7 +90,10 @@ export default function PanelButton({ text, type, focus = 0 }) {
           <ul className={panel_menu}>
             {Object.keys(contents).map((menuItem, index) => (
               <li className={panel_item} key={index}>
-                <div className={panel_link} onClick={() => setContentItem(menuItem)}>
+                <div
+                  className={panel_link}
+                  onClick={() => setContentItem(menuItem)}
+                >
                   {menuItem}
                 </div>
               </li>
