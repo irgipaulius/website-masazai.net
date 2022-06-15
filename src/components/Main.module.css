@@ -57,22 +57,6 @@
 .main_text:last-of-type {
   margin-bottom: 0;
 }
-/* .main_btn {
-  font-family: inherit;
-  font-size: 2rem;
-  letter-spacing: 1px;
-  color: white;
-  background-color: #ff59cd;
-  border: none;
-  border-radius: 8px;
-  margin-top: 3.2rem;
-  padding: 1.6rem 2.4rem;
-  cursor: pointer;
-}
-.main_btn:hover {
-  background-color: #cc47a4;
-  transition: all 0.2s ease-out;
-} */
 
 .main_image_container {
   width: 50%;

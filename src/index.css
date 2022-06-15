@@ -49,7 +49,7 @@ white
 
 --- 04 BORDER-RADIUS
 
-Default: 8px
+Default: 4px
 
 --- 05 WHITESPACE
 
@@ -67,6 +67,8 @@ Default: 8px
   --background: #444;
   --hover: #cc47a4;
   --hover2: #b33e90;
+  --tint: #ffeefa;
+  --thead: #ffdef5;
 }
 
 * {

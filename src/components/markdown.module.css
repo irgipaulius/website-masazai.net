@@ -2,6 +2,67 @@
 https://stackoverflow.com/questions/66356329/how-to-add-styling-for-elements-in-react-markdown
 */
 
+.reactMarkDown * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+
+  font-size: 1.8rem;
+  line-height: 1.4;
+  text-align: left !important;
+
+  /* color: red; */
+}
+
+.reactMarkDown table,
+.reactMarkDown td,
+.reactMarkDown th {
+  /* border: 1px solid !important; */
+  border: none !important;
+  padding: 0.4rem 0.8rem !important;
+  vertical-align: top;
+}
+
+.reactMarkDown table {
+  /* width: calc(100% - 1.8rem); */
+  width: 100%;
+  border-collapse: collapse;
+}
+.reactMarkDown thead th {
+  padding: 0 0.8rem 0.4rem 0.8rem !important;
+  /* background-color: var(--thead); */
+  border-bottom: 1px solid var(--background) !important;
+}
+
+.reactMarkDown tr:nth-child(odd) td {
+  background-color: var(--tint);
+}
+
+.reactMarkDown a,
+.reactMarkDown a:link,
+.reactMarkDown a:visited {
+  color: var(--background);
+}
+.reactMarkDown a:hover,
+.reactMarkDown a:active {
+  color: var(--hover);
+}
+
+.reactMarkDown p {
+  margin-bottom: 1.2rem;
+}
+
+.reactMarkDown img {
+  display: block;
+  width: 50%;
+  margin: 1.2rem auto;
+}
+/* .reactMarkDown img:first-of-type {
+  margin-top: 0;
+  border: 1px solid red;
+} */
+
+/*
 .reactMarkDown a {
   color: #0645ad;
   text-decoration: none;
@@ -169,6 +230,7 @@ https://stackoverflow.com/questions/66356329/how-to-add-styling-for-elements-in-
 .reactMarkDown td {
   vertical-align: top;
 }
+*/
 
 /*
 @media only screen and (min-width: 480px) {
