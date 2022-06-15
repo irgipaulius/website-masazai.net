@@ -57,6 +57,43 @@ https://stackoverflow.com/questions/66356329/how-to-add-styling-for-elements-in-
   width: 50%;
   margin: 1.2rem auto;
 }
+
+.reactMarkDown ul {
+  /* color: red; */
+  margin: 0;
+  padding: 0 0 0 1.8rem;
+  list-style: none;
+}
+.reactMarkDown ul li {
+  margin-top: 0.4rem;
+}
+.reactMarkDown ul li::before {
+  content: "\2022";
+  color: var(--primary);
+  font-weight: 900;
+  display: inline-block;
+  width: 1.8rem;
+  margin-left: -1.8rem;
+}
+
+.reactMarkDown ol {
+  /* color: green; */
+  margin: 0;
+  padding: 0 0 0 1.8rem;
+}
+
+.reactMarkDown h2 {
+  font-size: 2.4rem;
+  padding-top: 0.4rem;
+  padding-bottom: 0.8rem;
+}
+
+.reactMarkDown h3 {
+  font-size: 2rem;
+  padding-top: 0.2rem;
+  padding-bottom: 0.4rem;
+}
+
 /* .reactMarkDown img:first-of-type {
   margin-top: 0;
   border: 1px solid red;
