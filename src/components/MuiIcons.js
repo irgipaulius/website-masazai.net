@@ -19,7 +19,8 @@ export function MainCheckmark() {
   const style = {
     fontSize: "5.6rem",
     padding: "0.8rem",
-    backgroundColor: "var(--primary)",
+    // backgroundColor: "var(--primary)",
+    backgroundColor: "rgba(255, 122, 215, 0.85)",
     color: "white",
     borderRadius: "4px",
   };

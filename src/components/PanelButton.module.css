@@ -209,6 +209,10 @@
 
 /* 560 / 16 = 35 */
 @media (max-width: 35em) {
+  .panel_btn {
+    margin-top: 2.4rem;
+  }
+
   .A_modal {
     margin: 4.8rem 3.2rem;
     height: calc(95vh - (4.8rem * 2));
@@ -242,6 +246,17 @@
   .panel_content {
     width: 100%;
     /* height: 50vh; */
+  }
+}
+
+/**************************/
+/* BELOW 432px (Mobile) */
+/**************************/
+
+/* 432 / 16 = 27 */
+@media (max-width: 27em) {
+  .panel_btn {
+    margin-top: 2rem;
   }
 }
 
