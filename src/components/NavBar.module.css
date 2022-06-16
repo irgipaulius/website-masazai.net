@@ -61,7 +61,8 @@
 
 .navbar_menu_container {
   /* background: linear-gradient(90deg, rgb(83, 79, 79) 0%, rgb(42, 34, 42) 100%); */
-  background: var(--background);
+  /* background: var(--background); */
+  background: linear-gradient(180deg, #353535 0%, var(--background));
 }
 .nav_menu {
   max-width: 120rem;
