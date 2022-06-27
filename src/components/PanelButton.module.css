@@ -1,17 +1,18 @@
 .panel_btn {
   font-family: inherit;
   font-size: 2rem;
+  font-weight: 500;
   letter-spacing: 1px;
   color: white;
-  background-color: #ff59cd;
+  background-color: var(--primary);
   border: none;
-  border-radius: 8px;
+  border-radius: 4px;
   margin-top: 3.2rem;
   padding: 1.6rem 2.4rem;
   cursor: pointer;
 }
 .panel_btn:hover {
-  background-color: #cc47a4;
+  background-color: var(--hover);
   transition: all 0.2s ease-out;
 }
 
@@ -43,11 +44,11 @@
   max-width: calc(120rem - 12.8rem);
   width: 100%;
   /* height: calc(100vh - (4.8rem * 2)); */
-  height: 60vh;
+  height: 72vh;
   margin: 0;
-  margin-top: 4.8rem;
+  margin-top: 5.6rem;
   padding: 3.2rem;
-  border-radius: 8px;
+  border-radius: 4px;
 
   overflow-y: hidden;
 }
@@ -60,30 +61,37 @@
 
   /* border: 1px solid green; */
 }
-.A_modal_close_icon {
+.A_modal_close_icon,
+.A_modal_close_icon:link,
+.A_modal_close_icon:visited {
   width: 100%;
   height: 100%;
   fill: white;
   background-color: #333;
   border-radius: 50%;
 }
+.A_modal_close_icon:hover,
+.A_modal_close_icon:active {
+  background-color: var(--hover2);
+}
 
 .panel_title {
-  font-size: 3rem;
+  font-size: 2.4rem;
+  font-weight: 600;
   text-align: center;
   margin: 0 auto 3.2rem auto;
-  padding: 0 0 2.4rem 0;
-  color: #333;
-  border-bottom: 2px solid #555;
+  padding: 0 0 1.6rem 0;
+  color: var(--background);
+  border-bottom: 2px solid var(--background);
 }
 
 /* Menu + Content */
 .panel_menu_content_container {
   display: flex;
-  gap: 3.2rem;
+  gap: 2.4rem;
 
   /* height: calc(100vh - (4.8rem * 2) - (3.2rem * 4.75)); */
-  height: calc(60vh - (3.2rem * 4.75));
+  height: calc(72vh - (3.2rem * 4.75));
 
   /* height: 100%; */
   /* min-height: 100vh; */
@@ -95,7 +103,7 @@
 .panel_menu {
   list-style: none;
   width: 30%;
-  color: #555;
+  color: var(--background);
 
   flex: 1 1 auto;
   display: flex;
@@ -106,7 +114,7 @@
   /* border: 1px solid grey; */
 }
 .panel_item {
-  color: #333;
+  color: var(--background);
 
   /* border: 1px solid green; */
 }
@@ -114,7 +122,7 @@
 .panel_link,
 .panel_link:link,
 .panel_link:visited {
-  font-size: 2rem;
+  font-size: 1.8rem;
   font-weight: 700;
   line-height: 1.1;
   cursor: pointer;
@@ -124,7 +132,7 @@
 }
 .panel_link:hover,
 .panel_link:active {
-  color: #cc47a4;
+  color: var(--hover);
   transition: all 0.2s ease-out;
 }
 .panel_link_selected {
@@ -144,8 +152,6 @@
   /* height: 30rem; */
   flex: 1 1 auto;
 
-  font-size: 2rem;
-  line-height: 1.6;
   overflow-y: auto;
 
   /* border: 2px solid red; */
@@ -197,8 +203,13 @@ table {
   .A_modal {
     margin-left: 3.2rem;
     margin-right: 3.2rem;
+    height: 75vh;
 
     /* background-color: lightgreen; */
+  }
+
+  .panel_menu_content_container {
+    height: calc(75vh - (3.2rem * 4.75));
   }
 }
 
@@ -209,13 +220,13 @@ table {
 /* 640 / 16 = 40 */
 @media (max-width: 40em) {
   .A_modal {
-    height: 80vh;
+    height: 82vh;
 
     /* background-color: lightskyblue; */
   }
 
   .panel_menu_content_container {
-    height: calc(80vh - (3.2rem * 4.75));
+    height: calc(82vh - (3.2rem * 4.75));
   }
 }
 
@@ -225,9 +236,13 @@ table {
 
 /* 560 / 16 = 35 */
 @media (max-width: 35em) {
+  .panel_btn {
+    margin-top: 2.4rem;
+  }
+
   .A_modal {
-    margin: 4.8rem 3.2rem;
-    height: calc(95vh - (4.8rem * 2));
+    margin: 5.39rem 3.2rem;
+    height: calc(85vh);
     background-color: white;
   }
 
@@ -238,19 +253,17 @@ table {
   .panel_menu_content_container {
     flex-direction: column;
     gap: 3.2rem;
-    height: calc(95vh - (4.8rem * 2) - (3.2rem * 4.75));
+    height: calc(85vh - (3.2rem * 4.75));
   }
 
   .panel_menu {
     width: 100%;
+    height: 8.1rem;
     text-align: center;
-    flex: 0 1 auto;
-    overflow-y: visible;
+    flex: 0 0 auto;
+    overflow-y: auto;
 
-    flex-direction: row;
-    justify-content: center;
-    flex-wrap: wrap;
-    column-gap: 2.4rem;
+    row-gap: 2rem;
     padding-bottom: 2.4rem;
     border-bottom: 1px solid #555;
   }
@@ -258,6 +271,21 @@ table {
   .panel_content {
     width: 100%;
     /* height: 50vh; */
+  }
+}
+
+/**************************/
+/* BELOW 432px (Mobile) */
+/**************************/
+
+/* 432 / 16 = 27 */
+@media (max-width: 27em) {
+  .A_modal {
+    margin: 6.2rem 3.2rem;
+  }
+
+  .panel_btn {
+    margin-top: 2rem;
   }
 }
 

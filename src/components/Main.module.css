@@ -39,10 +39,15 @@
   font-size: 3.6rem;
   font-weight: 600;
   margin-bottom: 2.4rem;
-  color: #ff59cd;
+  color: var(--primary);
 }
-.points_container_title {
+.points_container_title_pop {
+  font-size: 3.6rem;
+  font-weight: 600;
+  margin-bottom: 2.4rem;
+  color: var(--primary);
   text-align: center;
+  /* text-shadow: 0 0 1.8rem rgba(0, 0, 0, 0.25); */
 }
 .main_text {
   font-size: 2rem;
@@ -51,22 +56,6 @@
 }
 .main_text:last-of-type {
   margin-bottom: 0;
-}
-.main_btn {
-  font-family: inherit;
-  font-size: 2rem;
-  letter-spacing: 1px;
-  color: white;
-  background-color: #ff59cd;
-  border: none;
-  border-radius: 8px;
-  margin-top: 3.2rem;
-  padding: 1.6rem 2.4rem;
-  cursor: pointer;
-}
-.main_btn:hover {
-  background-color: #cc47a4;
-  transition: all 0.2s ease-out;
 }
 
 .main_image_container {
@@ -99,34 +88,29 @@
 
   display: flex;
   flex-direction: column;
-  gap: 1.6rem;
+  gap: 2.4rem;
 }
 .points_text_list_item {
   font-size: 2.4rem;
   font-weight: 600;
+  color: #444;
 
   display: flex;
-  align-items: center;
+  align-items: flex-start;
 
   gap: 1.2rem;
 
-  cursor: pointer;
+  /* cursor: pointer; */
 }
 .points_text_list_item span {
-  background-color: white;
+  background-color: rgba(255, 255, 255, 0.75);
+  border-radius: 4px;
 
   flex-grow: 1;
   /* flex-basis: 100%; */
 
-  padding: 1rem 1.6rem;
+  padding: 1.6rem;
 }
-/* .points_text_checkmark {
-  min-width: 4.4rem;
-  height: 4.4rem;
-  padding: 0.4rem;
-  background-color: #ff59cd;
-  color: white;
-} */
 
 /**************************/
 /* BELOW 640px (Tablet) */
@@ -178,26 +162,52 @@
     width: 100%;
 
     justify-content: center;
-  
+
     /* align-self: stretch; */
-  
+
     /* background-image: url("/public/images/temp_main-image-container.jpg"); */
     /* background-position: center; */
     /* background-repeat: no-repeat; */
     /* background-size: cover; */
-  
+
     /* display: flex; */
     /* justify-content: flex-start; */
-  
+
     /* border: 1px solid green; */
   }
 
   .points_container {
     /* 64 - 3.2 - 3.2 = 53.6 */
     max-width: 100%;
-    margin: 3.2rem 4.8rem;
-  
+    margin: 3.2rem 4.8rem 4.8rem 4.8rem;
+
     /* border: 1px dotted blue; */
+  }
+}
+
+/**************************/
+/* BELOW 560px (Tablet) */
+/**************************/
+
+/* 560 / 16 = 35 */
+@media (max-width: 35em) {
+  .points_container {
+    margin: 3.2rem 4.8rem 4.8rem 4.8rem;
+  }
+}
+
+/**************************/
+/* BELOW 432px (Mobile) */
+/**************************/
+
+/* 432 / 16 = 27 */
+@media (max-width: 27em) {
+  .main_texts {
+    margin: 3.2rem;
+  }
+
+  .points_container {
+    margin: 3.2rem 3.2rem 4.8rem 3.2rem;
   }
 }
 

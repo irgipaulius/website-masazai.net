@@ -46,7 +46,7 @@
 .hero_line {
   margin: 0 20%;
   height: 0.4rem;
-  background-color: #ff59cd;
+  background-color: var(--primary);
 }
 
 /**************************/

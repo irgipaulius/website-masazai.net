@@ -9,6 +9,7 @@ export default function Popular() {
     main_image_container,
     points_container,
     points_container_title,
+    points_container_title_pop,
     points_text,
     points_text_list_item,
   } = styles;
@@ -17,7 +18,7 @@ export default function Popular() {
     <>
       <div className={main_image_container}>
         <div className={points_container}>
-          <p className={points_container_title}>POPULIARIAUSI</p>
+          <p className={points_container_title_pop}>Populiariausi masažai</p>
           <ul className={points_text}>
             <li className={points_text_list_item}>
               <MainCheckmark />
