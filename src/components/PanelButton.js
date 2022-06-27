@@ -61,6 +61,7 @@ export default function PanelButton({ text, type, focus = 0 }) {
     panel_menu,
     panel_item,
     panel_link,
+    panel_link_selected,
     panel_content,
   } = styles;
 
@@ -91,7 +92,7 @@ export default function PanelButton({ text, type, focus = 0 }) {
             {Object.keys(contents).map((menuItem, index) => (
               <li className={panel_item} key={index}>
                 <div
-                  className={panel_link}
+                  className={contentItem === menuItem ? panel_link_selected : panel_link}
                   onClick={() => setContentItem(menuItem)}
                 >
                   {menuItem}
