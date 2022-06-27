@@ -83,6 +83,7 @@ html {
   /* 10px / 16px = 0.625 = 62.5% */
   /* Percentage of user's browser font-size setting */
   font-size: 62.5%;
+  /* height: 100%; */
 }
 
 body {
@@ -104,10 +105,16 @@ body {
   line-height: 1;
   font-weight: 400;
   color: #333;
+  /* height: 100%; */
+}
+
+#root {
+  /* height: 100%; */
 }
 
 .container {
   margin: 0 auto;
+  /* height: 100%; */
 }
 
 /*
