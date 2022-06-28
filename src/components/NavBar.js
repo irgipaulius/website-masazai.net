@@ -1,14 +1,18 @@
 import React, { useState, useEffect, useRef } from "react";
-import { Link } from "react-scroll";
+import { NavLink, useLocation } from "react-router-dom";
+import { Link, scroller } from "react-scroll";
 
 import { PhoneIconSvg } from "./MuiIcons";
 
 import styles from "./NavBar.module.css";
 
 export default function Navbar() {
-  const navItems = ["Pradžia", "Apie", "Masažai", "Kontaktai"];
-
-  const [navBarHeight, setNavBarHeight] = useState(0);
+  const navItems = [
+    { text: "Pradžia", urlPath: "/", id: "hero" },
+    { text: "Apie", urlPath: "/about", id: "about" },
+    { text: "Masažai", urlPath: "/main", id: "main" },
+    { text: "Kontaktai", urlPath: "/contacts", id: "contacts" },
+  ];
 
   const {
     navbar,
@@ -19,18 +23,32 @@ export default function Navbar() {
     navbar_menu_container,
     nav_menu,
     nav_item,
-    nav_links,
+    nav_item_div,
+    nav_link,
+    active,
   } = styles;
+
+  const location = useLocation();
 
   const navBarRef = useRef();
 
+  const handleScroll = (id) => {
+    scroller.scrollTo(id, {
+      duration: 1000,
+      smooth: true,
+      offset: -navBarRef.current.clientHeight,
+    });
+  };
+
   useEffect(() => {
-    function handleResize() {
-      setNavBarHeight(navBarRef.current.clientHeight);
+    const findPath = navItems.find((item) => item.urlPath === location.pathname);
+
+    if (findPath) {
+      handleScroll(findPath.id);
+    } else {
+      handleScroll(navItems[0].id);
     }
-    window.addEventListener("resize", handleResize);
-    handleResize();
-  }, [navBarHeight]);
+  }, [location]);
 
   return (
     <>
@@ -46,11 +64,18 @@ export default function Navbar() {
         </div>
         <nav className={navbar_menu_container}>
           <ul className={nav_menu}>
-            {navItems.map((buttonText, index) => (
+            {navItems.map((navItem, index) => (
               <li className={nav_item} key={index}>
-                <Link to={buttonText} smooth={true} offset={-navBarHeight} duration={1000}>
-                  <div className={nav_links}>{buttonText}</div>
-                </Link>
+                <div className={nav_item_div}>
+                  <NavLink
+                    to={navItem.urlPath}
+                    className={(isActive) => {
+                      return isActive.isActive ? `${nav_link} ${active}` : nav_link;
+                    }}
+                  >
+                    {navItem.text}
+                  </NavLink>
+                </div>
               </li>
             ))}
           </ul>
