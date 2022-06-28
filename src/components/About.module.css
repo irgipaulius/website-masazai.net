@@ -13,6 +13,8 @@
 
   display: flex;
   gap: 4.8rem;
+  align-content: flex-start;
+  align-items: flex-start;
 
   /* height: 100%; */
   /* height: auto; */
@@ -102,7 +104,7 @@
 
   .about_image_container {
     /* width: 42%; */
-    height: 42rem;
+    /* height: 42rem; */
     /* border: 1px dotted orange; */
   }
   .about_image {
@@ -136,7 +138,7 @@
 
   .about_image_container {
     width: 38%;
-    height: 44.5rem;
+    /* height: 44.5rem; */
     /* border: 1px dotted blue; */
   }
   .about_image {
@@ -172,7 +174,7 @@
 
   .about_image_container {
     width: 40%;
-    height: 48.1rem;
+    /* height: 48.1rem; */
     /* border: 1px dotted blue; */
   }
   .about_image {
