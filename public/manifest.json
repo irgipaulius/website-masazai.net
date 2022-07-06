@@ -1,11 +1,11 @@
 {
-  "short_name": "React App",
-  "name": "Create React App Sample",
+  "short_name": "Masažas Pas Jeleną",
+  "name": "Masažas Pas Jeleną",
   "icons": [
     {
-      "src": "favicon.ico",
+      "src": "massage_icon.png",
       "sizes": "64x64 32x32 24x24 16x16",
-      "type": "image/x-icon"
+      "type": "image/png"
     },
     {
       "src": "logo192.png",
@@ -18,7 +18,7 @@
       "sizes": "512x512"
     },
     {
-      "src": "background.jpg",
+      "src": "images/background.jpg",
       "type": "image/jpeg",
       "sizes": "1920x1280"
     }
