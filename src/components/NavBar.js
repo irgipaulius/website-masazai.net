@@ -1,14 +1,18 @@
-import React, { useState, useEffect, useRef } from "react";
-import { Link } from "react-scroll";
+import React, { useEffect, useRef } from "react";
+import { NavLink, useLocation } from "react-router-dom";
+import { scroller } from "react-scroll";
 
 import { PhoneIconSvg } from "./MuiIcons";
 
 import styles from "./NavBar.module.css";
 
 export default function Navbar() {
-  const navItems = ["Pradžia", "Apie", "Masažai", "Kontaktai"];
-
-  const [navBarHeight, setNavBarHeight] = useState(0);
+  const navItems = [
+    { text: "Pradžia", urlPath: "/", id: "hero" },
+    { text: "Apie", urlPath: "/about", id: "about" },
+    { text: "Masažai", urlPath: "/main", id: "main" },
+    { text: "Kontaktai", urlPath: "/contacts", id: "contacts" },
+  ];
 
   const {
     navbar,
@@ -19,18 +23,29 @@ export default function Navbar() {
     navbar_menu_container,
     nav_menu,
     nav_item,
-    nav_links,
+    nav_link,
+    active,
   } = styles;
+
+  const location = useLocation();
 
   const navBarRef = useRef();
 
+  /** @returns id of the component to scroll to. */
+  const getScrollItemId = () => {
+    const findPath = navItems.find((item) => item.urlPath === location.pathname);
+
+    // scroll to found navItem OR the first one.
+    return findPath?.id || navItems[0].id;
+  };
+
   useEffect(() => {
-    function handleResize() {
-      setNavBarHeight(navBarRef.current.clientHeight);
-    }
-    window.addEventListener("resize", handleResize);
-    handleResize();
-  }, [navBarHeight]);
+    scroller.scrollTo(getScrollItemId(), {
+      duration: 1000,
+      smooth: true,
+      offset: -navBarRef.current.clientHeight,
+    });
+  }, [location]);
 
   return (
     <>
@@ -46,11 +61,14 @@ export default function Navbar() {
         </div>
         <nav className={navbar_menu_container}>
           <ul className={nav_menu}>
-            {navItems.map((buttonText, index) => (
+            {navItems.map((navItem, index) => (
               <li className={nav_item} key={index}>
-                <Link to={buttonText} smooth={true} offset={-navBarHeight} duration={1000}>
-                  <div className={nav_links}>{buttonText}</div>
-                </Link>
+                <NavLink
+                  to={navItem.urlPath}
+                  className={({ isActive }) => nav_link + (isActive ? ` ${active}` : "")}
+                >
+                  {navItem.text}
+                </NavLink>
               </li>
             ))}
           </ul>

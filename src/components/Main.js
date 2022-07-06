@@ -23,7 +23,7 @@ function Main() {
   } = styles;
 
   return (
-    <div className={main} id="Masažai">
+    <div className={main} id="main">
       <div className={main_content}>
         <Services />
         <Popular />

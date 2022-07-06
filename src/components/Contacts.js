@@ -19,7 +19,7 @@ export default function Contacts() {
   } = styles;
 
   return (
-    <div className={contacts} id="Kontaktai">
+    <div className={contacts} id="contacts">
       <div className={contacts_container}>
         <p className={contacts_title}>KONTAKTAI</p>
         <div className={contacts_mob_email}>

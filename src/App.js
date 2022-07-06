@@ -1,4 +1,5 @@
 import React from "react";
+import { BrowserRouter, HashRouter, Routes, Route } from "react-router-dom";
 
 import NavBar from "./components/NavBar";
 import Hero from "./components/Hero";
@@ -9,7 +10,9 @@ import Contacts from "./components/Contacts";
 function App() {
   return (
     <div className="container">
-      <NavBar />
+      <BrowserRouter>
+        <NavBar />
+      </BrowserRouter>
       <Hero />
       <About />
       <Main />
