@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { Modal } from "react-responsive-modal";
 import ReactMarkdown from "react-markdown";
 import remarkGfm from "remark-gfm";
@@ -32,7 +32,7 @@ const SelectContent = (type) => {
  * @param {*} type "about" or "pricing"
  * @param {*} focus ID of the menu item to focus on when opened
  */
-export default function PanelButton({ text, type, focus = 0 }) {
+export default function PanelButton({ text, type, open, focus = 0 }) {
   const panelContents = SelectContent(type);
   const title = panelContents.title;
   const contents = panelContents.contents;
@@ -66,6 +66,11 @@ export default function PanelButton({ text, type, focus = 0 }) {
   } = styles;
 
   const { reactMarkDown } = mdStyles;
+
+  useEffect(() => {
+    setVisible(true);
+    console.log(`PASIDARE VISIBLE ${open}`)
+  }, [open])
 
   return (
     <>

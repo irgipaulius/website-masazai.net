@@ -12,11 +12,11 @@ function App() {
     <div className="container">
       <BrowserRouter>
         <NavBar />
+        <Hero />
+        <About />
+        <Main />
+        <Contacts />
       </BrowserRouter>
-      <Hero />
-      <About />
-      <Main />
-      <Contacts />
     </div>
   );
 }

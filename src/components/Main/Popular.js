@@ -4,11 +4,10 @@ import { MainCheckmark } from "../MuiIcons";
 
 import styles from "../Main.module.css";
 
-export default function Popular() {
+export default function Popular({ pricingModal }) {
   const {
     main_image_container,
     points_container,
-    points_container_title,
     points_container_title_pop,
     points_text,
     points_text_list_item,
@@ -20,7 +19,9 @@ export default function Popular() {
         <div className={points_container}>
           <p className={points_container_title_pop}>Populiariausi masažai</p>
           <ul className={points_text}>
-            <li className={points_text_list_item}>
+            <li className={points_text_list_item} onClick={() => { 
+              
+            }}>
               <MainCheckmark />
               <span>Klasikinis kūno masažas</span>
             </li>
