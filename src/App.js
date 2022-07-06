@@ -9,15 +9,15 @@ import Contacts from "./components/Contacts";
 
 function App() {
   return (
-    <BrowserRouter>
-      <div className="container">
+    <div className="container">
+      <BrowserRouter>
         <NavBar />
-        <Hero />
-        <About />
-        <Main />
-        <Contacts />
-      </div>
-    </BrowserRouter>
+      </BrowserRouter>
+      <Hero />
+      <About />
+      <Main />
+      <Contacts />
+    </div>
   );
 }
 

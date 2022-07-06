@@ -32,22 +32,20 @@ export default function Navbar() {
 
   const navBarRef = useRef();
 
-  const handleScroll = (id) => {
-    scroller.scrollTo(id, {
+  /** @returns id of the component to scroll to. */
+  const getScrollItemId = () => {
+    const findPath = navItems.find((item) => item.urlPath === location.pathname);
+
+    // scroll to found navItem OR the first one.
+    return findPath?.id || navItems[0].id;
+  };
+
+  useEffect(() => {
+    scroller.scrollTo(getScrollItemId(), {
       duration: 1000,
       smooth: true,
       offset: -navBarRef.current.clientHeight,
     });
-  };
-
-  useEffect(() => {
-    const findPath = navItems.find((item) => item.urlPath === location.pathname);
-
-    if (findPath) {
-      handleScroll(findPath.id);
-    } else {
-      handleScroll(navItems[0].id);
-    }
   }, [location]);
 
   return (
@@ -66,16 +64,12 @@ export default function Navbar() {
           <ul className={nav_menu}>
             {navItems.map((navItem, index) => (
               <li className={nav_item} key={index}>
-                <div className={nav_item_div}>
-                  <NavLink
-                    to={navItem.urlPath}
-                    className={(isActive) => {
-                      return isActive.isActive ? `${nav_link} ${active}` : nav_link;
-                    }}
-                  >
-                    {navItem.text}
-                  </NavLink>
-                </div>
+                <NavLink
+                  to={navItem.urlPath}
+                  className={({ isActive }) => nav_link + (isActive ? ` ${active}` : "")}
+                >
+                  {navItem.text}
+                </NavLink>
               </li>
             ))}
           </ul>
