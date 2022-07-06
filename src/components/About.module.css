@@ -1,8 +1,4 @@
 .about {
-  /* height: 100%; */
-  /* height: auto; */
-
-  /* background-color: var(--background); */
   background: linear-gradient(180deg, #353535 0%, var(--background));
 }
 
@@ -16,13 +12,6 @@
   align-content: flex-start;
   align-items: flex-start;
 
-  /* height: 100%; */
-  /* height: auto; */
-
-  /* flex-direction: column; */
-  /* justify-content: center; */
-  /* align-items: center; */
-
   /* border: 1px solid blue; */
 }
 
@@ -32,9 +21,6 @@
   font-size: 1.8rem;
 
   flex-grow: 1;
-
-  /* height: 100%; */
-  /* height: auto; */
 
   /* border: 1px solid red; */
 }
@@ -71,10 +57,6 @@
   overflow: hidden;
 
   flex-grow: 1;
-
-  /* height: 100%; */
-  /* height: auto; */
-  /* height: 38.8rem; */
 
   /* border: 1px solid green; */
 }
