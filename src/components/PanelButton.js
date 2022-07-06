@@ -84,7 +84,7 @@ export default function PanelButton({ text, type, focus = 0 }) {
         open={visible}
         onClose={setHidden}
         center={true}
-        animationDuration={500}
+        animationDuration={700}
       >
         <div className={panel_title}>{title}</div>
         <div className={panel_menu_content_container}>
