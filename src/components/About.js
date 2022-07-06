@@ -22,6 +22,10 @@ export default function About() {
     <div className={about} id="about">
       <div className={about_container}>
         <div className={about_text_container}>
+          <div className={about_image_container}>
+            <img className={about_image} src="/images/profile.jpeg" alt="" />
+          </div>
+
           <p className={about_title}>Sveiki,</p>
           <p className={about_subtitle}>aš esu Jelena</p>
           <ul className={about_text}>
@@ -40,16 +44,16 @@ export default function About() {
             <li className={about_text_list_item}>
               <AboutCheckmark />
               <blockquote>
-                <i>„Lytėjimas - pirmasis ir svarbiausias žmogaus pojūtis. Tinkama profesionali masažo technika lytėjimu efektyviai atlieka gydomąją, apsauginę ir
-                raminančiąją funkcijas, bei garantuoja pilnatvės, laimės ir saugumo jausmą.“</i>
+                <i>
+                  „Lytėjimas - pirmasis ir svarbiausias žmogaus pojūtis. Tinkama profesionali masažo
+                  technika lytėjimu efektyviai atlieka gydomąją, apsauginę ir raminančiąją
+                  funkcijas, bei garantuoja pilnatvės, laimės ir saugumo jausmą.“
+                </i>
               </blockquote>
             </li>
           </ul>
 
           <PanelButton text="Išsami informacija" type="about" />
-        </div>
-        <div className={about_image_container}>
-          <img className={about_image} src="/images/profile.jpeg" alt="" />
         </div>
       </div>
     </div>
