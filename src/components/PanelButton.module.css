@@ -51,6 +51,10 @@
   border-radius: 4px;
 
   overflow-y: hidden;
+
+  /* react responsive modal animation is buggy blinking after close, to fix that these overrides are used */
+  animation-fill-mode: forwards !important;
+  animation-duration: 0.5s !important;
 }
 
 .A_modal_close_button {
