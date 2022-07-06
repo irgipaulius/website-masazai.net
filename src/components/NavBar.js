@@ -1,6 +1,6 @@
-import React, { useState, useEffect, useRef } from "react";
+import React, { useEffect, useRef } from "react";
 import { NavLink, useLocation } from "react-router-dom";
-import { Link, scroller } from "react-scroll";
+import { scroller } from "react-scroll";
 
 import { PhoneIconSvg } from "./MuiIcons";
 
@@ -23,7 +23,6 @@ export default function Navbar() {
     navbar_menu_container,
     nav_menu,
     nav_item,
-    nav_item_div,
     nav_link,
     active,
   } = styles;
