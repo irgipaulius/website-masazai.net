@@ -10,10 +10,28 @@
   margin-top: 3.2rem;
   padding: 1.6rem 2.4rem;
   cursor: pointer;
+
+  animation: slideIn 0.6s ease-in;
 }
 .panel_btn:hover {
   background-color: var(--hover);
   transition: all 0.2s ease-out;
+}
+
+@keyframes slideIn {
+  0% {
+    opacity: 0;
+    /* margin-left: -100%; */
+    transform: translateX(-100%);
+  }
+  70% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+    /* margin-left: 0%; */
+    transform: translateX(0);
+  }
 }
 
 .A_modal_root {
