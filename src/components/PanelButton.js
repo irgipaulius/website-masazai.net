@@ -69,7 +69,7 @@ export default function PanelButton({ text, type, focus = 0 }) {
 
   return (
     <>
-      <button className={panel_btn} onClick={toggleVisible}>
+      <button className={`${panel_btn} panel_btn animate__animated animate__fadeInLeft`} onClick={toggleVisible}>
         {text}
       </button>
       <Modal
