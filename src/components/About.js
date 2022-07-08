@@ -23,6 +23,12 @@ export default function About() {
     <div className={about} id="about">
       <div className={about_container}>
         <div className={about_text_container}>
+          <div
+            className={`${about_image_container} about_image_container animate__animated animate__fadeInRight`}
+          >
+            <img className={about_image} src="/images/profile.jpeg" alt="" />
+          </div>
+
           <p className={`${about_title} about_title animate__animated animate__fadeInLeft`}>
             Sveiki,
           </p>
@@ -55,11 +61,6 @@ export default function About() {
           </ul>
 
           <PanelButton text="Išsami informacija" type="about" />
-        </div>
-        <div
-          className={`${about_image_container} about_image_container animate__animated animate__fadeInRight`}
-        >
-          <img className={about_image} src="/images/profile.jpeg" alt="" />
         </div>
       </div>
     </div>
