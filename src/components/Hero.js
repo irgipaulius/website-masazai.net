@@ -12,7 +12,7 @@ export default function Hero() {
         <p className={`${hero_subtitle} hero_subtitle animate__animated animate__fadeInDown`}>
           PAS JELENĄ
         </p>
-        <div className={hero_line}></div>
+        <div className={`${hero_line} hero_line animate__animated animate__fadeIn`}></div>
         <p className={`${hero_about} hero_about animate__animated animate__fadeInDown`}>
           Profesionalus masažas Kaune
         </p>

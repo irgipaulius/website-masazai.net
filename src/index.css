@@ -142,6 +142,10 @@ body {
   animation-duration: 1.5s;
 }
 
+.hero_line.animate__animated.animate__fadeIn {
+  animation-duration: 2s;
+}
+
 /*
 // original create-react-app CSS
 
