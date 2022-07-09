@@ -9,7 +9,7 @@ export const PricingPanelContents = {
 | &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;↪ Sprando                          | 10 eur | 30 min |
 | &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;↪ Rankų                            | 15 eur | 35 min |
 | &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;↪ Kojų                             | 20 eur | 40 min |
-| &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;↪ Nugaros                          | 35 eur | 45 min |
+| &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;↪ Nugaros                          | 25 eur | 45 min |
 | &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;↪ Bendras kūno                     | 35 eur | 70 min |
 | Klasikinis-segmentinis masažas         | 40 eur | 80 min |
 | Neurosedatyvinis-antistresinis masažas | 45 eur | 90 min |
