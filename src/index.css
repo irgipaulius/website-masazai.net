@@ -114,6 +114,38 @@ body {
   /* height: 100%; */
 }
 
+.about_title.animate__animated.animate__fadeInLeft {
+  animation-duration: 1s;
+}
+.about_subtitle.animate__animated.animate__fadeInLeft {
+  animation-duration: 1.25s;
+}
+.about_text.animate__animated.animate__fadeInLeft {
+  animation-duration: 1.5s;
+}
+
+.panel_btn.animate__animated.animate__fadeInLeft {
+  animation-duration: 1.5s;
+}
+
+.about_title.animate__animated.animate__fadeInRight {
+  animation-duration: 1s;
+}
+
+.hero_title.animate__animated.animate__fadeInDown {
+  animation-duration: 1s;
+}
+.hero_subtitle.animate__animated.animate__fadeInDown {
+  animation-duration: 1.25s;
+}
+.hero_about.animate__animated.animate__fadeInDown {
+  animation-duration: 1.5s;
+}
+
+.hero_line.animate__animated.animate__fadeIn {
+  animation-duration: 2s;
+}
+
 /*
 // original create-react-app CSS
 

@@ -17,7 +17,9 @@ export default function Popular() {
   return (
     <>
       <div className={main_image_container}>
-        <div className={points_container}>
+        <div
+          className={`${points_container} points_container animate__animated animate__fadeInRight`}
+        >
           <p className={points_container_title_pop}>Populiariausi masažai</p>
           <ul className={points_text}>
             <li className={points_text_list_item}>
