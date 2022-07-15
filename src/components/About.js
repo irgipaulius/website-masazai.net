@@ -3,6 +3,8 @@ import React from "react";
 import PanelButton from "./PanelButton";
 import { AboutCheckmark } from "./MuiIcons";
 
+import { AnimationOnScroll } from "react-animation-on-scroll";
+
 import styles from "./About.module.css";
 // import "animate.css";
 
@@ -29,9 +31,18 @@ export default function About() {
             <img className={about_image} src="/images/profile.jpeg" alt="" />
           </div>
 
-          <p className={`${about_title} about_title animate__animated animate__fadeInLeft`}>
-            Sveiki,
-          </p>
+          <AnimationOnScroll
+            offset={50}
+            animateIn={"animate__fadeInLeft"}
+            initiallyVisible={true}
+            // animatePreScroll={true}
+          >
+            {/* <p className={`${about_title} about_title animate__animated animate__fadeInLeft`}>
+              Sveiki,
+            </p> */}
+            <p className={about_title}>Sveiki,</p>
+          </AnimationOnScroll>
+
           <p className={`${about_subtitle} about_subtitle animate__animated animate__fadeInLeft`}>
             aš esu Jelena
           </p>
