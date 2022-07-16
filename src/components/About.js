@@ -4,6 +4,7 @@ import PanelButton from "./PanelButton";
 import { AboutCheckmark } from "./MuiIcons";
 
 import styles from "./About.module.css";
+import ModalButton from "./Modal/modalButton";
 // import "animate.css";
 
 export default function About() {
@@ -29,13 +30,19 @@ export default function About() {
             <img className={about_image} src="/images/profile.jpeg" alt="" />
           </div>
 
-          <p className={`${about_title} about_title animate__animated animate__fadeInLeft`}>
+          <p
+            className={`${about_title} about_title animate__animated animate__fadeInLeft`}
+          >
             Sveiki,
           </p>
-          <p className={`${about_subtitle} about_subtitle animate__animated animate__fadeInLeft`}>
+          <p
+            className={`${about_subtitle} about_subtitle animate__animated animate__fadeInLeft`}
+          >
             aš esu Jelena
           </p>
-          <ul className={`${about_text} about_text animate__animated animate__fadeInLeft`}>
+          <ul
+            className={`${about_text} about_text animate__animated animate__fadeInLeft`}
+          >
             <li className={about_text_list_item}>
               <AboutCheckmark />
               <span>Pilnai kvalifikuota ir profesionali masažuotoja</span>
@@ -46,21 +53,25 @@ export default function About() {
             </li>
             <li className={about_text_list_item}>
               <AboutCheckmark />
-              <span>Dėmesinga, energinga, draugiška, delikačiomis ir švelniomis rankomis</span>
+              <span>
+                Dėmesinga, energinga, draugiška, delikačiomis ir švelniomis
+                rankomis
+              </span>
             </li>
             <li className={about_text_list_item}>
               <AboutCheckmark />
               <blockquote>
                 <i>
-                  „Lytėjimas - pirmasis ir svarbiausias žmogaus pojūtis. Tinkama profesionali masažo
-                  technika lytėjimu efektyviai atlieka gydomąją, apsauginę ir raminančiąją
-                  funkcijas, bei garantuoja pilnatvės, laimės ir saugumo jausmą.“
+                  „Lytėjimas - pirmasis ir svarbiausias žmogaus pojūtis. Tinkama
+                  profesionali masažo technika lytėjimu efektyviai atlieka
+                  gydomąją, apsauginę ir raminančiąją funkcijas, bei garantuoja
+                  pilnatvės, laimės ir saugumo jausmą.“
                 </i>
               </blockquote>
             </li>
           </ul>
 
-          <PanelButton text="Išsami informacija" type="about" />
+          <ModalButton text="Išsami informacija" type="about" />
         </div>
       </div>
     </div>
