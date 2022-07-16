@@ -3,7 +3,7 @@ import React, { useState } from "react";
 import "react-responsive-modal/styles.css";
 import styles from "./modal.module.css";
 
-import Doo from "./modal";
+import ModalHandler from "./modalHandler";
 
 /**
  *
@@ -29,7 +29,7 @@ export default function ModalButton({ text, type }) {
       >
         {text}
       </button>
-      <Doo type={type} visible={visible} setVisible={setVisible} />
+      <ModalHandler type={type} visible={visible} setVisible={setVisible} />
     </>
   );
 }

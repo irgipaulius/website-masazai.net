@@ -31,7 +31,7 @@ const SelectContent = (type) => {
  * @param {*} type "about" or "pricing"
  * @param {*} focus ID of the menu item to focus on when opened
  */
-export default function Doo({ type, visible, setVisible, focus = 0 }) {
+export default function ModalHandler({ type, visible, setVisible, focus = 0 }) {
   const panelContents = SelectContent(type);
   const title = panelContents.title;
   const contents = panelContents.contents;

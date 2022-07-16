@@ -3,7 +3,7 @@ import React, { useState } from "react";
 import { MainCheckmark } from "../MuiIcons";
 
 import styles from "../Main.module.css";
-import Doo from "../Modal/modal";
+import ModalHandler from "../Modal/modalHandler";
 import { PricingPanelContents } from "../panel/PricingPanel";
 
 export default function Popular() {
@@ -89,7 +89,7 @@ export default function Popular() {
         </div>
       </div>
 
-      <Doo
+      <ModalHandler
         type={"pricing"}
         visible={visible}
         setVisible={setVisible}
