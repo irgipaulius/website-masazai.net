@@ -6,19 +6,19 @@ export const PricingPanelContents = {
 |                Paslauga                |  Kaina | Trukmė |
 |:--------------------------------------:|:------:|--------|
 | Klasikinis kūno masažas                |        |        |
-| &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;↪ Sprando                          | 10 eur | 30 min |
-| &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;↪ Rankų                            | 15 eur | 35 min |
-| &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;↪ Kojų                             | 20 eur | 40 min |
-| &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;↪ Nugaros                          | 25 eur | 45 min |
-| &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;↪ Bendras kūno                     | 35 eur | 70 min |
-| Klasikinis-segmentinis masažas         | 40 eur | 80 min |
-| Neurosedatyvinis-antistresinis masažas | 45 eur | 90 min |
-| Limfodrenažinis masažas                | 35 eur | 60 min |
-| Chiromasažas                           | 50 eur | 45 min |
-| Anticeliulitinis masažas rankomis      | 30 eur | 50 min |
-| Nėščiųjų masažas                       | 30 eur | 60 min |
-| "Švytintis veidas"                     | 30 eur | 60 min |
-| Medaus masažas                         | 25 eur | 40 min |`,
+| &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;↪ Sprando                          | 10&nbsp;&euro; | 30&nbsp;min |
+| &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;↪ Rankų                            | 15&nbsp;&euro; | 35&nbsp;min |
+| &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;↪ Kojų                             | 20&nbsp;&euro; | 40&nbsp;min |
+| &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;↪ Nugaros                          | 25&nbsp;&euro; | 45&nbsp;min |
+| &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;↪ Bendras kūno                     | 35&nbsp;&euro; | 70&nbsp;min |
+| Klasikinis-segmentinis masažas         | 40&nbsp;&euro; | 80&nbsp;min |
+| Neurosedatyvinis-antistresinis masažas | 45&nbsp;&euro; | 90&nbsp;min |
+| Limfodrenažinis masažas                | 35&nbsp;&euro; | 60&nbsp;min |
+| Chiromasažas                           | 50&nbsp;&euro; | 45&nbsp;min |
+| Anticeliulitinis masažas rankomis      | 30&nbsp;&euro; | 50&nbsp;min |
+| Nėščiųjų masažas                       | 30&nbsp;&euro; | 60&nbsp;min |
+| „Švytintis veidas“                     | 30&nbsp;&euro; | 60&nbsp;min |
+| Medaus masažas                         | 25&nbsp;&euro; | 40&nbsp;min |`,
 
     //
     "Klasikinis kūno masažas": `
@@ -59,7 +59,7 @@ Tai efektyvi masažo technika, išsiskirianti ypatingu raminamuoju (sedatyviniu)
     //
     "Limfodrenažinis masažas": `
 ![Limfodrenažinis masažas](images/limfodrenazinis.jpeg "Limfodrenažinis masažas")
-**Limfinė sistema** - svarbi organizmo dalis, padedanti apsaugoti organizmą nuo įvairių infekcijų, kenksmingų aplinkos veiksnių bei valyti visą kūną. Sutrikusi šios sistemos veikla gali sukelti įvairius sveikatos negalavimus ar odos nelygumus, pavyzdžiui, venų varikozę, celiulitą, prastą emocinę būseną, energijos stoką ar padidėjusį kraujo spaudimą. Puikus būdas išvengti šių sveikatos sutrikimų – limfodrenažinis masažas, kuris padeda ne tik nugalėti jau esamas problemas, bet ir užkirsti kelią naujų atsiradimui. Limfodrenažinis kūno masažas, atliekamas lėtais, ilgais bei giliais judesiais limfos tekėjimo kryptimis, padeda suaktyvinti šio skysčio cirkuliaciją. Teigiamas masažo poveikis yra jaučiamas visame organizme. Limfodrenažinis masažas efektyviai paspartina susikaupusių toksinų pašalinimą bei padidina viso organizmo tonusą. Dėl šios priežasties suaktyvėja ląstelių atsinaujinimo procesai bei gražėja oda, mažėja apimtys, pamažu nyksta celiulitas.
+**Limfinė sistema** – svarbi organizmo dalis, padedanti apsaugoti organizmą nuo įvairių infekcijų, kenksmingų aplinkos veiksnių bei valyti visą kūną. Sutrikusi šios sistemos veikla gali sukelti įvairius sveikatos negalavimus ar odos nelygumus, pavyzdžiui, venų varikozę, celiulitą, prastą emocinę būseną, energijos stoką ar padidėjusį kraujo spaudimą. Puikus būdas išvengti šių sveikatos sutrikimų – limfodrenažinis masažas, kuris padeda ne tik nugalėti jau esamas problemas, bet ir užkirsti kelią naujų atsiradimui. Limfodrenažinis kūno masažas, atliekamas lėtais, ilgais bei giliais judesiais limfos tekėjimo kryptimis, padeda suaktyvinti šio skysčio cirkuliaciją. Teigiamas masažo poveikis yra jaučiamas visame organizme. Limfodrenažinis masažas efektyviai paspartina susikaupusių toksinų pašalinimą bei padidina viso organizmo tonusą. Dėl šios priežasties suaktyvėja ląstelių atsinaujinimo procesai bei gražėja oda, mažėja apimtys, pamažu nyksta celiulitas.
 `,
 
     //
@@ -80,7 +80,7 @@ Dažnai nėštumo metu būsimos mamytes tampa jautresnes, kartais ir nervingesne
 ![Nėščiųjų masažas](images/pregnant.jpg "Nėščiųjų masažas")
 
 ## Nėščiųjų masažo nauda:
-- Stimuliuoja minkštuosius audinius.
+- Stimuliuoja&nbsp;minkštuosius audinius.
 - Mažina skysčių kaupimąsi sąnariuose.
 - Pagerina raumenų ir sąnarių funkcijas.
 - Gerina medžiagų apykaitą, todėl nėštumo laikotarpiu mažėja sąnarių patinimas (edema).
@@ -90,9 +90,9 @@ Dažnai nėštumo metu būsimos mamytes tampa jautresnes, kartais ir nervingesne
 `,
 
     //
-    'Veido masažas "Švytintis veidas"': `
+    'Veido masažas „Švytintis veidas“': `
 Klasikinis veido masažas – vienas iš efektyviausių būdų išlaikyti sveiką, jaunatvišką odos išvaizdą. Tai malonus ir labai naudingas masažas įvairiais amžiaus tarpsniais, kadangi masažas veikia tiek prevenciškai (užkerta kelią odos senėjimui), tiek ir jau matomus odos senėjimo veiksnius, tokius kaip negyvybinga odos spalva, mimikos raukšlės, odos tonuso ar elastingumo sumažėjimas. Masažo metu atliekami glostymo, trynimo, maigymo judesiai, kurie aktyvina kraujotaką ir limfotaką, o to pasekoje gerėja maistinių medžiagų ir deguonies apykaita, gerėja toksinų ir šlakų pasišalinimas. Taip pat masažo metu veikiami ir poodiniai audiniai, nervai bei raumenys, taigi jaučiamas ne tik raumenų, bet ir bendras organizmo atsipalaidavimas.
-![Veido masažas](images/veido.jpg 'Veido masažas "Švytintis veidas"')
+![Veido masažas](images/veido.jpg 'Veido masažas „Švytintis veidas“')
 
 ### Procedūros eiga:
 
@@ -111,9 +111,9 @@ Klasikinis veido masažas – vienas iš efektyviausių būdų išlaikyti sveik�
 `,
 
     //
-    '"Su džok" terapija': `
-!["Su džok" terapija](images/su_dzok.jpg '"Su džok" terapija')
-Korėjietiška taškinio delnų masažo sistema. Visi kūno organų, stuburo, sanarių ir kiti taškai yra jūsų delne. Žinodami kokius taškus spaudyti jūs galėsite gydyti save kur bebūtumėt. Delnas - gydytojas visada su jumis. Skaudūs taškai delne rodo ne tik dabartines jūsų ligas, silpnas jūsų organizmo vietas, bet taip pat ir ateinančias ligas. Tiksliai veikiant taškus, įvairūs skausmai pradeda mažėti jau po kelių minučių. Be abejo reikia žinoti kaip, kiek laiko ir kokius taškus veikti. Tam nereikia išankstinio tikėjimo, bet būtina pabandyti, kad įsitikintumėt šios terapijos unikalumu. Už savo sveikatą esate atsakingi tik jūs patys. Ir taškų delnuose pagalba jūs galite efektyviai sau padėti spręsti savo sveikatos problemas, o gerai išmokę su džok terapijos principų galėsite ir kitiems pagelbėti.
+    '„Su džok“ terapija': `
+![„Su džok“ terapija](images/su_dzok.jpg '„Su džok“ terapija')
+Korėjietiška taškinio delnų masažo sistema. Visi kūno organų, stuburo, sanarių ir kiti taškai yra jūsų delne. Žinodami kokius taškus spaudyti jūs galėsite gydyti save kur bebūtumėt. Delnas – gydytojas visada su jumis. Skaudūs taškai delne rodo ne tik dabartines jūsų ligas, silpnas jūsų organizmo vietas, bet taip pat ir ateinančias ligas. Tiksliai veikiant taškus, įvairūs skausmai pradeda mažėti jau po kelių&nbsp;minučių. Be abejo reikia žinoti kaip, kiek laiko ir kokius taškus veikti. Tam nereikia išankstinio tikėjimo, bet būtina pabandyti, kad įsitikintumėt šios terapijos unikalumu. Už savo sveikatą esate atsakingi tik jūs patys. Ir taškų delnuose pagalba jūs galite efektyviai sau padėti spręsti savo sveikatos problemas, o gerai išmokę su džok terapijos principų galėsite ir kitiems pagelbėti.
 
 `,
   },

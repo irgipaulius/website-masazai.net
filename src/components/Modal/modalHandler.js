@@ -1,15 +1,15 @@
-import React, { useState } from "react";
+import React from "react";
 import { Modal } from "react-responsive-modal";
 import ReactMarkdown from "react-markdown";
 import remarkGfm from "remark-gfm";
 
-import { AboutPanelContents } from "./panel/AboutPanel";
-import { PricingPanelContents } from "./panel/PricingPanel";
-import { ErrorPanelContents } from "./panel/ErrorPanel";
+import { AboutPanelContents } from "../panel/AboutPanel";
+import { PricingPanelContents } from "../panel/PricingPanel";
+import { ErrorPanelContents } from "../panel/ErrorPanel";
 
 import "react-responsive-modal/styles.css";
-import styles from "./PanelButton.module.css";
-import mdStyles from "./markdown.module.css";
+import styles from "./modal.module.css";
+import mdStyles from "../markdown.module.css";
 
 /**
  * @param {*} type "about" or "pricing"
@@ -28,24 +28,20 @@ const SelectContent = (type) => {
 
 /**
  *
- * @param {*} text Button text
  * @param {*} type "about" or "pricing"
  * @param {*} focus ID of the menu item to focus on when opened
  */
-export default function PanelButton({ text, type, focus = 0 }) {
+export default function ModalHandler({
+  type,
+  visible,
+  setVisible,
+  focus,
+  setFocus,
+}) {
   const panelContents = SelectContent(type);
   const title = panelContents.title;
   const contents = panelContents.contents;
-
-  // select the default content item
-  const defaultContentItem = Object.keys(contents)[focus];
-
-  const [visible, setVisible] = useState(false);
-  const [contentItem, setContentItem] = useState(defaultContentItem);
-
-  const toggleVisible = () => setVisible(!visible);
-
-  const setHidden = () => setVisible(false);
+  const contentKeys = Object.keys(contents);
 
   const {
     A_modal_root,
@@ -55,7 +51,6 @@ export default function PanelButton({ text, type, focus = 0 }) {
     A_modal_close_button,
     A_modal_close_icon,
 
-    panel_btn,
     panel_title,
     panel_menu_content_container,
     panel_menu,
@@ -69,9 +64,6 @@ export default function PanelButton({ text, type, focus = 0 }) {
 
   return (
     <>
-      <button className={`${panel_btn} panel_btn animate__animated animate__fadeInLeft`} onClick={toggleVisible}>
-        {text}
-      </button>
       <Modal
         classNames={{
           root: A_modal_root,
@@ -82,20 +74,20 @@ export default function PanelButton({ text, type, focus = 0 }) {
           closeIcon: A_modal_close_icon,
         }}
         open={visible}
-        onClose={setHidden}
+        onClose={() => setVisible(false)}
         center={true}
         animationDuration={700}
       >
         <div className={panel_title}>{title}</div>
         <div className={panel_menu_content_container}>
           <ul className={panel_menu}>
-            {Object.keys(contents).map((menuItem, index) => (
+            {contentKeys.map((menuItemText, index) => (
               <li className={panel_item} key={index}>
                 <div
-                  className={contentItem === menuItem ? panel_link_selected : panel_link}
-                  onClick={() => setContentItem(menuItem)}
+                  className={focus === index ? panel_link_selected : panel_link}
+                  onClick={() => setFocus(index)}
                 >
-                  {menuItem}
+                  {menuItemText}
                 </div>
               </li>
             ))}
@@ -103,7 +95,7 @@ export default function PanelButton({ text, type, focus = 0 }) {
           <div className={panel_content}>
             <ReactMarkdown
               className={reactMarkDown}
-              children={contents[contentItem]}
+              children={Object.values(contents)[focus]}
               remarkPlugins={[remarkGfm]}
             />
           </div>

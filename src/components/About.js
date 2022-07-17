@@ -1,9 +1,9 @@
 import React from "react";
 
-import PanelButton from "./PanelButton";
 import { AboutCheckmark } from "./MuiIcons";
 
 import styles from "./About.module.css";
+import ModalButton from "./Modal/modalButton";
 // import "animate.css";
 
 export default function About() {
@@ -38,15 +38,15 @@ export default function About() {
           <ul className={`${about_text} about_text animate__animated animate__fadeInLeft`}>
             <li className={about_text_list_item}>
               <AboutCheckmark />
-              <span>Pilnai kvalifikuota ir profesionali masažuotoja</span>
+              <span>Pilnai kvalifikuota ir profesionali masažuotoja.</span>
             </li>
             <li className={about_text_list_item}>
               <AboutCheckmark />
-              <span>Virš 30 metų patirtis ir 10,000 atliktų masažų</span>
+              <span>Virš 30 metų patirtis ir 10,000 atliktų masažų.</span>
             </li>
             <li className={about_text_list_item}>
               <AboutCheckmark />
-              <span>Dėmesinga, energinga, draugiška, delikačiomis ir švelniomis rankomis</span>
+              <span>Dėmesinga, energinga, draugiška, delikačiomis ir švelniomis rankomis.</span>
             </li>
             <li className={about_text_list_item}>
               <AboutCheckmark />
@@ -60,7 +60,7 @@ export default function About() {
             </li>
           </ul>
 
-          <PanelButton text="Išsami informacija" type="about" />
+          <ModalButton text="Išsami informacija" type="about" />
         </div>
       </div>
     </div>
