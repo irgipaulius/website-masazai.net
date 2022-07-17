@@ -39,10 +39,9 @@ https://stackoverflow.com/questions/66356329/how-to-add-styling-for-elements-in-
 }
 
 /* test on first table column width */
-/* .reactMarkDown table tr td:nth-child(1) {
-  width: 20%;
-  background: greenyellow;
-} */
+.reactMarkDown table tr td:nth-child(1) {
+  white-space: nowrap;
+}
 
 .reactMarkDown a,
 .reactMarkDown a:link,
@@ -106,6 +105,9 @@ https://stackoverflow.com/questions/66356329/how-to-add-styling-for-elements-in-
 
 /* 1024 / 16 = 64 */
 @media (max-width: 64em) {
+  .reactMarkDown table tr td:nth-child(1) {
+    white-space: normal;
+  }
 }
 
 /* .reactMarkDown img:first-of-type {
