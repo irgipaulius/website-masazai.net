@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React from "react";
 import { Modal } from "react-responsive-modal";
 import ReactMarkdown from "react-markdown";
 import remarkGfm from "remark-gfm";
