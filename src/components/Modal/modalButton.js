@@ -13,6 +13,9 @@ import ModalHandler from "./modalHandler";
  */
 export default function ModalButton({ text, type }) {
   const [visible, setVisible] = useState(false);
+  
+  // focus in an index of content items
+  const [focus, setFocus] = useState(0);
 
   const { modal_btn } = styles;
 
@@ -29,7 +32,13 @@ export default function ModalButton({ text, type }) {
         {text}
       </button>
 
-      <ModalHandler type={type} visible={visible} setVisible={setVisible} />
+      <ModalHandler
+        type={type}
+        visible={visible}
+        setVisible={setVisible}
+        focus={focus}
+        setFocus={setFocus}
+      />
     </>
   );
 }

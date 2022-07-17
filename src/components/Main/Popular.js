@@ -47,7 +47,13 @@ export default function Popular() {
         </div>
       </div>
 
-      <ModalHandler type="pricing" visible={visible} setVisible={setVisible} focus={focus} />
+      <ModalHandler
+        type="pricing"
+        visible={visible}
+        setVisible={setVisible}
+        focus={focus}
+        setFocus={setFocus}
+      />
     </>
   );
 }

@@ -31,15 +31,17 @@ const SelectContent = (type) => {
  * @param {*} type "about" or "pricing"
  * @param {*} focus ID of the menu item to focus on when opened
  */
-export default function ModalHandler({ type, visible, setVisible, focus = 0 }) {
+export default function ModalHandler({
+  type,
+  visible,
+  setVisible,
+  focus,
+  setFocus,
+}) {
   const panelContents = SelectContent(type);
   const title = panelContents.title;
   const contents = panelContents.contents;
-
-  // select the default content item
-  const defaultContentItem = Object.keys(contents)[focus];
-
-  const [contentItem, setContentItem] = useState(defaultContentItem);
+  const contentKeys = Object.keys(contents);
 
   const {
     A_modal_root,
@@ -60,10 +62,6 @@ export default function ModalHandler({ type, visible, setVisible, focus = 0 }) {
 
   const { reactMarkDown } = mdStyles;
 
-  useEffect(() => {
-    setContentItem(Object.keys(contents)[focus]);
-  }, [focus]);
-
   return (
     <>
       <Modal
@@ -83,13 +81,13 @@ export default function ModalHandler({ type, visible, setVisible, focus = 0 }) {
         <div className={panel_title}>{title}</div>
         <div className={panel_menu_content_container}>
           <ul className={panel_menu}>
-            {Object.keys(contents).map((menuItem, index) => (
+            {contentKeys.map((menuItemText, index) => (
               <li className={panel_item} key={index}>
                 <div
-                  className={contentItem === menuItem ? panel_link_selected : panel_link}
-                  onClick={() => setContentItem(menuItem)}
+                  className={focus === index ? panel_link_selected : panel_link}
+                  onClick={() => setFocus(index)}
                 >
-                  {menuItem}
+                  {menuItemText}
                 </div>
               </li>
             ))}
@@ -97,7 +95,7 @@ export default function ModalHandler({ type, visible, setVisible, focus = 0 }) {
           <div className={panel_content}>
             <ReactMarkdown
               className={reactMarkDown}
-              children={contents[contentItem]}
+              children={Object.values(contents)[focus]}
               remarkPlugins={[remarkGfm]}
             />
           </div>
