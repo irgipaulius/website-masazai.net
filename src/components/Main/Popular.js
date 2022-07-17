@@ -37,64 +37,17 @@ export default function Popular() {
                   setFocus(id);
                   setVisible(true);
                 }}
+                key={id}
               >
                 <MainCheckmark />
                 <span>{contentNames[id]}</span>
               </li>
             ))}
-
-            {/* <li
-              className={points_text_list_item}
-              onClick={() => {
-                setFocus(1);
-                setVisible(true);
-              }}
-            >
-              <MainCheckmark />
-              <span>Klasikinis kūno masažas</span>
-            </li>
-            <li
-              className={points_text_list_item}
-              onClick={() => {
-                setFocus(2);
-                setVisible(true);
-              }}
-            >
-              <MainCheckmark />
-              <span>Klasikinis-segmentinis masažas</span>
-            </li>
-            <li
-              className={points_text_list_item}
-              onClick={() => {
-                setFocus(3);
-                setVisible(true);
-              }}
-            >
-              <MainCheckmark />
-              <span>Limfodrenažinis masažas</span>
-            </li>
-            <li className={points_text_list_item}>
-              <MainCheckmark />
-              <span>Chiromasažas masažas</span>
-            </li>
-            <li className={points_text_list_item}>
-              <MainCheckmark />
-              <span>Neurosedatyvinis-antistresinis masažas</span>
-            </li>
-            <li className={points_text_list_item}>
-              <MainCheckmark />
-              <span>Anticeliulitinis masažas</span>
-            </li> */}
           </ul>
         </div>
       </div>
 
-      <ModalHandler
-        type={"pricing"}
-        visible={visible}
-        setVisible={setVisible}
-        focus={focus}
-      />
+      <ModalHandler type="pricing" visible={visible} setVisible={setVisible} focus={focus} />
     </>
   );
 }

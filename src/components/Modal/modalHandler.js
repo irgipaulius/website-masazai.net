@@ -86,9 +86,7 @@ export default function ModalHandler({ type, visible, setVisible, focus = 0 }) {
             {Object.keys(contents).map((menuItem, index) => (
               <li className={panel_item} key={index}>
                 <div
-                  className={
-                    contentItem === menuItem ? panel_link_selected : panel_link
-                  }
+                  className={contentItem === menuItem ? panel_link_selected : panel_link}
                   onClick={() => setContentItem(menuItem)}
                 >
                   {menuItem}

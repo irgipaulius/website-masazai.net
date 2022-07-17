@@ -1,4 +1,4 @@
-.panel_btn {
+.modal_btn {
   font-family: inherit;
   font-size: 2rem;
   font-weight: 500;
@@ -11,7 +11,7 @@
   padding: 1.6rem 2.4rem;
   cursor: pointer;
 }
-.panel_btn:hover {
+.modal_btn:hover {
   background-color: var(--hover);
   transition: all 0.2s ease-out;
 }
@@ -224,7 +224,7 @@
 
 /* 560 / 16 = 35 */
 @media (max-width: 35em) {
-  .panel_btn {
+  .modal_btn {
     margin-top: 2.4rem;
   }
 
@@ -276,7 +276,7 @@
     margin: 6.2rem 3.2rem;
   }
 
-  .panel_btn {
+  .modal_btn {
     margin-top: 2rem;
   }
 }
