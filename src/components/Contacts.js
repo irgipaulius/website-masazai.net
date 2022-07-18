@@ -37,12 +37,22 @@ export default function Contacts() {
           </div>
         </div>
         <div className={contacts_facebook_blog}>
-          <a className={contacts_facebook} href="https://www.facebook.com/Masazuotoja">
+          <a
+            className={contacts_facebook}
+            href="https://www.facebook.com/Masazuotoja"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             <FacebookIconSvg />
             https://www.facebook.com/Masazuotoja
           </a>
           <br />
-          <a className={contacts_facebook} href="https://euromasazas.blogspot.com/">
+          <a
+            className={contacts_facebook}
+            href="https://euromasazas.blogspot.com/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             <BlogIconSvg />
             Asmeninis BLOG'as
           </a>
