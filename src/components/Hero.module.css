@@ -5,7 +5,6 @@
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-
   display: flex;
   align-items: flex-end;
 }
@@ -14,14 +13,9 @@
   max-width: 120rem;
   margin: 0 auto 9.6rem auto;
   padding: 0 3.2rem;
-
   color: white;
   text-align: center;
-
   flex-grow: 1;
-  /* flex-basis: 100%; */
-
-  /* border: 1px solid grey; */
 }
 
 .hero_title {
@@ -121,11 +115,3 @@
     margin: 0 15%;
   }
 }
-
-/*
-- Font sizes (px)
-10 / 12 / 14 / 16 / 18 / 20 / 24 / 30 / 36 / 44 / 52 / 62 / 74 / 86 / 98
-
-- Spacing system (px)
-2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 80 / 96 / 128
-*/

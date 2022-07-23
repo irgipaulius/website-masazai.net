@@ -1,9 +1,9 @@
 import React, { useState } from "react";
 
+import ModalHandler from "./modalHandler";
+
 import "react-responsive-modal/styles.css";
 import styles from "./modal.module.css";
-
-import ModalHandler from "./modalHandler";
 
 /**
  *
@@ -13,7 +13,7 @@ import ModalHandler from "./modalHandler";
  */
 export default function ModalButton({ text, type }) {
   const [visible, setVisible] = useState(false);
-  
+
   // focus in an index of content items
   const [focus, setFocus] = useState(0);
 

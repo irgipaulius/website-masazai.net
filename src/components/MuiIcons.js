@@ -11,7 +11,6 @@ export function AboutCheckmark() {
   const style = {
     fontSize: "3rem",
   };
-
   return <CheckIcon style={style} />;
 }
 
@@ -19,12 +18,10 @@ export function MainCheckmark() {
   const style = {
     fontSize: "5.6rem",
     padding: "0.8rem",
-    // backgroundColor: "var(--primary)",
     backgroundColor: "rgba(255, 122, 215, 0.85)",
     color: "white",
     borderRadius: "4px",
   };
-
   return <CheckIcon style={style} />;
 }
 
@@ -34,7 +31,6 @@ export function PhoneIconSvg() {
     marginRight: "1rem",
     verticalAlign: "middle",
   };
-
   return <PhoneIcon style={style} />;
 }
 
@@ -45,7 +41,6 @@ export function EmailIconSvg() {
     marginRight: "0.8rem",
     verticalAlign: "middle",
   };
-
   return <MailIcon style={style} />;
 }
 
@@ -55,7 +50,6 @@ export function FacebookIconSvg() {
     marginRight: "1rem",
     verticalAlign: "middle",
   };
-
   return <FacebookIcon style={style} />;
 }
 
@@ -65,6 +59,5 @@ export function BlogIconSvg() {
     marginRight: "1rem",
     verticalAlign: "middle",
   };
-
   return <MenuBookIcon style={style} />;
 }

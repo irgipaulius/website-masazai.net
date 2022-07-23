@@ -47,7 +47,7 @@ Viena populiariausių masažo formų visame pasaulyje. Tai ypatingai švelni, ra
 
     //
     "Klasikinis-segmentinis masažas": `
-![Klasikinis segmentinis masazas](images/klasikinis-segmentinis.jpg "Klasikinis segmentinis  masazas")
+![Klasikinis segmentinis masazas](images/klasikinis_segmentinis.jpg "Klasikinis segmentinis  masazas")
 Segmentinis masažas yra seniausias sveikatos higienos ir gydymo menas. Naudojamas kaip gydymo taip ir profilaktiniais tikslais. Šis masažas idealiai tinka žmonėms, dirbantiems sėdimą ar sunkų fizinį darbą, kai visa įtampa susikaupia įvairiose stuburo vietose, kaklo ir pečių srityje ir dėl to susiformuoja skausmingi raumenų mazgai. Jo metu atliekami specialūs glostymo, trynimo, maigymo bei vibracijų veiksmai. Šio masažo metu pasišalina mirusios odos ląstelės, pagerėja odos kvėpavimas, padidėja raumenų susitraukimo funkcija bei suaktyvėja medžiagų apykaita. Periodiškai atliekamas masažas padės atsikratyti dažnų nugaros ir galvos skausmų, atpalaiduos įtemptas raumenų grupes, jas stiprins. Segmentinis masažas daug kartų efektyvesnis už tradicinį masažą.
 `,
 

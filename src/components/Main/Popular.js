@@ -1,10 +1,10 @@
 import React, { useState } from "react";
 
 import { MainCheckmark } from "../MuiIcons";
-
-import styles from "../Main.module.css";
 import ModalHandler from "../Modal/modalHandler";
 import { PricingPanelContents } from "../panel/PricingPanel";
+
+import styles from "../Main.module.css";
 
 export default function Popular() {
   const [focus, setFocus] = useState(0);
