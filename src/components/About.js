@@ -1,6 +1,6 @@
 import React from "react";
 
-import { AboutCheckmark } from "./MuiIcons";
+import { AboutCheckmark } from "./Icons";
 import ModalButton from "./Modal/modalButton";
 
 import styles from "./About.module.css";

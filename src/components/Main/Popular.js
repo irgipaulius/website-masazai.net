@@ -1,6 +1,8 @@
 import React, { useState } from "react";
 
-import { MainCheckmark } from "../MuiIcons";
+// import { MainCheckmark } from "../Icons";
+import { MainCheckmarkRI } from "../Icons";
+
 import ModalHandler from "../Modal/modalHandler";
 import { PricingPanelContents } from "../panel/PricingPanel";
 
@@ -39,7 +41,8 @@ export default function Popular() {
                 }}
                 key={id}
               >
-                <MainCheckmark />
+                {/* <MainCheckmark /> */}
+                <MainCheckmarkRI />
                 <span>{contentNames[id]}</span>
               </li>
             ))}

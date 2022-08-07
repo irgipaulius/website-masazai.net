@@ -1,6 +1,6 @@
 import React from "react";
 
-import { PhoneIconSvg, EmailIconSvg, FacebookIconSvg, BlogIconSvg } from "./MuiIcons";
+import { PhoneIconSvg, EmailIconSvg, FacebookIconSvg, BlogIconSvg } from "./Icons";
 
 import styles from "./Contacts.module.css";
 
