@@ -8,18 +8,12 @@
   max-width: 120rem;
   margin: 0 auto;
   padding: 4.8rem 3.2rem 6.4rem 3.2rem;
-
   display: flex;
   flex-direction: column;
-  /* justify-content: center; */
   align-items: center;
   gap: 3.2rem;
-
   text-align: center;
-
   color: white;
-
-  /* border: 1px solid blue; */
 }
 
 .contacts_title {
@@ -46,28 +40,21 @@
 .mob:visited {
   font-size: 3rem;
   font-weight: 500;
-  /* margin-bottom: 0.8rem; */
-  /* display: inline-block; */
   color: white;
-
   text-decoration: none;
   cursor: pointer;
   transition: all 0.3s;
-
   display: inline-flex;
   align-items: center;
-
-  /* border: 1px solid blue; */
 }
 .mob:hover,
 .mob:active {
-  color: var(--hover);
+  color: var(--source);
 }
 
 .email {
   font-size: 1.6rem;
   font-weight: 300;
-
   display: flex;
   justify-content: center;
   align-items: baseline;
@@ -82,12 +69,9 @@
 }
 .email_link:hover,
 .email_link:active {
-  color: #ff59cd;
+  color: var(--source);
   text-decoration: underline;
   transition: all 0.2s ease-out;
-}
-
-.contacts_facebook_blog {
 }
 
 .contacts_facebook,
@@ -97,16 +81,12 @@
   font-weight: 300;
   color: white;
   text-decoration: none;
-  /* display: inline-block; */
-
   display: inline-flex;
   align-items: center;
-
-  /* border: 1px solid blue; */
 }
 .contacts_facebook:hover,
 .contacts_facebook:active {
-  color: #ff59cd;
+  color: var(--source);
   text-decoration: underline;
   transition: all 0.2s ease-out;
 }
@@ -122,8 +102,6 @@
 @media (max-width: 48em) {
   .contacts_container {
     padding: 3.2rem 3.2rem 4.8rem 3.2rem;
-
-    /* border: 1px dotted blue; */
   }
 }
 
@@ -161,11 +139,3 @@
     font-size: 1.8rem;
   }
 }
-
-/*
-- Font sizes (px)
-10 / 12 / 14 / 16 / 18 / 20 / 24 / 30 / 36 / 44 / 52 / 62 / 74 / 86 / 98
-
-- Spacing system (px)
-2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 80 / 96 / 128
-*/

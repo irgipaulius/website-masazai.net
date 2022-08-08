@@ -2,7 +2,7 @@ import React, { useEffect, useRef } from "react";
 import { NavLink, useLocation } from "react-router-dom";
 import { scroller } from "react-scroll";
 
-import { PhoneIconSvg } from "./MuiIcons";
+import { PhoneIconSvg } from "./Icons";
 
 import styles from "./NavBar.module.css";
 

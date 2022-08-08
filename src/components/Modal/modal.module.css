@@ -19,8 +19,6 @@
 .A_modal_root {
   width: 100vw;
   height: 100vh;
-
-  /* border: 4px dotted blueviolet; */
 }
 
 .A_modal_overlay {
@@ -29,27 +27,21 @@
 }
 
 .A_modal_container {
-  /* height: 100%; */
   margin: 0;
   padding: 0;
-
   display: flex;
   justify-content: center;
   align-items: flex-start;
-
-  /* border: 2px dotted orangered; */
 }
 
 .A_modal {
   max-width: calc(120rem - 12.8rem);
   width: 100%;
-  /* height: calc(100vh - (4.8rem * 2)); */
   height: 72vh;
   margin: 0;
   margin-top: 5.6rem;
   padding: 3.2rem;
   border-radius: 4px;
-
   overflow-y: hidden;
 
   /* react responsive modal animation is buggy blinking after close, to fix that these overrides are used */
@@ -62,8 +54,6 @@
   height: 3rem;
   top: 1.6rem;
   right: 1.6rem;
-
-  /* border: 1px solid green; */
 }
 .A_modal_close_icon,
 .A_modal_close_icon:link,
@@ -71,12 +61,12 @@
   width: 100%;
   height: 100%;
   fill: white;
-  background-color: #333;
+  background-color: var(--background);
   border-radius: 50%;
 }
 .A_modal_close_icon:hover,
 .A_modal_close_icon:active {
-  background-color: var(--hover2);
+  background-color: var(--hover);
 }
 
 .panel_title {
@@ -93,34 +83,21 @@
 .panel_menu_content_container {
   display: flex;
   gap: 2.4rem;
-
-  /* height: calc(100vh - (4.8rem * 2) - (3.2rem * 4.75)); */
   height: calc(72vh - (3.2rem * 4.75));
-
-  /* height: 100%; */
-  /* min-height: 100vh; */
-  /* height: 30rem; */
-
-  /* border: 2px dotted blue; */
 }
 
 .panel_menu {
   list-style: none;
   width: 30%;
   color: var(--background);
-
   flex: 1 1 auto;
   display: flex;
   flex-direction: column;
   gap: 1.6rem;
   overflow-y: auto;
-
-  /* border: 1px solid grey; */
 }
 .panel_item {
   color: var(--background);
-
-  /* border: 1px solid green; */
 }
 
 .panel_link,
@@ -131,8 +108,6 @@
   line-height: 1.1;
   cursor: pointer;
   display: inline-block;
-
-  /* border: 1px solid orange; */
 }
 .panel_link:hover,
 .panel_link:active {
@@ -146,19 +121,12 @@
   cursor: pointer;
   display: inline-block;
   color: var(--hover);
-
-  /* border: 1px solid orange; */
 }
 
 .panel_content {
   width: 70%;
-  /* height: calc(100vh - (4.8rem * 2) - (3.2rem * 2)); */
-  /* height: 30rem; */
   flex: 1 1 auto;
-
   overflow-y: auto;
-
-  /* border: 2px solid red; */
 }
 
 /**************************/
@@ -167,11 +135,8 @@
 
 @media (max-width: 75em) {
   .A_modal {
-    /* max-width: calc(120rem - 12.8rem); */
     margin-left: 6.4rem;
     margin-right: 6.4rem;
-
-    /* background-color: lightsalmon; */
   }
 }
 
@@ -192,8 +157,6 @@
     margin-left: 3.2rem;
     margin-right: 3.2rem;
     height: 75vh;
-
-    /* background-color: lightgreen; */
   }
 
   .panel_menu_content_container {
@@ -209,8 +172,6 @@
 @media (max-width: 40em) {
   .A_modal {
     height: 82vh;
-
-    /* background-color: lightskyblue; */
   }
 
   .panel_menu_content_container {
@@ -230,7 +191,6 @@
 
   .A_modal {
     margin: 5.39rem 3.2rem;
-    /* height: calc(85vh); */
     height: auto;
     background-color: white;
   }
@@ -242,26 +202,22 @@
   .panel_menu_content_container {
     flex-direction: column;
     gap: 3.2rem;
-    /* height: calc(85vh - (3.2rem * 4.75)); */
     height: auto;
   }
 
   .panel_menu {
     width: 100%;
-    /* height: 8.1rem; */
     height: auto;
     text-align: center;
     flex: 0 0 auto;
     overflow-y: auto;
-
     row-gap: 1.8rem;
     padding-bottom: 1.8rem;
-    border-bottom: 2px solid #555;
+    border-bottom: 2px solid var(--background);
   }
 
   .panel_content {
     width: 100%;
-    /* height: 50vh; */
     height: auto;
   }
 }
@@ -280,11 +236,3 @@
     margin-top: 2rem;
   }
 }
-
-/*
-- Font sizes (px)
-10 / 12 / 14 / 16 / 18 / 20 / 24 / 30 / 36 / 44 / 52 / 62 / 74 / 86 / 98
-
-- Spacing system (px)
-2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 80 / 96 / 128
-*/

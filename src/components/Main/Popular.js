@@ -1,10 +1,11 @@
 import React, { useState } from "react";
 
-import { MainCheckmark } from "../MuiIcons";
+import { MainCheckmarkRI } from "../Icons";
 
-import styles from "../Main.module.css";
 import ModalHandler from "../Modal/modalHandler";
 import { PricingPanelContents } from "../panel/PricingPanel";
+
+import styles from "../Main.module.css";
 
 export default function Popular() {
   const [focus, setFocus] = useState(0);
@@ -39,7 +40,7 @@ export default function Popular() {
                 }}
                 key={id}
               >
-                <MainCheckmark />
+                <MainCheckmarkRI />
                 <span>{contentNames[id]}</span>
               </li>
             ))}
