@@ -6,19 +6,19 @@ export const PricingPanelContents = {
 |                Paslauga                |  Kaina | Trukmė |
 |:--------------------------------------:|:------:|--------|
 | Klasikinis kūno masažas                |        |        |
-| &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;↪ Sprando                          | 10&nbsp;&euro; | 30&nbsp;min |
-| &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;↪ Rankų                            | 15&nbsp;&euro; | 35&nbsp;min |
-| &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;↪ Kojų                             | 20&nbsp;&euro; | 40&nbsp;min |
-| &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;↪ Nugaros                          | 25&nbsp;&euro; | 45&nbsp;min |
-| &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;↪ Bendras kūno                     | 35&nbsp;&euro; | 70&nbsp;min |
-| Klasikinis-segmentinis masažas         | 40&nbsp;&euro; | 80&nbsp;min |
-| Neurosedatyvinis-antistresinis masažas | 45&nbsp;&euro; | 90&nbsp;min |
-| Limfodrenažinis masažas                | 35&nbsp;&euro; | 60&nbsp;min |
-| Chiromasažas                           | 50&nbsp;&euro; | 45&nbsp;min |
-| Anticeliulitinis masažas rankomis      | 30&nbsp;&euro; | 50&nbsp;min |
-| Nėščiųjų masažas                       | 30&nbsp;&euro; | 60&nbsp;min |
-| „Švytintis veidas“                     | 30&nbsp;&euro; | 60&nbsp;min |
-| Medaus masažas                         | 25&nbsp;&euro; | 40&nbsp;min |`,
+| &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;↪ Sprando                          | 15&nbsp;&euro; | 35&nbsp;min |
+| &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;↪ Rankų                            | 20&nbsp;&euro; | 40&nbsp;min |
+| &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;↪ Kojų                             | 25&nbsp;&euro; | 45&nbsp;min |
+| &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;↪ Nugaros                          | 30&nbsp;&euro; | 50&nbsp;min |
+| &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;↪ Bendras kūno                     | 40&nbsp;&euro; | 75&nbsp;min |
+| Klasikinis-segmentinis masažas         | 45&nbsp;&euro; | 85&nbsp;min |
+| Neurosedatyvinis-antistresinis masažas | 50&nbsp;&euro; | 95&nbsp;min |
+| Limfodrenažinis masažas                | 40&nbsp;&euro; | 65&nbsp;min |
+| Chiromasažas                           | 55&nbsp;&euro; | 50&nbsp;min |
+| Anticeliulitinis masažas rankomis      | 35&nbsp;&euro; | 55&nbsp;min |
+| Nėščiųjų masažas                       | 35&nbsp;&euro; | 65&nbsp;min |
+| „Švytintis veidas“                     | 35&nbsp;&euro; | 65&nbsp;min |
+| Medaus masažas                         | 30&nbsp;&euro; | 45&nbsp;min |`,
 
     //
     "Klasikinis kūno masažas": `
@@ -90,7 +90,7 @@ Dažnai nėštumo metu būsimos mamytes tampa jautresnes, kartais ir nervingesne
 `,
 
     //
-    'Veido masažas „Švytintis veidas“': `
+    "Veido masažas „Švytintis veidas“": `
 Klasikinis veido masažas – vienas iš efektyviausių būdų išlaikyti sveiką, jaunatvišką odos išvaizdą. Tai malonus ir labai naudingas masažas įvairiais amžiaus tarpsniais, kadangi masažas veikia tiek prevenciškai (užkerta kelią odos senėjimui), tiek ir jau matomus odos senėjimo veiksnius, tokius kaip negyvybinga odos spalva, mimikos raukšlės, odos tonuso ar elastingumo sumažėjimas. Masažo metu atliekami glostymo, trynimo, maigymo judesiai, kurie aktyvina kraujotaką ir limfotaką, o to pasekoje gerėja maistinių medžiagų ir deguonies apykaita, gerėja toksinų ir šlakų pasišalinimas. Taip pat masažo metu veikiami ir poodiniai audiniai, nervai bei raumenys, taigi jaučiamas ne tik raumenų, bet ir bendras organizmo atsipalaidavimas.
 ![Veido masažas](images/veido.jpg 'Veido masažas „Švytintis veidas“')
 
@@ -111,7 +111,7 @@ Klasikinis veido masažas – vienas iš efektyviausių būdų išlaikyti sveik�
 `,
 
     //
-    '„Su džok“ terapija': `
+    "„Su džok“ terapija": `
 ![„Su džok“ terapija](images/su_dzok.jpg '„Su džok“ terapija')
 Korėjietiška taškinio delnų masažo sistema. Visi kūno organų, stuburo, sanarių ir kiti taškai yra jūsų delne. Žinodami kokius taškus spaudyti jūs galėsite gydyti save kur bebūtumėt. Delnas – gydytojas visada su jumis. Skaudūs taškai delne rodo ne tik dabartines jūsų ligas, silpnas jūsų organizmo vietas, bet taip pat ir ateinančias ligas. Tiksliai veikiant taškus, įvairūs skausmai pradeda mažėti jau po kelių&nbsp;minučių. Be abejo reikia žinoti kaip, kiek laiko ir kokius taškus veikti. Tam nereikia išankstinio tikėjimo, bet būtina pabandyti, kad įsitikintumėt šios terapijos unikalumu. Už savo sveikatą esate atsakingi tik jūs patys. Ir taškų delnuose pagalba jūs galite efektyviai sau padėti spręsti savo sveikatos problemas, o gerai išmokę su džok terapijos principų galėsite ir kitiems pagelbėti.
 
