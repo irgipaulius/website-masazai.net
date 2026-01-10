@@ -7,6 +7,18 @@
   background-size: cover;
   display: flex;
   align-items: flex-end;
+  position: relative;
+  overflow: hidden;
+}
+
+.hero::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background:
+    radial-gradient(900px 500px at 50% 25%, rgba(255, 122, 215, 0.28), transparent 55%),
+    linear-gradient(180deg, rgba(7, 7, 10, 0.25), rgba(7, 7, 10, 0.78));
+  pointer-events: none;
 }
 
 .hero_container {
@@ -16,6 +28,8 @@
   color: white;
   text-align: center;
   flex-grow: 1;
+  position: relative;
+  z-index: 1;
 }
 
 .hero_title {
@@ -23,24 +37,30 @@
   font-weight: 500;
   letter-spacing: 1rem;
   padding-bottom: 1.6rem;
+  text-shadow: 0 10px 40px rgba(0, 0, 0, 0.55);
 }
 .hero_subtitle {
   font-size: 4.4rem;
   font-weight: 400;
   letter-spacing: 0.75rem;
   padding-bottom: 1.6rem;
+  opacity: 0.95;
+  text-shadow: 0 10px 40px rgba(0, 0, 0, 0.45);
 }
 .hero_about {
   font-size: 3.6rem;
   font-weight: 300;
   letter-spacing: 0.25rem;
   padding: 1.6rem 0 0 0;
+  opacity: 0.92;
+  text-shadow: 0 10px 40px rgba(0, 0, 0, 0.4);
 }
 
 .hero_line {
   margin: 0 20%;
   height: 0.4rem;
-  background-color: var(--primary);
+  background: linear-gradient(90deg, rgba(255, 122, 215, 0), rgba(255, 122, 215, 0.95), rgba(255, 122, 215, 0));
+  box-shadow: 0 8px 30px rgba(255, 122, 215, 0.25);
 }
 
 /**************************/

@@ -1,6 +1,8 @@
 .contacts {
   background-color: var(--background);
-  background: linear-gradient(180deg, #353535 0%, var(--background));
+  background:
+    radial-gradient(900px 500px at 50% 0%, rgba(255, 122, 215, 0.16), transparent 62%),
+    linear-gradient(180deg, rgba(12, 12, 18, 0.94) 0%, rgba(7, 7, 10, 0.98) 100%);
   max-width: 100%;
 }
 
@@ -13,13 +15,14 @@
   align-items: center;
   gap: 3.2rem;
   text-align: center;
-  color: white;
+  color: rgba(255, 255, 255, 0.9);
 }
 
 .contacts_title {
   font-size: 3.6rem;
   font-weight: 500;
   letter-spacing: 4px;
+  text-shadow: 0 12px 40px rgba(0, 0, 0, 0.45);
 }
 
 .contacts_subtitle {
@@ -40,16 +43,17 @@
 .mob:visited {
   font-size: 3rem;
   font-weight: 500;
-  color: white;
+  color: rgba(255, 255, 255, 0.92);
   text-decoration: none;
   cursor: pointer;
-  transition: all 0.3s;
+  transition: color 180ms ease, transform 180ms ease;
   display: inline-flex;
   align-items: center;
 }
 .mob:hover,
 .mob:active {
   color: var(--source);
+  transform: translateY(-1px);
 }
 
 .email {
@@ -64,7 +68,7 @@
 .email_link:visited {
   font-size: 1.6rem;
   font-weight: 300;
-  color: white;
+  color: rgba(255, 255, 255, 0.92);
   text-decoration: none;
 }
 .email_link:hover,
@@ -79,15 +83,17 @@
 .contacts_facebook:visited {
   font-size: 2rem;
   font-weight: 300;
-  color: white;
+  color: rgba(255, 255, 255, 0.9);
   text-decoration: none;
   display: inline-flex;
   align-items: center;
+  transition: color 180ms ease, transform 180ms ease;
 }
 .contacts_facebook:hover,
 .contacts_facebook:active {
   color: var(--source);
   text-decoration: underline;
+  transform: translateY(-1px);
   transition: all 0.2s ease-out;
 }
 .contacts_facebook:first-child {

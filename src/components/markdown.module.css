@@ -9,6 +9,7 @@ https://stackoverflow.com/questions/66356329/how-to-add-styling-for-elements-in-
   font-size: 1.6rem;
   line-height: 1.4;
   text-align: left !important;
+  color: rgba(15, 17, 21, 0.86);
 }
 
 .reactMarkDown table,
@@ -25,11 +26,11 @@ https://stackoverflow.com/questions/66356329/how-to-add-styling-for-elements-in-
 }
 .reactMarkDown thead th {
   padding: 0 0.8rem 0.4rem 0.8rem !important;
-  border-bottom: 1px solid var(--background) !important;
+  border-bottom: 1px solid rgba(15, 17, 21, 0.16) !important;
 }
 
 .reactMarkDown tr:nth-child(odd) td {
-  background-color: var(--tint);
+  background-color: rgba(255, 122, 215, 0.08);
 }
 
 /* test on first table column width */
@@ -40,7 +41,7 @@ https://stackoverflow.com/questions/66356329/how-to-add-styling-for-elements-in-
 .reactMarkDown a,
 .reactMarkDown a:link,
 .reactMarkDown a:visited {
-  color: var(--background);
+  color: rgba(15, 17, 21, 0.86);
 }
 .reactMarkDown a:hover,
 .reactMarkDown a:active {
@@ -83,12 +84,14 @@ https://stackoverflow.com/questions/66356329/how-to-add-styling-for-elements-in-
   font-size: 2.4rem;
   padding-top: 0.4rem;
   padding-bottom: 0.8rem;
+  color: rgba(15, 17, 21, 0.92);
 }
 
 .reactMarkDown h3 {
   font-size: 2rem;
   padding-top: 0.2rem;
   padding-bottom: 0.4rem;
+  color: rgba(15, 17, 21, 0.92);
 }
 
 /**************************/
