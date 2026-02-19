@@ -27,7 +27,7 @@ export default function Services() {
           <p className={main_text}>Taip pat teikiu rekomendacijas masažo ilgalaikiams kursams.</p>
           <p className={main_text}>Dėl platesnės informacijos kreipkitės telefonu.</p>
 
-          <ModalButton text="Kainininkas" type="pricing" />
+          <ModalButton text="Plačiau apie paslaugas →" type="pricing" />
         </div>
       </div>
     </>

@@ -1,4 +1,5 @@
 import React, { useEffect, useRef } from "react";
+import { scroller } from "react-scroll";
 
 import styles from "./Hero.module.css";
 
@@ -16,9 +17,18 @@ export default function Hero() {
     hero_motion_s3,
     hero_motion_s4,
     hero_line_wrap,
+    hero_cta_button,
   } = styles;
 
   const heroRef = useRef(null);
+
+  const scrollToPricing = () => {
+    scroller.scrollTo("pricing", {
+      duration: 1000,
+      smooth: true,
+      offset: -80,
+    });
+  };
 
   useEffect(() => {
     const el = heroRef.current;
@@ -110,6 +120,12 @@ export default function Hero() {
         <p className={`${hero_about} hero_about animate__animated animate__fadeInDown`}>
           <span className={`${hero_motion} ${hero_motion_s3}`}>Profesionalus masažas Kaune</span>
         </p>
+        <button
+          className={`${hero_cta_button} hero_cta_button animate__animated animate__fadeInUp`}
+          onClick={scrollToPricing}
+        >
+          Žiūrėti kainas ↓
+        </button>
       </div>
     </div>
   );

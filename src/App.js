@@ -5,6 +5,7 @@ import NavBar from "./components/NavBar";
 import Hero from "./components/Hero";
 import About from "./components/About";
 import Main from "./components/Main";
+import Pricing from "./components/Pricing";
 import Contacts from "./components/Contacts";
 
 function App() {
@@ -16,6 +17,7 @@ function App() {
       <Hero />
       <About />
       <Main />
+      <Pricing />
       <Contacts />
     </div>
   );

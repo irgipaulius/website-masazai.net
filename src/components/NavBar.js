@@ -11,6 +11,7 @@ export default function Navbar() {
     { text: "Pradžia", urlPath: "/", id: "hero" },
     { text: "Apie", urlPath: "/about", id: "about" },
     { text: "Masažai", urlPath: "/main", id: "main" },
+    { text: "Kainos", urlPath: "/pricing", id: "pricing" },
     { text: "Kontaktai", urlPath: "/contacts", id: "contacts" },
   ];
 
