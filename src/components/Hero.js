@@ -15,7 +15,6 @@ export default function Hero() {
     hero_motion,
     hero_motion_s2,
     hero_motion_s3,
-    hero_motion_s4,
     hero_line_wrap,
     hero_cta_button,
   } = styles;

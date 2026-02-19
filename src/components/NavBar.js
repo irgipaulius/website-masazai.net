@@ -6,14 +6,15 @@ import { PhoneIconSvg } from "./Icons";
 
 import styles from "./NavBar.module.css";
 
+const navItems = [
+  { text: "Pradžia", urlPath: "/", id: "hero" },
+  { text: "Apie", urlPath: "/about", id: "about" },
+  { text: "Masažai", urlPath: "/main", id: "main" },
+  { text: "Kainos", urlPath: "/pricing", id: "pricing" },
+  { text: "Kontaktai", urlPath: "/contacts", id: "contacts" },
+];
+
 export default function Navbar() {
-  const navItems = [
-    { text: "Pradžia", urlPath: "/", id: "hero" },
-    { text: "Apie", urlPath: "/about", id: "about" },
-    { text: "Masažai", urlPath: "/main", id: "main" },
-    { text: "Kainos", urlPath: "/pricing", id: "pricing" },
-    { text: "Kontaktai", urlPath: "/contacts", id: "contacts" },
-  ];
 
   const {
     navbar,
@@ -32,16 +33,10 @@ export default function Navbar() {
 
   const navBarRef = useRef();
 
-  /** @returns id of the component to scroll to. */
-  const getScrollItemId = () => {
-    const findPath = navItems.find((item) => item.urlPath === location.pathname);
-
-    // scroll to found navItem OR the first one.
-    return findPath?.id || navItems[0].id;
-  };
-
   useEffect(() => {
-    scroller.scrollTo(getScrollItemId(), {
+    const findPath = navItems.find((item) => item.urlPath === location.pathname);
+    const scrollItemId = findPath?.id || navItems[0].id;
+    scroller.scrollTo(scrollItemId, {
       duration: 1000,
       smooth: true,
       offset: -navBarRef.current.clientHeight,
