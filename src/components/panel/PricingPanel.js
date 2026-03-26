@@ -10,7 +10,7 @@ export const PricingPanelContents = {
 | &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;↪ Rankų                            | 20&nbsp;&euro; | 40&nbsp;min |
 | &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;↪ Kojų                             | 25&nbsp;&euro; | 45&nbsp;min |
 | &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;↪ Nugaros                          | 30&nbsp;&euro; | 50&nbsp;min |
-| &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;↪ Bendras kūno                     | 40&nbsp;&euro; | 75&nbsp;min |
+| &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;↪ Bendras kūno                     | 50&nbsp;&euro; | 75&nbsp;min |
 | Klasikinis-segmentinis masažas         | 45&nbsp;&euro; | 85&nbsp;min |
 | Neurosedatyvinis-antistresinis masažas | 50&nbsp;&euro; | 95&nbsp;min |
 | Limfodrenažinis masažas                | 40&nbsp;&euro; | 65&nbsp;min |
