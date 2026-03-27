@@ -14,7 +14,9 @@ const vm = require("vm");
 function loadPricingPanel() {
   const filePath = path.join(__dirname, "../src/components/panel/PricingPanel.js");
   let src = fs.readFileSync(filePath, "utf8");
-  src = src.replace("export const PricingPanelContents =", "const PricingPanelContents =");
+  // Remove all export keywords
+  src = src.replace(/export const PricingData =/g, "const PricingData =");
+  src = src.replace(/export const PricingPanelContents =/g, "const PricingPanelContents =");
   src += "\n__result__ = PricingPanelContents;";
   const sandbox = { __result__: null };
   vm.runInNewContext(src, sandbox);
