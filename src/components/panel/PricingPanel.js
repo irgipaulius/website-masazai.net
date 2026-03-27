@@ -1,6 +1,7 @@
 // Pricing data extracted from the table
 export const PricingData = {
   "Klasikinis kūno masažas": null, // Parent category, no single price
+  "Atpalaiduojantis viso kūno masažas": { price: "55€", duration: "75 min" }, // Maps to "Bendras kūno" - most popular
   "Klasikinis-segmentinis masažas": { price: "45€", duration: "85 min" },
   "Neurosedatyvinis-antistresinis masažas": { price: "50€", duration: "95 min" },
   "Limfodrenažinis masažas": { price: "40€", duration: "65 min" },
