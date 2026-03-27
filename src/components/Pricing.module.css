@@ -1,6 +1,9 @@
 .pricing {
   max-width: 100%;
-  background: rgba(255, 255, 255, 0.95);
+  background:
+    radial-gradient(1200px 560px at 10% 0%, rgba(166, 184, 255, 0.14), transparent 62%),
+    radial-gradient(980px 520px at 92% 8%, rgba(196, 176, 255, 0.12), transparent 58%),
+    linear-gradient(180deg, #f5f7ff 0%, #f2f4fb 100%);
   padding: 6.4rem 0;
 }
 
@@ -14,7 +17,7 @@
 .pricing_title {
   font-size: 4.8rem;
   font-weight: 600;
-  color: rgba(255, 122, 215, 0.95);
+  color: rgba(15, 17, 21, 0.9);
   margin-bottom: 4.8rem;
   letter-spacing: 0.01em;
 }
@@ -23,11 +26,11 @@
   max-width: 96rem;
   margin: 0 auto;
   text-align: left;
-  background: rgba(255, 255, 255, 0.88);
+  background: rgba(255, 255, 255, 0.78);
   border-radius: var(--radius-2);
   padding: 3.2rem;
-  box-shadow: var(--shadow-2);
-  border: 1px solid rgba(255, 255, 255, 0.35);
+  box-shadow: 0 16px 42px rgba(204, 71, 164, 0.14);
+  border: 1px solid rgba(255, 255, 255, 0.62);
   backdrop-filter: blur(8px);
   -webkit-backdrop-filter: blur(8px);
 }
@@ -52,18 +55,18 @@
 
 .pricing_table td {
   padding: 1.8rem 1.6rem;
-  border-bottom: 1px solid rgba(15, 17, 21, 0.08);
+  border-bottom: 1px solid rgba(204, 71, 164, 0.12);
   font-size: 2rem;
   color: rgba(15, 17, 21, 0.86);
 }
 
 /* Alternating row colors for readability */
 .pricing_table tr:nth-child(even) {
-  background: rgba(255, 255, 255, 0.6);
+  background: rgba(255, 255, 255, 0.52);
 }
 
 .pricing_table tr:nth-child(odd) {
-  background: rgba(248, 250, 252, 0.8);
+  background: rgba(241, 244, 255, 0.62);
 }
 
 /* Highlight prices */
@@ -81,7 +84,7 @@
 
 /* Hover effect for rows */
 .pricing_table tbody tr:hover {
-  background: rgba(255, 122, 215, 0.08);
+  background: rgba(255, 122, 215, 0.14);
   transition: background-color 0.2s ease;
 }
 
@@ -132,6 +135,7 @@
 @media (max-width: 40em) {
   .pricing {
     padding: 3.2rem 0;
+    background: linear-gradient(180deg, #f5f7ff 0%, #eef1fa 100%);
   }
 
   .pricing_title {
