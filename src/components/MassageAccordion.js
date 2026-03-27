@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import ReactMarkdown from "react-markdown";
 import remarkGfm from "remark-gfm";
 
@@ -21,67 +21,80 @@ export default function MassageAccordion() {
       isPopular: POPULAR_INDICES.has(allKeys.indexOf(key)),
     }));
 
-  const toggle = (i) => {
-    setOpenIndex((prev) => (prev === i ? null : i));
-  };
+  useEffect(() => {
+    if (openIndex === null) return;
+    const onKey = (e) => {
+      if (e.key === "Escape") setOpenIndex(null);
+    };
+    document.addEventListener("keydown", onKey);
+    document.body.style.overflow = "hidden";
+    return () => {
+      document.removeEventListener("keydown", onKey);
+      document.body.style.overflow = "";
+    };
+  }, [openIndex]);
 
   return (
     <section className={styles.section} id="main">
-      <div className={styles.section_inner}>
-        <div className={styles.intro}>
-          <p className={styles.intro_title}>Masažo paslaugos</p>
-          <p className={styles.intro_sub}>
-            Paslaugos teikiamos profilaktiniais, išvaizdos koregavimo, kosmetiniais,
-            celiulito gydymo, skausmų mažinimo ir antistresiniais tikslais.
-            Spustelėkite, kad sužinotumėte daugiau.
-          </p>
-        </div>
+      <div className={styles.intro}>
+        <h2 className={styles.intro_title}>Masažo paslaugos</h2>
+        <p className={styles.intro_sub}>
+          Paslaugos teikiamos profilaktiniais, išvaizdos koregavimo, kosmetiniais,
+          celiulito gydymo, skausmų mažinimo ir antistresiniais tikslais.
+        </p>
+      </div>
 
-        <div className={styles.accordion}>
-          {panels.map(({ key, markdown, isPopular }, i) => {
-            const isOpen = openIndex === i;
-            return (
-              <div
-                key={key}
-                className={`${styles.panel} ${isPopular ? styles.panel_popular : ""} ${
-                  isOpen ? styles.panel_open : ""
-                }`}
-                onClick={() => !isOpen && toggle(i)}
-              >
-                {/* Collapsed label — vertical text */}
-                <div className={styles.panel_label_wrap}>
-                  {isPopular && <span className={styles.panel_dot} />}
-                  <span className={styles.panel_label}>{key}</span>
-                </div>
-
-                {/* Expanded content */}
-                <div className={styles.panel_content}>
-                  <div className={styles.panel_content_header}>
-                    <h3 className={styles.panel_content_title}>{key}</h3>
-                    <button
-                      className={styles.close_btn}
-                      onClick={(e) => {
-                        e.stopPropagation();
-                        setOpenIndex(null);
-                      }}
-                      aria-label="Uždaryti"
-                    >
-                      ×
-                    </button>
-                  </div>
-                  <div className={styles.panel_content_body}>
-                    <ReactMarkdown
-                      className={mdStyles.reactMarkDown}
-                      children={markdown}
-                      remarkPlugins={[remarkGfm]}
-                    />
-                  </div>
-                </div>
-              </div>
-            );
-          })}
+      <div className={styles.cards_wrap}>
+        <div className={styles.cards}>
+          {panels.map(({ key, isPopular }, i) => (
+            <button
+              key={key}
+              className={`${styles.card} ${isPopular ? styles.card_popular : ""} ${
+                openIndex === i ? styles.card_active : ""
+              }`}
+              onClick={() => setOpenIndex(i)}
+              aria-haspopup="dialog"
+            >
+              {isPopular && <span className={styles.badge}>⭐ Populiarus</span>}
+              <span className={styles.card_name}>{key}</span>
+              <span className={styles.card_cta}>Sužinoti daugiau →</span>
+            </button>
+          ))}
         </div>
       </div>
+
+      {openIndex !== null && (
+        <div
+          className={styles.overlay}
+          onClick={() => setOpenIndex(null)}
+          role="dialog"
+          aria-modal="true"
+          aria-label={panels[openIndex].key}
+        >
+          <div
+            className={styles.lightbox}
+            onClick={(e) => e.stopPropagation()}
+          >
+            <div className={styles.lightbox_header}>
+              <h3 className={styles.lightbox_title}>{panels[openIndex].key}</h3>
+              <button
+                className={styles.lightbox_close}
+                onClick={() => setOpenIndex(null)}
+                aria-label="Uždaryti"
+              >
+                ×
+              </button>
+            </div>
+            <div className={styles.lightbox_body}>
+              <ReactMarkdown
+                className={mdStyles.reactMarkDown}
+                children={panels[openIndex].markdown}
+                remarkPlugins={[remarkGfm]}
+              />
+            </div>
+          </div>
+        </div>
+      )}
     </section>
   );
 }
