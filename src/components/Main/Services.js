@@ -1,8 +1,8 @@
 import React from "react";
-
-import ModalButton from "../Modal/modalButton";
+import { scroller } from "react-scroll";
 
 import styles from "../Main.module.css";
+import modalStyles from "../Modal/modal.module.css";
 
 export default function Services() {
   const { main_text_container, main_texts, main_title, main_text } = styles;
@@ -27,7 +27,18 @@ export default function Services() {
           <p className={main_text}>Taip pat teikiu rekomendacijas masažo ilgalaikiams kursams.</p>
           <p className={main_text}>Dėl platesnės informacijos kreipkitės telefonu.</p>
 
-          <ModalButton text="Plačiau apie paslaugas →" type="pricing" />
+          <button
+            className={`${modalStyles.modal_btn} animate__animated animate__fadeInLeft`}
+            onClick={() =>
+              scroller.scrollTo("service-descriptions", {
+                duration: 800,
+                smooth: true,
+                offset: -80,
+              })
+            }
+          >
+            Plačiau apie paslaugas →
+          </button>
         </div>
       </div>
     </>

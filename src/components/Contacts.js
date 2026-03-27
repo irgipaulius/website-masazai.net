@@ -22,6 +22,12 @@ export default function Contacts() {
     <div className={contacts} id="contacts">
       <div className={contacts_container}>
         <p className={contacts_title}>KONTAKTAI</p>
+        <address className={contacts_subtitle} style={{ fontStyle: "normal" }}>
+          Girstutis, Kaunas, Lietuva
+        </address>
+        <p className={contacts_subtitle} style={{ fontSize: "1.4rem", opacity: 0.6 }}>
+          Запись на массаж в Каунасе: +370 672 736 95
+        </p>
         <div className={contacts_mob_email}>
           <p className={contacts_subtitle}>Prieš atvykstant privaloma užsiregistruoti telefonu:</p>
           <a className={mob} href="tel:+37067273695">

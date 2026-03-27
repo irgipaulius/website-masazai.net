@@ -11,10 +11,12 @@ export default function Hero() {
     hero_title,
     hero_subtitle,
     hero_about,
+    hero_tagline,
     hero_line,
     hero_motion,
     hero_motion_s2,
     hero_motion_s3,
+    hero_motion_s4,
     hero_line_wrap,
     hero_cta_button,
   } = styles;
@@ -117,7 +119,10 @@ export default function Hero() {
           <div className={`${hero_line} hero_line`}></div>
         </div>
         <p className={`${hero_about} hero_about animate__animated animate__fadeInDown`}>
-          <span className={`${hero_motion} ${hero_motion_s3}`}>Profesionalus masažas Kaune</span>
+          <span className={`${hero_motion} ${hero_motion_s3}`}>Profesionalus privatus masažas Kaune, Girstutyje</span>
+        </p>
+        <p className={`${hero_tagline} hero_tagline animate__animated animate__fadeInDown`}>
+          <span className={`${hero_motion} ${hero_motion_s4}`}>Prieinamos kainos · Lanksti darbo tvarka</span>
         </p>
         <button
           className={`${hero_cta_button} hero_cta_button animate__animated animate__fadeInUp`}

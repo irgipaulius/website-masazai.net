@@ -6,6 +6,7 @@ import Hero from "./components/Hero";
 import About from "./components/About";
 import Main from "./components/Main";
 import Pricing from "./components/Pricing";
+import ServiceDescriptions from "./components/ServiceDescriptions";
 import Contacts from "./components/Contacts";
 
 function App() {
@@ -18,6 +19,7 @@ function App() {
       <About />
       <Main />
       <Pricing />
+      <ServiceDescriptions />
       <Contacts />
     </div>
   );

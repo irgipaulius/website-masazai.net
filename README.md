@@ -15,6 +15,8 @@ I personally guided Albertas through the fundamentals and real-world application
 -  **CSS & HTML** – responsive design and styling best practices
 -  **Jira** – managing tasks, sprints, and versioned deliverables
 -  **JavaScript** – functional logic, event handling, component state
+- **SEO friendly** - this React app is optimized for search engines without the use of fancy frameworks such as Astro or Next
+- **Self-hosted and CDN optimized** - for many years this website was self-hosted on a linux machine in my garage, but now it's linked with Cloudflare Pages for better performance, reliability and dependable uptime.
 
 We built everything collaboratively from scratch, with a strong focus on code readability, best practices, and hands-on problem-solving.
 
