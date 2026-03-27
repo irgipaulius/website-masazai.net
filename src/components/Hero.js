@@ -119,11 +119,11 @@ export default function Hero() {
           <div className={`${hero_line} hero_line`}></div>
         </div>
         <p className={`${hero_about} hero_about animate__animated animate__fadeInDown`}>
-          <span className={`${hero_motion} ${hero_motion_s3}`}>Profesionalus privatus masažas Kaune, Girstutyje</span>
+          <span className={`${hero_motion} ${hero_motion_s3}`}>Profesionalus privatus masažas Kaune</span>
         </p>
-        <p className={`${hero_tagline} hero_tagline animate__animated animate__fadeInDown`}>
+        {/* <p className={`${hero_tagline} hero_tagline animate__animated animate__fadeInDown`}>
           <span className={`${hero_motion} ${hero_motion_s4}`}>Prieinamos kainos · Lanksti darbo tvarka</span>
-        </p>
+        </p> */}
         <button
           className={`${hero_cta_button} hero_cta_button animate__animated animate__fadeInUp`}
           onClick={scrollToPricing}
