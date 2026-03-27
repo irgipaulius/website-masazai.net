@@ -4,9 +4,8 @@ import { BrowserRouter } from "react-router-dom";
 import NavBar from "./components/NavBar";
 import Hero from "./components/Hero";
 import About from "./components/About";
-import Main from "./components/Main";
+import MassageAccordion from "./components/MassageAccordion";
 import Pricing from "./components/Pricing";
-import ServiceDescriptions from "./components/ServiceDescriptions";
 import Contacts from "./components/Contacts";
 
 function App() {
@@ -17,9 +16,8 @@ function App() {
       </BrowserRouter>
       <Hero />
       <About />
-      <Main />
+      <MassageAccordion />
       <Pricing />
-      <ServiceDescriptions />
       <Contacts />
     </div>
   );
