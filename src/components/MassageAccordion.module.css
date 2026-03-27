@@ -195,6 +195,26 @@
   font-weight: 700;
   color: rgba(15, 17, 21, 0.9);
   line-height: 1.3;
+  margin-bottom: 0.4rem;
+}
+
+.lightbox_pricing {
+  display: flex;
+  gap: 1.2rem;
+  align-items: center;
+  margin-top: 0.6rem;
+}
+
+.price {
+  font-size: 2rem;
+  font-weight: 600;
+  color: rgba(204, 71, 164, 0.9);
+}
+
+.duration {
+  font-size: 1.5rem;
+  font-weight: 400;
+  color: var(--text-1);
 }
 
 .lightbox_close {
@@ -276,6 +296,14 @@
     font-size: 2.4rem;
   }
 
+  .price {
+    font-size: 1.8rem;
+  }
+
+  .duration {
+    font-size: 1.4rem;
+  }
+
   .lightbox_body {
     padding: 2rem 2.4rem 2.4rem;
   }
@@ -328,6 +356,18 @@
 
   .lightbox_title {
     font-size: 2rem;
+  }
+
+  .lightbox_pricing {
+    gap: 1rem;
+  }
+
+  .price {
+    font-size: 1.7rem;
+  }
+
+  .duration {
+    font-size: 1.3rem;
   }
 
   .lightbox_body {

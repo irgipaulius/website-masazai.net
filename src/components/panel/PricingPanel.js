@@ -1,3 +1,16 @@
+// Pricing data extracted from the table
+export const PricingData = {
+  "Klasikinis kūno masažas": null, // Parent category, no single price
+  "Klasikinis-segmentinis masažas": { price: "45€", duration: "85 min" },
+  "Neurosedatyvinis-antistresinis masažas": { price: "50€", duration: "95 min" },
+  "Limfodrenažinis masažas": { price: "40€", duration: "65 min" },
+  "Chiromasažas": { price: "55€", duration: "50 min" },
+  "Anticeliulitinis masažas rankomis": { price: "35€", duration: "55 min" },
+  "Nėščiųjų masažas": { price: "35€", duration: "65 min" },
+  'Veido masažas „Švytintis veidas"': { price: "35€", duration: "65 min" },
+  "Medaus masažas": { price: "30€", duration: "45 min" },
+};
+
 export const PricingPanelContents = {
   title: "Masažo paslaugos",
   contents: {

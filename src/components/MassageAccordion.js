@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import ReactMarkdown from "react-markdown";
 import remarkGfm from "remark-gfm";
 
-import { PricingPanelContents } from "./panel/PricingPanel";
+import { PricingPanelContents, PricingData } from "./panel/PricingPanel";
 import styles from "./MassageAccordion.module.css";
 import mdStyles from "./markdown.module.css";
 
@@ -87,7 +87,15 @@ export default function MassageAccordion() {
             onClick={(e) => e.stopPropagation()}
           >
             <div className={styles.lightbox_header}>
-              <h3 className={styles.lightbox_title}>{panels[openIndex].key}</h3>
+              <div>
+                <h3 className={styles.lightbox_title}>{panels[openIndex].key}</h3>
+                {PricingData[panels[openIndex].key] && (
+                  <div className={styles.lightbox_pricing}>
+                    <span className={styles.price}>{PricingData[panels[openIndex].key].price}</span>
+                    <span className={styles.duration}>{PricingData[panels[openIndex].key].duration}</span>
+                  </div>
+                )}
+              </div>
               <button
                 className={styles.lightbox_close}
                 onClick={() => setOpenIndex(null)}
