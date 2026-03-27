@@ -42,6 +42,17 @@ export default function MassageAccordion() {
           Paslaugos teikiamos profilaktiniais, išvaizdos koregavimo, kosmetiniais,
           celiulito gydymo, skausmų mažinimo ir antistresiniais tikslais.
         </p>
+        <div className={styles.intro_details}>
+          <p>
+            Masažo metu naudojami įvairūs efektyvūs šiuolaikinio masažo prietaisai, skirti tiksliau
+            dozuoti procedūros intensyvumą kliento patogumui.
+          </p>
+          <p>
+            Siūlau pasirinkimą iš įvairių masažo technikų, bei galiu padėti išsirinkti tinkamą
+            procedūrą pagal asmeninius poreikius.
+          </p>
+          <p>Taip pat teikiu rekomendacijas masažo ilgalaikiams kursams.</p>
+        </div>
       </div>
 
       <div className={styles.cards_wrap}>
@@ -55,7 +66,7 @@ export default function MassageAccordion() {
               onClick={() => setOpenIndex(i)}
               aria-haspopup="dialog"
             >
-              {isPopular && <span className={styles.badge}>⭐ Populiarus</span>}
+              {isPopular && <span className={styles.badge}>Populiarus</span>}
               <span className={styles.card_name}>{key}</span>
               <span className={styles.card_cta}>Sužinoti daugiau →</span>
             </button>
