@@ -48,11 +48,11 @@ const BUSINESS = {
   url: "https://masazai.net",
   telephone: "+37067273695",
   description:
-    "Profesionalus privatus masažas Kaune, Girstutyje. Klasikinis, anticeliulitinis, " +
+    "Profesionalus privatus masažas Kaune, Gričiupyje. Klasikinis, anticeliulitinis, " +
     "limfodrenažinis, nėščiųjų masažas ir kt. Virš 30 metų patirtis. Prieinamos kainos.",
   priceRange: "€–€€",
   facebook: "https://www.facebook.com/Masazuotoja",
-  neighbourhood: "Girstutis",
+  neighbourhood: "Gričiupis",
   city: "Kaunas",
   country: "LT",
 };
