@@ -25,7 +25,7 @@ export default function About() {
           <div
             className={`${about_image_container} about_image_container animate__animated animate__fadeInRight`}
           >
-            <img className={about_image} src="/images/profile.jpeg" alt="Jelena – masažuotoja Kaune, Girstutyje" />
+            <img className={about_image} src="/images/profile.jpeg" alt="Jelena – masažuotoja Kaune, Gričiupyje" />
           </div>
 
           <p className={`${about_title} about_title animate__animated animate__fadeInLeft`}>
