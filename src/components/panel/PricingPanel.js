@@ -1,15 +1,16 @@
 // Pricing data extracted from the table
 export const PricingData = {
-  "Klasikinis kūno masažas": { price: "55€", duration: "75 min" }, // Bendras kūno - most popular
+  "Klasikinis kūno masažas": { price: "60€", duration: "80 min" }, // Bendras kūno - most popular
   "Atpalaiduojantis viso kūno masažas": null, // Marketing content, no standard pricing
-  "Klasikinis-segmentinis masažas": { price: "45€", duration: "85 min" },
-  "Neurosedatyvinis-antistresinis masažas": { price: "50€", duration: "95 min" },
-  "Limfodrenažinis masažas": { price: "40€", duration: "65 min" },
-  "Chiromasažas": { price: "55€", duration: "50 min" },
-  "Anticeliulitinis masažas rankomis": { price: "35€", duration: "55 min" },
-  "Nėščiųjų masažas": { price: "35€", duration: "65 min" },
+  "Klasikinis-segmentinis masažas": { price: "70€", duration: "90 min" },
+  "Neurosedatyvinis-antistresinis masažas": { price: "80€", duration: "100 min" },
+  "Limfodrenažinis masažas": { price: "50€", duration: "75 min" },
+  "Chiromasažas": { price: "55€", duration: "45 min" },
+  "Anticeliulitinis masažas rankomis": { price: "45€", duration: "60 min" },
+  "Nėščiųjų masažas": { price: "40€", duration: "55 min" },
   'Veido masažas „Švytintis veidas"': { price: "35€", duration: "65 min" },
-  "Medaus masažas": { price: "30€", duration: "45 min" },
+  "Medaus masažas": { price: "30€", duration: "30 min" },
+  "„Su džok“ terapija": { price: "40€", duration: "60 min" },
 };
 
 export const PricingPanelContents = {
@@ -20,19 +21,20 @@ export const PricingPanelContents = {
 |                Paslauga                |  Kaina | Trukmė |
 |:--------------------------------------:|:------:|--------|
 | Klasikinis kūno masažas                |        |        |
-| &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;↪ Sprando                          | 15&nbsp;&euro; | 35&nbsp;min |
-| &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;↪ Rankų                            | 20&nbsp;&euro; | 40&nbsp;min |
-| &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;↪ Kojų                             | 25&nbsp;&euro; | 45&nbsp;min |
-| &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;↪ Nugaros                          | 30&nbsp;&euro; | 50&nbsp;min |
-| &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;↪ Bendras kūno                     | 55&nbsp;&euro; | 75&nbsp;min |
-| Klasikinis-segmentinis masažas         | 45&nbsp;&euro; | 85&nbsp;min |
-| Neurosedatyvinis-antistresinis masažas | 50&nbsp;&euro; | 95&nbsp;min |
-| Limfodrenažinis masažas                | 40&nbsp;&euro; | 65&nbsp;min |
-| Chiromasažas                           | 55&nbsp;&euro; | 50&nbsp;min |
-| Anticeliulitinis masažas rankomis      | 35&nbsp;&euro; | 55&nbsp;min |
-| Nėščiųjų masažas                       | 35&nbsp;&euro; | 65&nbsp;min |
-| „Švytintis veidas“                     | 35&nbsp;&euro; | 65&nbsp;min |
-| Medaus masažas                         | 30&nbsp;&euro; | 45&nbsp;min |`,
+| &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;↪ Sprando                          | 20&nbsp;&euro; | 40&nbsp;min |
+| &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;↪ Rankų                            | 25&nbsp;&euro; | 45&nbsp;min |
+| &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;↪ Kojų                             | 30&nbsp;&euro; | 50&nbsp;min |
+| &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;↪ Nugaros                          | 35&nbsp;&euro; | 55&nbsp;min |
+| &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;↪ Bendras kūno                     | 60&nbsp;&euro; | 80&nbsp;min |
+| Klasikinis-segmentinis masažas         | 70&nbsp;&euro; | 90&nbsp;min |
+| Neurosedatyvinis-antistresinis masažas | 80&nbsp;&euro; | 100&nbsp;min |
+| Limfodrenažinis masažas                | 50&nbsp;&euro; | 75&nbsp;min |
+| Chiromasažas                           | 55&nbsp;&euro; | 45&nbsp;min |
+| Anticeliulitinis masažas rankomis      | 45&nbsp;&euro; | 60&nbsp;min |
+| Nėščiųjų masažas                       | 40&nbsp;&euro; | 55&nbsp;min |
+| Veido masažas „Švytintis veidas"       | 35&nbsp;&euro; | 65&nbsp;min |
+| „Su džok“ pėdų ir plaštakų masažas     | 40&nbsp;&euro; | 60&nbsp;min |
+| Medaus masažas                         | 30&nbsp;&euro; | 30&nbsp;min |`,
 
     //
     "Klasikinis kūno masažas": `
