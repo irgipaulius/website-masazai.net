@@ -4,9 +4,10 @@ export const AboutPanelContents = {
     "Išsilavinimas ir kvalifikacija": `
 | Data        |                       Lokacija                       | Kvalifikacijos kėlimo įstaiga                                                                     |
 |:-----------:|:----------------------------------------------------:|---------------------------------------------------------------------------------------------------|
-| 2021        |                      Nuotolinis                      | Klinikiniai masažai. Kaklinės ir krūtininės stuburo dalies patologijos                            |
-| 2021        | Nuotolinis                                           | Nugaros skausmas gydytojo, kineziterapeuto, ergoterapeuto ir masažuotojo praktikoje               |
-| 2021        | Nuotolinis                                           | Miofascijinių ir giliųjų audinių masažo technikų taikymas esant išialgijai                        |
+| 2026        | Nuotolinis                                           | Gydomasis nugaros masažas. Efektyvios technikos įrodymais grįstoje praktikoje. **VŠĮ Žinių laboratorija EMPATIJA** |
+| 2021        |                      Nuotolinis                      | Klinikiniai masažai. Kaklinės ir krūtininės stuburo dalies patologijos. **VŠĮ Žinių laboratorija EMPATIJA** |
+| 2021        | Nuotolinis                                           | Nugaros skausmas gydytojo, kineziterapeuto, ergoterapeuto ir masažuotojo praktikoje. **VŠĮ Žinių laboratorija EMPATIJA** |
+| 2021        | Nuotolinis                                           | Miofascijinių ir giliųjų audinių masažo technikų taikymas esant išialgijai. **VŠĮ Žinių laboratorija EMPATIJA** |
 | 2018        | Vilnius                                              | FOREVER AKADEMIJA ([foreverliving](https://foreverliving.com/ltu/lt-lt/home))                     |
 | 2013        | Kaunas                                               | „SU DŽOK“ terapija                                                                                |
 | 2009        | Kaunas                                               | „STARVAC SP2“ prancūziškas aparatas, anticeliulitinė programa ir veido vakuuminis masažas, kursai |
